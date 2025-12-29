@@ -1,0 +1,14 @@
+.backBtn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  background-color: #b91c1c;
+}

@@ -1,0 +1,41 @@
+* {
+  /* Réinitialisation globale */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background général de l'application */
+  background-image: url("/bg_japon.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+
+  /* Centre le texte pour tout ce qui est dedans */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans", "Sawarabi Mincho", sans-serif;
+  color: black;
+}
+
+.parchemin {
+  /* Parchemin semi-transparent derrière le contenu */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  /* supprime les puces */
+  list-style: none;
+}

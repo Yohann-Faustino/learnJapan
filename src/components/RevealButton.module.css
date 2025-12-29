@@ -1,0 +1,92 @@
+.miniVocabItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Colonnes */
+.leftCol {
+  flex: 1; /* espace flexible à gauche */
+}
+
+.middleCol {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rightCol {
+  flex: 2; /* colonne droite plus large */
+  display: flex;
+  justify-content: flex-start; /* ou center si tu veux centrer le reveal horizontalement */
+}
+
+/* Hiragana */
+.japText {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Bouton bleu */
+.revealButton {
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: white;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.revealButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3),
+    transparent 70%
+  );
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.revealButton:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+.revealButton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.revealButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu reveal */
+.revealContent {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
