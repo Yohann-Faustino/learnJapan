@@ -206,7 +206,9 @@ export default function HiraganaPage() {
                 <strong>ひ</strong> → “hi” (comme dans histoire)
               </p>
               <p>
-                <strong>ふ</strong> → “fu” (comme dans fou)
+                <p>
+                  <strong>ふ</strong> → “fu” (comme le début de "houhou")
+                </p>
               </p>
               <p>
                 <strong>へ</strong> → “he” (comme dans héros)

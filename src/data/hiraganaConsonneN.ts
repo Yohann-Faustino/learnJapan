@@ -1,6 +1,7 @@
 import type { Question } from "../types/Question";
 
 export const hiraganaNQuestions: Question[] = [
+  // QUESTIONS 1-15 : MÊMES MOTS QUE DANS hiraganaNVocab
   {
     id: 1,
     category: "hiragana",
@@ -77,48 +78,48 @@ export const hiraganaNQuestions: Question[] = [
     id: 7,
     category: "hiragana",
     subCategory: "consonne N",
-    question: "Comment se prononce le mot にけ ?",
+    question: "Comment se prononce le mot にほん ?",
     options: [
-      { text: "nike", correct: true },
-      { text: "niko", correct: false },
-      { text: "tike", correct: false },
-      { text: "sike", correct: false },
+      { text: "nihon", correct: true },
+      { text: "nihan", correct: false },
+      { text: "nihun", correct: false },
+      { text: "nihin", correct: false },
     ],
   },
   {
     id: 8,
     category: "hiragana",
     subCategory: "consonne N",
-    question: "Comment se prononce le mot ぬた ?",
+    question: "Comment se prononce le mot すな ?",
     options: [
-      { text: "nuta", correct: true },
-      { text: "nuto", correct: false },
-      { text: "tuta", correct: false },
-      { text: "suta", correct: false },
+      { text: "suna", correct: true },
+      { text: "suna", correct: false },
+      { text: "tsuna", correct: false },
+      { text: "kuna", correct: false },
     ],
   },
   {
     id: 9,
     category: "hiragana",
     subCategory: "consonne N",
-    question: "Comment se prononce le mot ねす ?",
+    question: "Comment se prononce le mot のど ?",
     options: [
-      { text: "nesu", correct: true },
-      { text: "nesoo", correct: false },
-      { text: "tessu", correct: false },
-      { text: "sesu", correct: false },
+      { text: "nodo", correct: true },
+      { text: "nodo", correct: false },
+      { text: "todo", correct: false },
+      { text: "sodo", correct: false },
     ],
   },
   {
     id: 10,
     category: "hiragana",
     subCategory: "consonne N",
-    question: "Comment se prononce le mot のた ?",
+    question: "Comment se prononce le mot かんじ ?",
     options: [
-      { text: "nota", correct: true },
-      { text: "noto", correct: false },
-      { text: "tota", correct: false },
-      { text: "sota", correct: false },
+      { text: "kanji", correct: true },
+      { text: "kanji", correct: false },
+      { text: "kanji", correct: false },
+      { text: "kanji", correct: false },
     ],
   },
   {
@@ -181,6 +182,8 @@ export const hiraganaNQuestions: Question[] = [
       { text: "somimasu", correct: false },
     ],
   },
+
+  // QUESTIONS 16-21 : IDENTIFICATION DES HIRAGANA
   {
     id: 16,
     category: "hiragana",
@@ -245,7 +248,7 @@ export const hiraganaNQuestions: Question[] = [
     id: 21,
     category: "hiragana",
     subCategory: "consonne N",
-    question: "Quel est l'hiragana 'ん' ?",
+    question: "Quel est l'hiragana 'n' (ん) ?",
     options: [
       { text: "ん", correct: true },
       { text: "な", correct: false },
@@ -255,20 +258,21 @@ export const hiraganaNQuestions: Question[] = [
   },
 ];
 
+// VOCABULAIRE (LES MÊMES 15 MOTS QUE DANS LES QUESTIONS 1-15)
 export const hiraganaNVocab = [
   { jp: "なつ", romaji: "natsu", fr: "été" },
   { jp: "にし", romaji: "nishi", fr: "ouest" },
-  { jp: "ぬけ", romaji: "nuke", fr: "sortir / échapper" },
+  { jp: "ぬけ", romaji: "nuke", fr: "échappement / défaillance" },
   { jp: "ねこ", romaji: "neko", fr: "chat" },
-  { jp: "のみ", romaji: "nomi", fr: "insecte piqueur / boire" },
+  { jp: "のみ", romaji: "nomi", fr: "boisson (verbe)" },
   { jp: "なに", romaji: "nani", fr: "quoi" },
   { jp: "にほん", romaji: "nihon", fr: "Japon" },
   { jp: "すな", romaji: "suna", fr: "sable" },
   { jp: "のど", romaji: "nodo", fr: "gorge" },
   { jp: "かんじ", romaji: "kanji", fr: "caractère chinois" },
-  { jp: "なつめ", romaji: "natsume", fr: "jujube / prénom" },
+  { jp: "なつめ", romaji: "natsume", fr: "jujube (fruit)" },
   { jp: "にく", romaji: "niku", fr: "viande" },
-  { jp: "ぬける", romaji: "nukeru", fr: "tomber / s’échapper" },
-  { jp: "ねん", romaji: "nen", fr: "année / esprit" },
+  { jp: "ぬける", romaji: "nukeru", fr: "tomber / s'échapper" },
+  { jp: "ねん", romaji: "nen", fr: "année" },
   { jp: "のみます", romaji: "nomimasu", fr: "boire (forme polie)" },
 ];

@@ -1,6 +1,7 @@
 import type { Question } from "../types/Question";
 
 export const hiraganaVoyellesQuestions: Question[] = [
+  // QUESTIONS 1-11 : MÊMES MOTS QUE DANS hiraganaVoyellesVocab
   {
     id: 1,
     category: "hiragana",
@@ -53,12 +54,12 @@ export const hiraganaVoyellesQuestions: Question[] = [
     id: 5,
     category: "hiragana",
     subCategory: "voyelles",
-    question: "Comment se prononce le mot うう ?",
+    question: "Comment se prononce le mot うお ?",
     options: [
-      { text: "uu", correct: true },
+      { text: "uo", correct: true },
       { text: "ou", correct: false },
-      { text: "ii", correct: false },
-      { text: "uo", correct: false },
+      { text: "oo", correct: false },
+      { text: "io", correct: false },
     ],
   },
   {
@@ -118,71 +119,25 @@ export const hiraganaVoyellesQuestions: Question[] = [
       { text: "aoi", correct: true },
       { text: "oai", correct: false },
       { text: "aou", correct: false },
-      { text: "oai", correct: false },
+      { text: "oui", correct: false },
     ],
   },
   {
     id: 11,
     category: "hiragana",
     subCategory: "voyelles",
-    question: "Comment se prononce le mot いお ?",
-    options: [
-      { text: "io", correct: true },
-      { text: "iu", correct: false },
-      { text: "oi", correct: false },
-      { text: "ie", correct: false },
-    ],
-  },
-  {
-    id: 12,
-    category: "hiragana",
-    subCategory: "voyelles",
-    question: "Comment se prononce le mot うあ ?",
-    options: [
-      { text: "ua", correct: true },
-      { text: "au", correct: false },
-      { text: "uo", correct: false },
-      { text: "oa", correct: false },
-    ],
-  },
-  {
-    id: 13,
-    category: "hiragana",
-    subCategory: "voyelles",
-    question: "Comment se prononce le mot えお ?",
-    options: [
-      { text: "eo", correct: true },
-      { text: "oe", correct: false },
-      { text: "ea", correct: false },
-      { text: "ae", correct: false },
-    ],
-  },
-  {
-    id: 14,
-    category: "hiragana",
-    subCategory: "voyelles",
-    question: "Comment se prononce le mot おあ ?",
-    options: [
-      { text: "oa", correct: true },
-      { text: "ao", correct: false },
-      { text: "oi", correct: false },
-      { text: "ou", correct: false },
-    ],
-  },
-  {
-    id: 15,
-    category: "hiragana",
-    subCategory: "voyelles",
     question: "Comment se prononce le mot いいえ ?",
     options: [
       { text: "iie", correct: true },
-      { text: "uue", correct: false },
+      { text: "iee", correct: false },
       { text: "eii", correct: false },
-      { text: "euu", correct: false },
+      { text: "ieu", correct: false },
     ],
   },
+
+  // QUESTIONS 12-16 : IDENTIFICATION DES HIRAGANA (pour compléter à 16 questions)
   {
-    id: 16,
+    id: 12,
     category: "hiragana",
     subCategory: "voyelles",
     question: "Quel est l'hiragana 'a' ?",
@@ -194,7 +149,7 @@ export const hiraganaVoyellesQuestions: Question[] = [
     ],
   },
   {
-    id: 17,
+    id: 13,
     category: "hiragana",
     subCategory: "voyelles",
     question: "Quel est l'hiragana 'i' ?",
@@ -206,7 +161,7 @@ export const hiraganaVoyellesQuestions: Question[] = [
     ],
   },
   {
-    id: 18,
+    id: 14,
     category: "hiragana",
     subCategory: "voyelles",
     question: "Quel est l'hiragana 'u' ?",
@@ -218,7 +173,7 @@ export const hiraganaVoyellesQuestions: Question[] = [
     ],
   },
   {
-    id: 19,
+    id: 15,
     category: "hiragana",
     subCategory: "voyelles",
     question: "Quel est l'hiragana 'e' ?",
@@ -230,7 +185,7 @@ export const hiraganaVoyellesQuestions: Question[] = [
     ],
   },
   {
-    id: 20,
+    id: 16,
     category: "hiragana",
     subCategory: "voyelles",
     question: "Quel est l'hiragana 'o' ?",
@@ -243,16 +198,17 @@ export const hiraganaVoyellesQuestions: Question[] = [
   },
 ];
 
+// VOCABULAIRE (LES MÊMES 11 MOTS QUE DANS LES QUESTIONS 1-11)
 export const hiraganaVoyellesVocab = [
   { jp: "あい", romaji: "ai", fr: "amour" },
   { jp: "いい", romaji: "ii", fr: "bon / bien" },
   { jp: "あう", romaji: "au", fr: "rencontrer" },
-  { jp: "あお", romaji: "ao", fr: "bleu" },
-  { jp: "うう", romaji: "uu", fr: "oui long" },
+  { jp: "あお", romaji: "ao", fr: "bleu (nom)" },
+  { jp: "うお", romaji: "uo", fr: "poisson" },
   { jp: "ええ", romaji: "ee", fr: "oui" },
   { jp: "おお", romaji: "oo", fr: "grand / beaucoup" },
   { jp: "いう", romaji: "iu", fr: "dire" },
   { jp: "うえ", romaji: "ue", fr: "au-dessus" },
-  { jp: "あおい", romaji: "aoi", fr: "bleu adjectif" },
+  { jp: "あおい", romaji: "aoi", fr: "bleu (adjectif)" },
   { jp: "いいえ", romaji: "iie", fr: "non" },
 ];

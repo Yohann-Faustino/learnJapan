@@ -11,6 +11,9 @@ export default function Home() {
         <Link to="/hiragana" className={styles.card}>
           Hiragana
         </Link>
+        <Link to="/katakana" className={styles.card}>
+          katakana
+        </Link>
         <Link to="/kanji" className={styles.card}>
           Kanji
         </Link>
