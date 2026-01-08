@@ -56,7 +56,7 @@ export const hiraganaWQuestions: Question[] = [
     subCategory: "consonne W",
     question: "Comment se prononce le mot をかし ?",
     options: [
-      { text: "okashi", correct: true }, // PRONONCIATION IMPORTANTE : "o" pas "wo"
+      { text: "okashi", correct: true },
       { text: "wokashi", correct: false },
       { text: "okashi", correct: false },
       { text: "okashi", correct: false },
@@ -138,12 +138,12 @@ export const hiraganaWQuestions: Question[] = [
     id: 12,
     category: "hiragana",
     subCategory: "consonne W",
-    question: "Comment se prononce le mot わだい ?",
+    question: "Comment se prononce le mot わか ?",
     options: [
-      { text: "wadai", correct: true },
-      { text: "wadai", correct: false },
-      { text: "wadai", correct: false },
-      { text: "wadai", correct: false },
+      { text: "waka", correct: true },
+      { text: "waka", correct: false },
+      { text: "waka", correct: false },
+      { text: "waka", correct: false },
     ],
   },
   {
@@ -162,12 +162,12 @@ export const hiraganaWQuestions: Question[] = [
     id: 14,
     category: "hiragana",
     subCategory: "consonne W",
-    question: "Comment se prononce le mot わんぱく ?",
+    question: "Comment se prononce le mot わり ?",
     options: [
-      { text: "wanpaku", correct: true },
-      { text: "wanpaku", correct: false },
-      { text: "wanpaku", correct: false },
-      { text: "wanpaku", correct: false },
+      { text: "wari", correct: true },
+      { text: "wari", correct: false },
+      { text: "wari", correct: false },
+      { text: "wari", correct: false },
     ],
   },
   {
@@ -176,7 +176,7 @@ export const hiraganaWQuestions: Question[] = [
     subCategory: "consonne W",
     question: "Comment se prononce le mot をり ?",
     options: [
-      { text: "ori", correct: true }, // PRONONCIATION : "o" pas "wo"
+      { text: "ori", correct: true },
       { text: "wori", correct: false },
       { text: "ori", correct: false },
       { text: "ori", correct: false },
@@ -235,8 +235,8 @@ export const hiraganaWVocab = [
   { jp: "わし", romaji: "washi", fr: "aigle" },
   { jp: "わくわく", romaji: "wakuwaku", fr: "excité / impatient" },
   { jp: "わたる", romaji: "wataru", fr: "traverser" },
-  { jp: "わだい", romaji: "wadai", fr: "sujet / thème" },
+  { jp: "わか", romaji: "waka", fr: "jeune (préfixe)" },
   { jp: "わん", romaji: "wan", fr: "bol" },
-  { jp: "わんぱく", romaji: "wanpaku", fr: "espiègle / coquin" },
+  { jp: "わり", romaji: "wari", fr: "pourcentage / ratio" },
   { jp: "をり", romaji: "ori", fr: "pli / pliage" },
 ];
