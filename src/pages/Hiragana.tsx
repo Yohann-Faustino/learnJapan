@@ -20,8 +20,32 @@ import { hiraganaMQuestions, hiraganaMVocab } from "../data/hiraganaConsonneM";
 import { hiraganaYQuestions, hiraganaYVocab } from "../data/hiraganaConsonneY";
 import { hiraganaRQuestions, hiraganaRVocab } from "../data/hiraganaConsonneR";
 import { hiraganaWQuestions, hiraganaWVocab } from "../data/hiraganaConsonneW";
+import { dakutenQuestions, dakutenVocab } from "../data/dakuten";
+import { handakutenQuestions, handakutenVocab } from "../data/handakuten";
+import {
+  hiraganaCombiQuestions,
+  hiraganaCombiVocab,
+} from "../data/hiraganaCombi";
+import {
+  hiraganaExceptionsQuestions,
+  hiraganaExceptionsVocab,
+} from "../data/hiraganaExceptions";
 
-type Section = "voyelles" | "K" | "S" | "T" | "N" | "H" | "M" | "Y" | "R" | "W";
+type Section =
+  | "voyelles"
+  | "K"
+  | "S"
+  | "T"
+  | "N"
+  | "H"
+  | "M"
+  | "Y"
+  | "R"
+  | "W"
+  | "Dakuten"
+  | "Handakuten"
+  | "Combinaisons"
+  | "Exceptions";
 
 export default function HiraganaPage() {
   const [activeSection, setActiveSection] = useState<Section>("voyelles");
@@ -327,6 +351,56 @@ export default function HiraganaPage() {
           </>
         );
 
+      case "Dakuten":
+        return (
+          <>
+            <h2>Les Dakuten (゛)</h2>
+            <p>Cour...</p>
+            {renderMiniVocab(dakutenVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={dakutenQuestions} title="Quiz dakuten" />
+            </div>
+          </>
+        );
+
+      case "Handakuten":
+        return (
+          <>
+            <h2>Les Handakuten (゜)</h2>
+            <p>Cour...</p>
+            {renderMiniVocab(handakutenVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={handakutenQuestions} title="Quiz handakuten" />
+            </div>
+          </>
+        );
+
+      case "Combinaisons":
+        return (
+          <>
+            <h2>Combinaisons (きゃ, しゃ, etc.)</h2>;<p>Cour...</p>
+            {renderMiniVocab(hiraganaCombiVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz
+                questions={hiraganaCombiQuestions}
+                title="Quiz combinaisons"
+              />
+            </div>
+          </>
+        );
+      case "Exceptions":
+        return (
+          <>
+            <h2>Exceptions (っ, ー, etc.)</h2>;<p>Cour...</p>
+            {renderMiniVocab(hiraganaExceptionsVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz
+                questions={hiraganaExceptionsQuestions}
+                title="Quiz exceptions"
+              />
+            </div>
+          </>
+        );
       default:
         return null;
     }
@@ -347,6 +421,10 @@ export default function HiraganaPage() {
           { label: "Y", key: "Y" },
           { label: "R", key: "R" },
           { label: "W", key: "W" },
+          { label: "Dakuten", key: "Dakuten" },
+          { label: "Handakuten", key: "Handakuten" },
+          { label: "Combinaisons", key: "Combinaisons" },
+          { label: "Exceptions", key: "Exceptions" },
         ].map((tab) => (
           <TabButton
             key={tab.key}
