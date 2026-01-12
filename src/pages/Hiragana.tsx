@@ -355,10 +355,56 @@ export default function HiraganaPage() {
         return (
           <>
             <h2>Les Dakuten (゛)</h2>
-            <p>Cour...</p>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Deux petits traits (゛) changent la
+                prononciation d'une consonne sourde en consonne sonore.
+              </p>
+
+              <p>
+                <strong>Série K → G :</strong>
+              </p>
+              <p>
+                <strong>かきくけこ</strong> → <strong>がぎぐげご</strong>
+                <br />
+                "k" devient "g" (comme dans gare, guide, gum, guêpe, gorge)
+              </p>
+
+              <p>
+                <strong>Série S → Z :</strong>
+              </p>
+              <p>
+                <strong>さしすせそ</strong> → <strong>ざじずぜぞ</strong>
+                <br />
+                "s" devient "z" (zèbre, zone)
+                <br />• し (shi) → じ (ji) - prononcé "ji" comme dans "djembé"
+              </p>
+
+              <p>
+                <strong>Série T → D :</strong>
+              </p>
+              <p>
+                <strong>たちつてと</strong> → <strong>だぢづでど</strong>
+                <br />
+                "t" devient "d" (date, dé, dommage)
+                <br />• ち (chi) → ぢ (ji) - très rare, souvent remplacé par じ
+                <br />• つ (tsu) → づ (zu) - très rare, souvent remplacé par ず
+              </p>
+
+              <p>
+                <strong>Série H → B :</strong>
+              </p>
+              <p>
+                <strong>はひふへほ</strong> → <strong>ばびぶべぼ</strong>
+                <br />
+                "h" devient "b" (bateau, bise, bulle, berceau, bol)
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
             {renderMiniVocab(dakutenVocab)}
             <div className={styles.miniQuiz}>
-              <Quiz questions={dakutenQuestions} title="Quiz dakuten" />
+              <Quiz questions={dakutenQuestions} title="Quiz Dakuten" />
             </div>
           </>
         );
