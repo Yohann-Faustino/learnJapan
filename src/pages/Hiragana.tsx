@@ -413,10 +413,33 @@ export default function HiraganaPage() {
         return (
           <>
             <h2>Les Handakuten (゜)</h2>
-            <p>Cour...</p>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Un petit cercle (゜) change la
+                prononciation de la série H en "P".
+              </p>
+
+              <p>
+                <strong>はひふへほ</strong> → <strong>ぱぴぷぺぽ</strong>
+                <br />
+                "h" devient "p" (comme dans pain, piano, pudding, pen, poche)
+              </p>
+
+              <p>
+                <strong>À noter</strong> :
+                <br />• Le handakuten ne s'applique{" "}
+                <strong>qu'à la série H</strong>
+                <br />• C'est le seul cas où un hiragana peut avoir deux marques
+                diacritiques
+                <br />• Beaucoup de mots avec handakuten sont des mots étrangers
+                adaptés
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
             {renderMiniVocab(handakutenVocab)}
             <div className={styles.miniQuiz}>
-              <Quiz questions={handakutenQuestions} title="Quiz handakuten" />
+              <Quiz questions={handakutenQuestions} title="Quiz Handakuten" />
             </div>
           </>
         );
