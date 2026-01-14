@@ -447,12 +447,59 @@ export default function HiraganaPage() {
       case "Combinaisons":
         return (
           <>
-            <h2>Combinaisons (きゃ, しゃ, etc.)</h2>;<p>Cour...</p>
+            <h2>Combinaisons (きゃ, しゃ, ちょ, etc.)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Un hiragana de la colonne Y (や, ゆ,
+                よ) en petit size combiné avec un autre hiragana.
+              </p>
+
+              <p>
+                <strong>Formation</strong> :
+                <br />• Base (き, し, ち, に, ひ, み, り, ぎ, じ, ぴ) + petit
+                や/ゆ/よ
+                <br />• Exemples : き + ゃ = きゃ (kya)
+              </p>
+
+              <p>
+                <strong>Séries principales :</strong>
+              </p>
+              <p>
+                <strong>K → KY</strong> : きゃ (kya), きゅ (kyu), きょ (kyo)
+                <br />
+                <strong>S → SH</strong> : しゃ (sha), しゅ (shu), しょ (sho)
+                <br />
+                <strong>T → CH</strong> : ちゃ (cha), ちゅ (chu), ちょ (cho)
+                <br />
+                <strong>N → NY</strong> : にゃ (nya), にゅ (nyu), にょ (nyo)
+                <br />
+                <strong>H → HY</strong> : ひゃ (hya), ひゅ (hyu), ひょ (hyo)
+                <br />
+                <strong>M → MY</strong> : みゃ (mya), みゅ (myu), みょ (myo)
+                <br />
+                <strong>R → RY</strong> : りゃ (rya), りゅ (ryu), りょ (ryo)
+              </p>
+
+              <p>
+                <strong>Avec dakuten/handakuten :</strong>
+                <br />• ぎゃ (gya), ぎゅ (gyu), ぎょ (gyo)
+                <br />• じゃ (ja), じゅ (ju), じょ (jo)
+                <br />• ぴゃ (pya), ぴゅ (pyu), ぴょ (pyo)
+              </p>
+
+              <p>
+                <strong>À noter</strong> : Les combinaisons se prononcent en une
+                seule syllabe, pas comme deux sons séparés (きゃ = "kya", pas
+                "ki-ya").
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
             {renderMiniVocab(hiraganaCombiVocab)}
             <div className={styles.miniQuiz}>
               <Quiz
                 questions={hiraganaCombiQuestions}
-                title="Quiz combinaisons"
+                title="Quiz Combinaisons"
               />
             </div>
           </>
