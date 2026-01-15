@@ -504,15 +504,76 @@ export default function HiraganaPage() {
             </div>
           </>
         );
+
       case "Exceptions":
         return (
           <>
-            <h2>Exceptions (っ, ー, etc.)</h2>;<p>Cour...</p>
+            <h2>Exceptions (っ, ー, etc.)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>1. Le sokuon (っ) - Consonne doublée</strong>
+              </p>
+              <p>
+                • Petit っ devant k, s, t, p : double la consonne suivante
+                <br />• Exemples : がっこう (gakkou), きっぷ (kippu)
+                <br />• Prononciation : Petite pause avant la consonne
+              </p>
+
+              <p>
+                <strong>2. Le chōon (ー) - Voyelle longue</strong>
+              </p>
+              <p>
+                • Trait horizontal qui allonge la voyelle précédente
+                <br />• Exemples : ケーキ (keeki = gâteau), コーヒー (koohii =
+                café)
+                <br />• En hiragana : souvent écrit avec une voyelle
+                supplémentaire
+              </p>
+
+              <p>
+                <strong>3. Voyelles longues en hiragana</strong>
+              </p>
+              <p>
+                • ああ = ā (あ long) : おかあさん (okaasan)
+                <br />• いい = ī (い long) : おにいさん (oniisan)
+                <br />• うう = ū (う long) : ゆうめい (yuumei = célèbre)
+                <br />• えい = ē (え long) : せんせい (sensei)
+                <br />• おお = ō (お long) : おおきい (ookii)
+              </p>
+
+              <p>
+                <strong>4. Les particules (prononciation spéciale)</strong>
+              </p>
+              <p>
+                • は (ha) → se prononce "wa" comme particule
+                <br />• へ (he) → se prononce "e" comme particule
+                <br />• を (wo) → se prononce "o" comme particule
+              </p>
+
+              <p>
+                <strong>5. Le hiragana ん</strong>
+              </p>
+              <p>
+                • Seul hiragana qui ne se termine pas par une voyelle
+                <br />• Son nasal "n" comme dans "bonbon"
+                <br />• Peut se trouver en milieu ou fin de mot : にほん (nihon)
+              </p>
+
+              <p>
+                <strong>6. Les combinaisons spéciales</strong>
+              </p>
+              <p>
+                • ちゃ, じゃ, ぴゃ, etc. : voir section "Combinaisons"
+                <br />• Les petits ゃ, ゅ, ょ modifient la prononciation
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
             {renderMiniVocab(hiraganaExceptionsVocab)}
             <div className={styles.miniQuiz}>
               <Quiz
                 questions={hiraganaExceptionsQuestions}
-                title="Quiz exceptions"
+                title="Quiz Exceptions"
               />
             </div>
           </>
