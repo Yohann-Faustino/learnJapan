@@ -1,7 +1,7 @@
 // pages/BaseVocabulary.tsx
 import { useState } from "react";
 import Quiz from "../components/Quiz";
-import RevealButton from "../components/RevealButton";
+import FrenchRevealButton from "../components/FrenchRevealButton";
 import BackButton from "../components/BackButton";
 import TabButton from "../components/TabButton";
 import styles from "./BaseVocabulary.module.css";
@@ -29,15 +29,15 @@ export default function BaseVocabularyPage() {
   const [activeSection, setActiveSection] = useState<Section>("survie");
 
   const renderMiniVocab = (
-    list: { jp: string; romaji: string; fr: string }[]
+    list: { french: string; romaji: string; pronunciation: string }[],
   ) => (
     <div className={styles.miniVocab}>
       {list.map((item, idx) => (
-        <RevealButton
+        <FrenchRevealButton
           key={idx}
-          japanese={item.jp}
+          french={item.french}
           romaji={item.romaji}
-          french={item.fr}
+          pronunciation={item.pronunciation}
         />
       ))}
     </div>
