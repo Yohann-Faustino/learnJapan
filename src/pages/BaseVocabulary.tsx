@@ -7,9 +7,9 @@ import TabButton from "../components/TabButton";
 import styles from "./BaseVocabulary.module.css";
 
 import {
-  survieVocab,
-  survieQuestions,
-} from "../data/baseVocabularyData/vocabSurvie";
+  salutationsVocab,
+  salutationsQuestions,
+} from "../data/baseVocabularyData/vocabSalutations";
 import {
   nourritureVocab,
   nourritureQuestions,
@@ -19,14 +19,41 @@ import {
   transportQuestions,
 } from "../data/baseVocabularyData/vocabTransport";
 import {
-  cultureVocab,
-  cultureQuestions,
-} from "../data/baseVocabularyData/vocabCulture";
+  achatsVocab,
+  achatsQuestions,
+} from "../data/baseVocabularyData/vocabAchats";
 
-type Section = "survie" | "nourriture" | "transport" | "culture";
+import {
+  santeVocab,
+  santeQuestions,
+} from "../data/baseVocabularyData/vocabSante";
+import {
+  quotidienVocab,
+  quotidienQuestions,
+} from "../data/baseVocabularyData/vocabQuotidien";
+
+import {
+  grammaireVocab,
+  grammaireQuestions,
+} from "../data/baseVocabularyData/vocabGrammaire";
+
+import {
+  questionsVocab,
+  questionsQuestions,
+} from "../data/baseVocabularyData/vocabQuestions";
+
+type Section =
+  | "quotidien"
+  | "salutations"
+  | "questions"
+  | "nourriture"
+  | "transport"
+  | "achats"
+  | "santé"
+  | "grammaire";
 
 export default function BaseVocabularyPage() {
-  const [activeSection, setActiveSection] = useState<Section>("survie");
+  const [activeSection, setActiveSection] = useState<Section>("salutations");
 
   const renderMiniVocab = (
     list: { french: string; romaji: string; pronunciation: string }[],
@@ -45,23 +72,79 @@ export default function BaseVocabularyPage() {
 
   const renderSection = () => {
     switch (activeSection) {
-      case "survie":
+      case "quotidien":
         return (
           <>
-            <h2>📍 Mots de Survie</h2>
+            <h2>🏠 Quotidien </h2>
             <div className={styles.cours}>
               <p>
-                Les <strong>20 mots les plus essentiels</strong> pour vos
-                premiers échanges.
+                "Les objets et situations de la vie de tous les jours au Japon.
+                Essentiel pour décrire votre environnement."
               </p>
-              <p>Mémorisez ces bases avant tout le reste !</p>
+
+              <p>
+                <strong>Phrase utile </strong>: ここは [lieu] です (Ici c'est
+                [lieu])
+              </p>
             </div>
 
-            <h3>Vocabulaire de survie</h3>
-            {renderMiniVocab(survieVocab)}
+            <h3>Vocabulaire du quotidien</h3>
+            {renderMiniVocab(quotidienVocab)}
 
             <div className={styles.miniQuiz}>
-              <Quiz questions={survieQuestions} title="Quiz Survie" />
+              <Quiz questions={quotidienQuestions} title="Quiz Quotidien" />
+            </div>
+          </>
+        );
+
+      case "salutations":
+        return (
+          <>
+            <h2>🏯 Salutations & Politesse</h2>
+            <div className={styles.cours}>
+              <p>
+                Les bases essentielles pour saluer, remercier et s'excuser au
+                Japon.
+              </p>
+              <p>
+                <strong>Phrase utile</strong> : はじめまして、[nom] です
+                (Enchanté, je m'appelle [nom])
+              </p>
+              <p>
+                <strong>Astuce</strong> : Utilisez "sumimasen" pour attirer
+                l'attention poliment.
+              </p>
+            </div>
+
+            <h3>Vocabulaire des salutations</h3>
+            {renderMiniVocab(salutationsVocab)}
+
+            <div className={styles.miniQuiz}>
+              <Quiz questions={salutationsQuestions} title="Quiz Salutations" />
+            </div>
+          </>
+        );
+
+      case "questions":
+        return (
+          <>
+            <h2>❓ Questions</h2>
+            <div className={styles.cours}>
+              <p>
+                "Apprenez à poser des questions simples. La clé pour obtenir des
+                informations et communiquer efficacement."
+              </p>
+              <p>
+                <strong>Phrase utile</strong>: [mot] は なんですか？ (Qu'est-ce
+                que [mot] ?)
+              </p>
+            </div>
+
+            <h3>Vocabulaire du questionnement</h3>
+            {renderMiniVocab(questionsVocab)}
+
+            <div className={styles.miniQuiz}>
+              <Quiz questions={questionsQuestions} title="Quiz Questions" />
             </div>
           </>
         );
@@ -110,22 +193,72 @@ export default function BaseVocabularyPage() {
           </>
         );
 
-      case "culture":
+      case "achats":
         return (
           <>
-            <h2>🏯 Culture & Visites</h2>
+            <h2>💸 Achats & Argent</h2>
             <div className={styles.cours}>
               <p>
-                Pour visiter temples, comprendre la culture et faire des achats.
+                "Pour faire des courses, négocier les prix et comprendre les
+                transactions. Indispensable pour tout achat."
               </p>
-              <p>Des mots qui rendront votre voyage plus riche !</p>
+              <p>
+                <strong>Phrase utile</strong>: いくらですか？ (C'est combien ?)
+              </p>
+            </div>
+
+            <h3>Vocabulaire des transactions</h3>
+            {renderMiniVocab(achatsVocab)}
+
+            <div className={styles.miniQuiz}>
+              <Quiz questions={achatsQuestions} title="Quiz Achats" />
+            </div>
+          </>
+        );
+
+      case "sante":
+        return (
+          <>
+            <h2>⚕️ Santé</h2>
+            <div className={styles.cours}>
+              <p>
+                "Exprimer des problèmes médicaux, trouver de l'aide et décrire
+                des symptômes. Pour votre sécurité."
+              </p>
+              <p>
+                <strong>Phrase utile</strong>: びょういんは どこですか？ (Où est
+                l'hôpital ?)
+              </p>
+            </div>
+
+            <h3>Vocabulaire sanitaire</h3>
+            {renderMiniVocab(santeVocab)}
+
+            <div className={styles.miniQuiz}>
+              <Quiz questions={santeQuestions} title="Quiz Santé" />
+            </div>
+          </>
+        );
+
+      case "grammaire":
+        return (
+          <>
+            <h2>🈴 Grammaire</h2>
+            <div className={styles.cours}>
+              <p>
+                "Les petits mots qui relient les phrases. Essentiel pour parler
+                de manière naturelle et fluide."
+              </p>
+              <p>
+                <strong>Phrase utile</strong>: [A] と [B] (A et B)
+              </p>
             </div>
 
             <h3>Vocabulaire culturel</h3>
-            {renderMiniVocab(cultureVocab)}
+            {renderMiniVocab(grammaireVocab)}
 
             <div className={styles.miniQuiz}>
-              <Quiz questions={cultureQuestions} title="Quiz Culture" />
+              <Quiz questions={grammaireQuestions} title="Quiz Grammaire" />
             </div>
           </>
         );
@@ -141,10 +274,14 @@ export default function BaseVocabularyPage() {
 
       <div className={styles.navTabs}>
         {[
-          { label: "📍 Survie", key: "survie" },
+          { label: "🏠 Quotidien", key: "quotidien" },
+          { label: "🏯 Salutations", key: "salutations" },
+          { label: "❓ Questions", key: "questions" },
           { label: "🍣 Nourriture", key: "nourriture" },
           { label: "🚄 Transport", key: "transport" },
-          { label: "🏯 Culture", key: "culture" },
+          { label: "💸 Achats", key: "achats" },
+          { label: "⚕️ Santé", key: "sante" },
+          { label: "🈴 Grammaire", key: "grammaire" },
         ].map((tab) => (
           <TabButton
             key={tab.key}

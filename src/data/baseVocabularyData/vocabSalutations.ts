@@ -2,7 +2,7 @@ import type { Question } from "../../types/Question";
 
 // VOCABULAIRE (20 mots)
 
-export const survieVocab = [
+export const salutationsVocab = [
   { french: "je / moi", romaji: "watashi", pronunciation: "wa-ta-chi" },
   { french: "toi / vous", romaji: "anata", pronunciation: "a-na-ta" },
   { french: "oui", romaji: "hai", pronunciation: "ha-ï" },
@@ -49,7 +49,7 @@ export const survieVocab = [
   { french: "cela (près de toi)", romaji: "sore", pronunciation: "so-ré" },
 ];
 
-export const survieQuestions: Question[] = [
+export const salutationsQuestions: Question[] = [
   // QUESTIONS 1-20 : FRANÇAIS → JAPONAIS
   {
     id: 1,
