@@ -1,6 +1,6 @@
 import type { Question } from "../../types/Question";
 
-// VOCABULAIRE (20 mots)
+// VOCABULAIRE SALUTATIONS (20 mots)
 
 export const salutationsVocab = [
   { french: "je / moi", romaji: "watashi", pronunciation: "wa-ta-chi" },
