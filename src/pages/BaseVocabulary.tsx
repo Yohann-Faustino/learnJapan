@@ -33,9 +33,9 @@ import {
 } from "../data/baseVocabularyData/vocabQuotidien";
 
 import {
-  grammaireVocab,
-  grammaireQuestions,
-} from "../data/baseVocabularyData/vocabGrammaire";
+  utileVocab,
+  utileQuestions,
+} from "../data/baseVocabularyData/vocabUtile";
 
 import {
   questionsVocab,
@@ -50,7 +50,7 @@ type Section =
   | "transport"
   | "achats"
   | "santé"
-  | "grammaire";
+  | "utile";
 
 export default function BaseVocabularyPage() {
   const [activeSection, setActiveSection] = useState<Section>("salutations");
@@ -240,7 +240,7 @@ export default function BaseVocabularyPage() {
           </>
         );
 
-      case "grammaire":
+      case "utile":
         return (
           <>
             <h2>🈴 Grammaire</h2>
@@ -255,10 +255,10 @@ export default function BaseVocabularyPage() {
             </div>
 
             <h3>Vocabulaire culturel</h3>
-            {renderMiniVocab(grammaireVocab)}
+            {renderMiniVocab(utileVocab)}
 
             <div className={styles.miniQuiz}>
-              <Quiz questions={grammaireQuestions} title="Quiz Grammaire" />
+              <Quiz questions={utileQuestions} title="Quiz Grammaire" />
             </div>
           </>
         );
@@ -281,7 +281,7 @@ export default function BaseVocabularyPage() {
           { label: "🚄 Transport", key: "transport" },
           { label: "💸 Achats", key: "achats" },
           { label: "⚕️ Santé", key: "sante" },
-          { label: "🈴 Grammaire", key: "grammaire" },
+          { label: "🈴 Utile", key: "utile" },
         ].map((tab) => (
           <TabButton
             key={tab.key}
