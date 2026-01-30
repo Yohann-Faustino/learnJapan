@@ -1,4 +1,3 @@
-// pages/Hiragana.tsx
 import { useState } from "react";
 import Quiz from "../components/Quiz";
 import TabButton from "../components/TabButton";
@@ -9,27 +8,57 @@ import styles from "./Hiragana.module.css";
 import {
   hiraganaVoyellesQuestions,
   hiraganaVoyellesVocab,
-} from "../data/hiraganaVoyelles";
+} from "../data/hiragana/hiraganaVoyelles";
 
-import { hiraganaKQuestions, hiraganaKVocab } from "../data/hiraganaConsonneK";
-import { hiraganaSQuestions, hiraganaSVocab } from "../data/hiraganaConsonneS";
-import { hiraganaTQuestions, hiraganaTVocab } from "../data/hiraganaConsonneT";
-import { hiraganaNQuestions, hiraganaNVocab } from "../data/hiraganaConsonneN";
-import { hiraganaHQuestions, hiraganaHVocab } from "../data/hiraganaConsonneH";
-import { hiraganaMQuestions, hiraganaMVocab } from "../data/hiraganaConsonneM";
-import { hiraganaYQuestions, hiraganaYVocab } from "../data/hiraganaConsonneY";
-import { hiraganaRQuestions, hiraganaRVocab } from "../data/hiraganaConsonneR";
-import { hiraganaWQuestions, hiraganaWVocab } from "../data/hiraganaConsonneW";
-import { dakutenQuestions, dakutenVocab } from "../data/dakuten";
-import { handakutenQuestions, handakutenVocab } from "../data/handakuten";
+import {
+  hiraganaKQuestions,
+  hiraganaKVocab,
+} from "../data/hiragana/hiraganaConsonneK";
+import {
+  hiraganaSQuestions,
+  hiraganaSVocab,
+} from "../data/hiragana/hiraganaConsonneS";
+import {
+  hiraganaTQuestions,
+  hiraganaTVocab,
+} from "../data/hiragana/hiraganaConsonneT";
+import {
+  hiraganaNQuestions,
+  hiraganaNVocab,
+} from "../data/hiragana/hiraganaConsonneN";
+import {
+  hiraganaHQuestions,
+  hiraganaHVocab,
+} from "../data/hiragana/hiraganaConsonneH";
+import {
+  hiraganaMQuestions,
+  hiraganaMVocab,
+} from "../data/hiragana/hiraganaConsonneM";
+import {
+  hiraganaYQuestions,
+  hiraganaYVocab,
+} from "../data/hiragana/hiraganaConsonneY";
+import {
+  hiraganaRQuestions,
+  hiraganaRVocab,
+} from "../data/hiragana/hiraganaConsonneR";
+import {
+  hiraganaWQuestions,
+  hiraganaWVocab,
+} from "../data/hiragana/hiraganaConsonneW";
+import { dakutenQuestions, dakutenVocab } from "../data/hiragana/dakuten";
+import {
+  handakutenQuestions,
+  handakutenVocab,
+} from "../data/hiragana/handakuten";
 import {
   hiraganaCombiQuestions,
   hiraganaCombiVocab,
-} from "../data/hiraganaCombi";
+} from "../data/hiragana/hiraganaCombi";
 import {
   hiraganaExceptionsQuestions,
   hiraganaExceptionsVocab,
-} from "../data/hiraganaExceptions";
+} from "../data/hiragana/hiraganaExceptions";
 
 type Section =
   | "voyelles"
@@ -51,7 +80,7 @@ export default function HiraganaPage() {
   const [activeSection, setActiveSection] = useState<Section>("voyelles");
 
   const renderMiniVocab = (
-    list: { jp: string; romaji: string; fr: string }[]
+    list: { jp: string; romaji: string; fr: string }[],
   ) => (
     <div className={styles.miniVocab}>
       {list.map((item, idx) => (

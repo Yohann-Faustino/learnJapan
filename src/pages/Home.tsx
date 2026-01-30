@@ -26,6 +26,9 @@ export default function Home() {
         <Link to="/complexe" className={styles.card}>
           Vocabulaire complexe
         </Link>
+        <Link to="/particules" className={styles.card}>
+          Particules
+        </Link>
       </div>
     </div>
   );
