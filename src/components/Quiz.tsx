@@ -5,6 +5,8 @@ import QuizButton from "./QuizButton";
 type QuizProps = {
   questions: Question[];
   title?: string;
+  category: string;
+  subCategory: string;
 };
 
 export default function Quiz({ questions, title }: QuizProps) {

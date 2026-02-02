@@ -1,4 +1,3 @@
-// src/pages/Particles.tsx
 import Quiz from "../components/Quiz";
 import BackButton from "../components/BackButton";
 

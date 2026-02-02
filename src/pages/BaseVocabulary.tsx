@@ -48,7 +48,7 @@ type Section =
   | "nourriture"
   | "transport"
   | "achats"
-  | "santé"
+  | "sante"
   | "utile";
 
 export default function BaseVocabularyPage() {
