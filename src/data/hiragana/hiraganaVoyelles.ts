@@ -1,4 +1,4 @@
-import type { Question } from "../types/Question";
+import type { Question } from "../../types/Question";
 
 export const hiraganaVoyellesQuestions: Question[] = [
   // QUESTIONS 1-11 : MÊMES MOTS QUE DANS hiraganaVoyellesVocab

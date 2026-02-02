@@ -1,4 +1,4 @@
-import type { Question } from "../types/Question";
+import type { Question } from "../../types/Question";
 
 export const hiraganaCombiQuestions: Question[] = [
   // QUESTIONS 1-15 : MÊMES MOTS QUE DANS hiraganaCombiVocab
