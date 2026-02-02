@@ -1,4 +1,3 @@
-// pages/BaseVocabulary.tsx
 import { useState } from "react";
 import Quiz from "../components/Quiz";
 import FrenchRevealButton from "../components/FrenchRevealButton";

@@ -1,4 +1,3 @@
-// src/data/baseVocabularyData/vocabSante.ts
 import type { Question } from "../../types/Question";
 
 // VOCABULAIRE SANTÉ (20 mots)
