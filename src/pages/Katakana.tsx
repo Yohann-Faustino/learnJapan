@@ -10,7 +10,23 @@ import {
   katakanaVoyellesVocab,
 } from "../data/katakana/katakanaVoyelles";
 
-type Section = "voyelles" | "K" | "S" | "T" | "N" | "H" | "M" | "Y" | "R" | "W";
+import {
+  katakanaKQuestions,
+  katakanaKVocab,
+} from "../data/katakana/katakanaConsonneK";
+
+type Section =
+  | "voyelles"
+  | "K"
+  | "S"
+  | "T"
+  | "N"
+  | "H"
+  | "M"
+  | "Y"
+  | "R"
+  | "W"
+  | "autres";
 
 export default function KatakanaPage() {
   const [activeSection, setActiveSection] = useState<Section>("voyelles");
@@ -64,8 +80,35 @@ export default function KatakanaPage() {
           </>
         );
 
-      // Les autres sections seront ajoutées plus tard
       case "K":
+        return (
+          <>
+            <h2>Prononciation de la consonne K</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>カ</strong> → “ka” (comme dans kaki)
+              </p>
+              <p>
+                <strong>キ</strong> → “ki” (comme dans kilo)
+              </p>
+              <p>
+                <strong>ク</strong> → “ku” (comme dans coup)
+              </p>
+              <p>
+                <strong>ケ</strong> → “ke” (comme dans képi)
+              </p>
+              <p>
+                <strong>コ</strong> → “ko” (comme dans colis)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaKVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaKQuestions} title="Quiz Consonnes K" />
+            </div>
+          </>
+        );
+
       case "S":
       case "T":
       case "N":

@@ -1,4 +1,3 @@
-// src/data/katakana/katakanaVoyelles.ts
 import type { Question } from "../../types/Question";
 
 export const katakanaVoyellesQuestions: Question[] = [

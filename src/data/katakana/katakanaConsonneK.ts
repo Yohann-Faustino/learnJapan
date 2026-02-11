@@ -1,12 +1,12 @@
 import type { Question } from "../../types/Question";
 
-export const hiraganaKQuestions: Question[] = [
-  // QUESTIONS 1-15 : MÊMES MOTS QUE DANS hiraganaKVocab
+export const katakanaKQuestions: Question[] = [
+  // QUESTIONS 1-15 : MÊMES MOTS QUE DANS katakanaKVocab
   {
     id: 1,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かお ?",
+    question: "Comment se prononce le mot カオ ?",
     options: [
       { text: "kao", correct: true },
       { text: "kio", correct: false },
@@ -16,9 +16,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 2,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かき ?",
+    question: "Comment se prononce le mot カキ ?",
     options: [
       { text: "kaki", correct: true },
       { text: "kaku", correct: false },
@@ -28,9 +28,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 3,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かく ?",
+    question: "Comment se prononce le mot カク ?",
     options: [
       { text: "kaku", correct: true },
       { text: "kako", correct: false },
@@ -40,9 +40,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 4,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かけ ?",
+    question: "Comment se prononce le mot カケ ?",
     options: [
       { text: "kake", correct: true },
       { text: "keke", correct: false },
@@ -52,9 +52,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 5,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かこ ?",
+    question: "Comment se prononce le mot カコ ?",
     options: [
       { text: "kako", correct: true },
       { text: "kaku", correct: false },
@@ -64,9 +64,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 6,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot きく ?",
+    question: "Comment se prononce le mot キク ?",
     options: [
       { text: "kiku", correct: true },
       { text: "kiki", correct: false },
@@ -76,9 +76,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 7,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot かさ ?",
+    question: "Comment se prononce le mot カサ ?",
     options: [
       { text: "kasa", correct: true },
       { text: "kiku", correct: false },
@@ -88,9 +88,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 8,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot きそ ?",
+    question: "Comment se prononce le mot キソ ?",
     options: [
       { text: "kiso", correct: true },
       { text: "kiku", correct: false },
@@ -100,9 +100,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 9,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot くう ?",
+    question: "Comment se prononce le mot クウ ?",
     options: [
       { text: "kuu", correct: true },
       { text: "kuku", correct: false },
@@ -112,9 +112,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 10,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot くす ?",
+    question: "Comment se prononce le mot クス ?",
     options: [
       { text: "kusu", correct: true },
       { text: "kisa", correct: false },
@@ -124,9 +124,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 11,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot こえ ?",
+    question: "Comment se prononce le mot コエ ?",
     options: [
       { text: "koe", correct: true },
       { text: "koi", correct: false },
@@ -136,9 +136,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 12,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot こく ?",
+    question: "Comment se prononce le mot コク ?",
     options: [
       { text: "koku", correct: true },
       { text: "kokuu", correct: false },
@@ -148,9 +148,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 13,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot こう ?",
+    question: "Comment se prononce le mot コウ ?",
     options: [
       { text: "kou", correct: true },
       { text: "ko", correct: false },
@@ -160,9 +160,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 14,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot けい ?",
+    question: "Comment se prononce le mot ケイ ?",
     options: [
       { text: "kei", correct: true },
       { text: "ke", correct: false },
@@ -172,9 +172,9 @@ export const hiraganaKQuestions: Question[] = [
   },
   {
     id: 15,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Comment se prononce le mot けいこ ?",
+    question: "Comment se prononce le mot ケイコ ?",
     options: [
       { text: "keiko", correct: true },
       { text: "keko", correct: false },
@@ -183,84 +183,84 @@ export const hiraganaKQuestions: Question[] = [
     ],
   },
 
-  // QUESTIONS 16-20 : IDENTIFICATION DES HIRAGANA
+  // QUESTIONS 16-20 : IDENTIFICATION DES KATAKANA
   {
     id: 16,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Quel est l'hiragana 'ka' ?",
+    question: "Quel est le katakana 'ka' ?",
     options: [
-      { text: "か", correct: true },
-      { text: "き", correct: false },
-      { text: "く", correct: false },
-      { text: "け", correct: false },
+      { text: "カ", correct: true },
+      { text: "キ", correct: false },
+      { text: "ク", correct: false },
+      { text: "ケ", correct: false },
     ],
   },
   {
     id: 17,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Quel est l'hiragana 'ki' ?",
+    question: "Quel est le katakana 'ki' ?",
     options: [
-      { text: "き", correct: true },
-      { text: "か", correct: false },
-      { text: "く", correct: false },
-      { text: "け", correct: false },
+      { text: "キ", correct: true },
+      { text: "カ", correct: false },
+      { text: "ク", correct: false },
+      { text: "ケ", correct: false },
     ],
   },
   {
     id: 18,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Quel est l'hiragana 'ku' ?",
+    question: "Quel est le katakana 'ku' ?",
     options: [
-      { text: "く", correct: true },
-      { text: "か", correct: false },
-      { text: "き", correct: false },
-      { text: "こ", correct: false },
+      { text: "ク", correct: true },
+      { text: "カ", correct: false },
+      { text: "キ", correct: false },
+      { text: "コ", correct: false },
     ],
   },
   {
     id: 19,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Quel est l'hiragana 'ke' ?",
+    question: "Quel est le katakana 'ke' ?",
     options: [
-      { text: "け", correct: true },
-      { text: "か", correct: false },
-      { text: "き", correct: false },
-      { text: "く", correct: false },
+      { text: "ケ", correct: true },
+      { text: "カ", correct: false },
+      { text: "キ", correct: false },
+      { text: "ク", correct: false },
     ],
   },
   {
     id: 20,
-    category: "hiragana",
+    category: "katakana",
     subCategory: "consonne K",
-    question: "Quel est l'hiragana 'ko' ?",
+    question: "Quel est le katakana 'ko' ?",
     options: [
-      { text: "こ", correct: true },
-      { text: "か", correct: false },
-      { text: "き", correct: false },
-      { text: "く", correct: false },
+      { text: "コ", correct: true },
+      { text: "カ", correct: false },
+      { text: "キ", correct: false },
+      { text: "ク", correct: false },
     ],
   },
 ];
 
 // VOCABULAIRE (LES MÊMES 15 MOTS QUE DANS LES QUESTIONS 1-15)
-export const hiraganaKVocab = [
-  { jp: "かお", romaji: "kao", fr: "visage" },
-  { jp: "かき", romaji: "kaki", fr: "kaki / fruit" },
-  { jp: "かく", romaji: "kaku", fr: "écrire" },
-  { jp: "かけ", romaji: "kake", fr: "étagère / crochet" },
-  { jp: "かこ", romaji: "kako", fr: "passé" },
-  { jp: "きく", romaji: "kiku", fr: "écouter / chrysanthème" },
-  { jp: "こえ", romaji: "koe", fr: "voix" },
-  { jp: "こく", romaji: "koku", fr: "pays / nation" },
-  { jp: "こう", romaji: "kou", fr: "école / construction" },
-  { jp: "けい", romaji: "kei", fr: "système / plan" },
-  { jp: "けいこ", romaji: "keiko", fr: "entraînement" },
-  { jp: "かさ", romaji: "kasa", fr: "parapluie" },
-  { jp: "きそ", romaji: "kiso", fr: "base / fondation" },
-  { jp: "くす", romaji: "kusu", fr: "camphre (arbre)" },
-  { jp: "くう", romaji: "kuu", fr: "espace / vide" },
+export const katakanaKVocab = [
+  { jp: "カオ", romaji: "kao", fr: "visage" },
+  { jp: "カキ", romaji: "kaki", fr: "kaki / fruit" },
+  { jp: "カク", romaji: "kaku", fr: "écrire" },
+  { jp: "カケ", romaji: "kake", fr: "étagère / crochet" },
+  { jp: "カコ", romaji: "kako", fr: "passé" },
+  { jp: "キク", romaji: "kiku", fr: "écouter / chrysanthème" },
+  { jp: "コエ", romaji: "koe", fr: "voix" },
+  { jp: "コク", romaji: "koku", fr: "pays / nation" },
+  { jp: "コウ", romaji: "kou", fr: "école / construction" },
+  { jp: "ケイ", romaji: "kei", fr: "système / plan" },
+  { jp: "ケイコ", romaji: "keiko", fr: "entraînement" },
+  { jp: "カサ", romaji: "kasa", fr: "parapluie" },
+  { jp: "キソ", romaji: "kiso", fr: "base / fondation" },
+  { jp: "クス", romaji: "kusu", fr: "camphre (arbre)" },
+  { jp: "クウ", romaji: "kuu", fr: "espace / vide" }, // 15ème mot
 ];
