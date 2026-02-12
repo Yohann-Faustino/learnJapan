@@ -15,6 +15,11 @@ import {
   katakanaKVocab,
 } from "../data/katakana/katakanaConsonneK";
 
+import {
+  katakanaSVocab,
+  katakanaSQuestions,
+} from "../data/katakana/katakanaConsonneS";
+
 type Section =
   | "voyelles"
   | "K"
@@ -110,6 +115,33 @@ export default function KatakanaPage() {
         );
 
       case "S":
+        return (
+          <>
+            <h2>Prononciation de la consonne S</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>サ</strong> → “sa” (comme dans salade)
+              </p>
+              <p>
+                <strong>シ</strong> → “shi” (comme dans chiche)
+              </p>
+              <p>
+                <strong>ス</strong> → “su” (comme dans sucre)
+              </p>
+              <p>
+                <strong>セ</strong> → “se” (comme dans sel)
+              </p>
+              <p>
+                <strong>ソ</strong> → “so” (comme dans salon)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaSVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaSQuestions} title="Quiz Consonnes S" />
+            </div>
+          </>
+        );
       case "T":
       case "N":
       case "H":
