@@ -20,6 +20,11 @@ import {
   katakanaSQuestions,
 } from "../data/katakana/katakanaConsonneS";
 
+import {
+  katakanaTQuestions,
+  katakanaTVocab,
+} from "../data/katakana/katakanaConsonneT";
+
 type Section =
   | "voyelles"
   | "K"
@@ -142,7 +147,35 @@ export default function KatakanaPage() {
             </div>
           </>
         );
+
       case "T":
+        return (
+          <>
+            <h2>Prononciation de la consonne T</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>タ</strong> → “ta” (comme dans tasse)
+              </p>
+              <p>
+                <strong>チ</strong> → “chi” (comme dans tchèque)
+              </p>
+              <p>
+                <strong>ツ</strong> → “tsu” (comme dans tsunami)
+              </p>
+              <p>
+                <strong>テ</strong> → “te” (comme dans terre)
+              </p>
+              <p>
+                <strong>ト</strong> → “to” (comme dans tonne)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaTVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaTQuestions} title="Quiz Consonnes T" />
+            </div>
+          </>
+        );
       case "N":
       case "H":
       case "M":
