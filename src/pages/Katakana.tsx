@@ -25,6 +25,11 @@ import {
   katakanaTVocab,
 } from "../data/katakana/katakanaConsonneT";
 
+import {
+  katakanaNQuestions,
+  katakanaNVocab,
+} from "../data/katakana/katakanaConsonneN";
+
 type Section =
   | "voyelles"
   | "K"
@@ -176,7 +181,39 @@ export default function KatakanaPage() {
             </div>
           </>
         );
+
       case "N":
+        return (
+          <>
+            <h2>Prononciation de la consonne N</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>ナ</strong> → “na” (comme dans nature)
+              </p>
+              <p>
+                <strong>ニ</strong> → “ni” (comme dans niche)
+              </p>
+              <p>
+                <strong>ヌ</strong> → “nu” (comme dans nuage)
+              </p>
+              <p>
+                <strong>ネ</strong> → “ne” (comme dans net)
+              </p>
+              <p>
+                <strong>ノ</strong> → “no” (comme dans note)
+              </p>
+              <p>
+                <strong>ン</strong> → “n” (comme la lettre N)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaNVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaNQuestions} title="Quiz Consonnes N" />
+            </div>
+          </>
+        );
+
       case "H":
       case "M":
       case "Y":
