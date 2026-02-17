@@ -30,6 +30,11 @@ import {
   katakanaNVocab,
 } from "../data/katakana/katakanaConsonneN";
 
+import {
+  katakanaHQuestions,
+  katakanaHVocab,
+} from "../data/katakana/katakanaConsonneH";
+
 type Section =
   | "voyelles"
   | "K"
@@ -215,6 +220,34 @@ export default function KatakanaPage() {
         );
 
       case "H":
+        return (
+          <>
+            <h2>Prononciation de la consonne H</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>ハ</strong> → “ha” (comme dans haleine)
+              </p>
+              <p>
+                <strong>ヒ</strong> → “hi” (comme dans histoire)
+              </p>
+              <p>
+                <strong>フ</strong> → “fu” (comme le début de "houhou")
+              </p>
+              <p>
+                <strong>ヘ</strong> → “he” (comme dans héros)
+              </p>
+              <p>
+                <strong>ホ</strong> → “ho” (comme dans hôtel)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaHVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaHQuestions} title="Quiz Consonnes H" />
+            </div>
+          </>
+        );
+
       case "M":
       case "Y":
       case "R":
