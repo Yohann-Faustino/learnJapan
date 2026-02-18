@@ -35,6 +35,11 @@ import {
   katakanaHVocab,
 } from "../data/katakana/katakanaConsonneH";
 
+import {
+  katakanaMQuestions,
+  katakanaMVocab,
+} from "../data/katakana/katakanaConsonneM";
+
 type Section =
   | "voyelles"
   | "K"
@@ -249,6 +254,34 @@ export default function KatakanaPage() {
         );
 
       case "M":
+        return (
+          <>
+            <h2>Prononciation de la consonne M</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>マ</strong> → “ma” (comme dans maman)
+              </p>
+              <p>
+                <strong>ミ</strong> → “mi” (comme dans mile)
+              </p>
+              <p>
+                <strong>ム</strong> → “mu” (comme dans mule)
+              </p>
+              <p>
+                <strong>メ</strong> → “me” (comme dans métier)
+              </p>
+              <p>
+                <strong>モ</strong> → “mo” (comme dans mobile)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaMVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaMQuestions} title="Quiz Consonnes M" />
+            </div>
+          </>
+        );
+
       case "Y":
       case "R":
       case "W":
