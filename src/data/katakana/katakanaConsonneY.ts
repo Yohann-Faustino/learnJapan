@@ -1,0 +1,242 @@
+import type { Question } from "../../types/Question";
+
+export const katakanaYQuestions: Question[] = [
+  // QUESTIONS 1-15 : MÊMES MOTS QUE DANS katakanaYVocab
+  {
+    id: 1,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヤマ ?",
+    options: [
+      { text: "yama", correct: true },
+      { text: "yami", correct: false },
+      { text: "yamu", correct: false },
+      { text: "yame", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ユキ ?",
+    options: [
+      { text: "yuki", correct: true },
+      { text: "yuka", correct: false },
+      { text: "yuku", correct: false },
+      { text: "yuke", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヨル ?",
+    options: [
+      { text: "yoru", correct: true },
+      { text: "yora", correct: false },
+      { text: "yori", correct: false },
+      { text: "yoro", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヤク ?",
+    options: [
+      { text: "yaku", correct: true },
+      { text: "yaka", correct: false },
+      { text: "yaki", correct: false },
+      { text: "yake", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ユメ ?",
+    options: [
+      { text: "yume", correct: true },
+      { text: "yuma", correct: false },
+      { text: "yumi", correct: false },
+      { text: "yumo", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヨミ ?",
+    options: [
+      { text: "yomi", correct: true },
+      { text: "yoma", correct: false },
+      { text: "yomu", correct: false },
+      { text: "yomo", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヤチ ?",
+    options: [
+      { text: "yachi", correct: true },
+      { text: "yaka", correct: false },
+      { text: "yaku", correct: false },
+      { text: "yake", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ユス ?",
+    options: [
+      { text: "yusu", correct: true },
+      { text: "yusa", correct: false },
+      { text: "yushi", correct: false },
+      { text: "yuse", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヨツ ?",
+    options: [
+      { text: "yotsu", correct: true },
+      { text: "yota", correct: false },
+      { text: "yoti", correct: false },
+      { text: "yote", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヤネ ?",
+    options: [
+      { text: "yane", correct: true },
+      { text: "yana", correct: false },
+      { text: "yani", correct: false },
+      { text: "yano", correct: false },
+    ],
+  },
+  {
+    id: 11,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ユミ ?",
+    options: [
+      { text: "yumi", correct: true },
+      { text: "yuma", correct: false },
+      { text: "yumu", correct: false },
+      { text: "yumo", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヨン ?",
+    options: [
+      { text: "yon", correct: true },
+      { text: "yoni", correct: false },
+      { text: "yono", correct: false },
+      { text: "yone", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヤン ?",
+    options: [
+      { text: "yan", correct: true },
+      { text: "yani", correct: false },
+      { text: "yano", correct: false },
+      { text: "yane", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ユン ?",
+    options: [
+      { text: "yun", correct: true },
+      { text: "yuni", correct: false },
+      { text: "yuno", correct: false },
+      { text: "yune", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Comment se prononce le mot ヨヤ ?",
+    options: [
+      { text: "yoya", correct: true },
+      { text: "yoyi", correct: false },
+      { text: "yoyu", correct: false },
+      { text: "yoye", correct: false },
+    ],
+  },
+
+  // QUESTIONS 16-18 : IDENTIFICATION DES KATAKANA
+  {
+    id: 16,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Quel est le katakana 'ya' ?",
+    options: [
+      { text: "ヤ", correct: true },
+      { text: "ユ", correct: false },
+      { text: "ヨ", correct: false },
+      { text: "イ", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Quel est le katakana 'yu' ?",
+    options: [
+      { text: "ユ", correct: true },
+      { text: "ヤ", correct: false },
+      { text: "ヨ", correct: false },
+      { text: "ウ", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "katakana",
+    subCategory: "consonne Y",
+    question: "Quel est le katakana 'yo' ?",
+    options: [
+      { text: "ヨ", correct: true },
+      { text: "ヤ", correct: false },
+      { text: "ユ", correct: false },
+      { text: "オ", correct: false },
+    ],
+  },
+];
+
+// VOCABULAIRE (LES MÊMES 15 MOTS QUE DANS LES QUESTIONS 1-15)
+export const katakanaYVocab = [
+  { jp: "ヤマ", romaji: "yama", fr: "montagne" },
+  { jp: "ユキ", romaji: "yuki", fr: "neige" },
+  { jp: "ヨル", romaji: "yoru", fr: "nuit" },
+  { jp: "ヤク", romaji: "yaku", fr: "rôle / brûler" },
+  { jp: "ユメ", romaji: "yume", fr: "rêve" },
+  { jp: "ヨミ", romaji: "yomi", fr: "lecture" },
+  { jp: "ヤチ", romaji: "yachi", fr: "terre aride" },
+  { jp: "ユス", romaji: "yusu", fr: "remuer / secouer" },
+  { jp: "ヨツ", romaji: "yotsu", fr: "quatre (vieilli)" },
+  { jp: "ヤネ", romaji: "yane", fr: "toit" },
+  { jp: "ユミ", romaji: "yumi", fr: "arc (arme)" },
+  { jp: "ヨン", romaji: "yon", fr: "quatre" },
+  { jp: "ヤン", romaji: "yan", fr: "(suffixe familier)" },
+  { jp: "ユン", romaji: "yun", fr: "(rare)" },
+  { jp: "ヨヤ", romaji: "yoya", fr: "nuit tombante" },
+];

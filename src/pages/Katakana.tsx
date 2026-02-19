@@ -40,6 +40,11 @@ import {
   katakanaMVocab,
 } from "../data/katakana/katakanaConsonneM";
 
+import {
+  katakanaYQuestions,
+  katakanaYVocab,
+} from "../data/katakana/katakanaConsonneY";
+
 type Section =
   | "voyelles"
   | "K"
@@ -283,6 +288,28 @@ export default function KatakanaPage() {
         );
 
       case "Y":
+        return (
+          <>
+            <h2>Prononciation de la consonne Y</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>ヤ</strong> → “ya” (comme dans yacht)
+              </p>
+              <p>
+                <strong>ユ</strong> → “yu” (comme dans youpin)
+              </p>
+              <p>
+                <strong>ヨ</strong> → “yo” (comme dans yoga)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaYVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaYQuestions} title="Quiz Consonnes Y" />
+            </div>
+          </>
+        );
+
       case "R":
       case "W":
       case "autres":
