@@ -45,6 +45,11 @@ import {
   katakanaYVocab,
 } from "../data/katakana/katakanaConsonneY";
 
+import {
+  katakanaRQuestions,
+  katakanaRVocab,
+} from "../data/katakana/katakanaConsonneR";
+
 type Section =
   | "voyelles"
   | "K"
@@ -311,6 +316,34 @@ export default function KatakanaPage() {
         );
 
       case "R":
+        return (
+          <>
+            <h2>Prononciation de la consonne R</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>ラ</strong> → “ra” (comme dans radar)
+              </p>
+              <p>
+                <strong>リ</strong> → “ri” (comme dans rideau)
+              </p>
+              <p>
+                <strong>ル</strong> → “ru” (comme dans ruse)
+              </p>
+              <p>
+                <strong>レ</strong> → “re” (comme dans relais)
+              </p>
+              <p>
+                <strong>ロ</strong> → “ro” (comme dans robot)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaRVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaRQuestions} title="Quiz Consonnes R" />
+            </div>
+          </>
+        );
+
       case "W":
       case "autres":
         return (
