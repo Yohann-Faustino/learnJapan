@@ -50,6 +50,11 @@ import {
   katakanaRVocab,
 } from "../data/katakana/katakanaConsonneR";
 
+import {
+  katakanaWQuestions,
+  katakanaWVocab,
+} from "../data/katakana/katakanaConsonneW";
+
 type Section =
   | "voyelles"
   | "K"
@@ -345,6 +350,33 @@ export default function KatakanaPage() {
         );
 
       case "W":
+        return (
+          <>
+            <h2>Prononciation de la consonne W</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>ワ</strong> → “wa” (comme dans wagon)
+              </p>
+              <p>
+                <strong>ヲ</strong> → “wo” (utilisé comme particule, prononcé
+                “o”)
+              </p>
+              <p>
+                <strong>ン</strong> → “n” (seule consonne seule, comme la lettre
+                N)
+              </p>
+              <p>
+                <strong>ん</strong> → “n” (comme la lettre N)
+              </p>
+            </div>
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaWVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaWQuestions} title="Quiz Consonnes W" />
+            </div>
+          </>
+        );
+
       case "autres":
         return (
           <div style={{ textAlign: "center", padding: "3rem" }}>
