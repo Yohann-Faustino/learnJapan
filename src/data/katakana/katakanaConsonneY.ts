@@ -82,8 +82,8 @@ export const katakanaYQuestions: Question[] = [
     options: [
       { text: "yachi", correct: true },
       { text: "yaka", correct: false },
+      { text: "yaki", correct: false },
       { text: "yaku", correct: false },
-      { text: "yake", correct: false },
     ],
   },
   {
@@ -183,7 +183,7 @@ export const katakanaYQuestions: Question[] = [
     ],
   },
 
-  // QUESTIONS 16-18 : IDENTIFICATION DES KATAKANA
+  // QUESTIONS 16-18 : Identification des katakana Y
   {
     id: 16,
     category: "katakana",
@@ -231,12 +231,12 @@ export const katakanaYVocab = [
   { jp: "ユメ", romaji: "yume", fr: "rêve" },
   { jp: "ヨミ", romaji: "yomi", fr: "lecture" },
   { jp: "ヤチ", romaji: "yachi", fr: "terre aride" },
-  { jp: "ユス", romaji: "yusu", fr: "remuer / secouer" },
+  { jp: "ユス", romaji: "yusu", fr: "remuer" },
   { jp: "ヨツ", romaji: "yotsu", fr: "quatre (vieilli)" },
   { jp: "ヤネ", romaji: "yane", fr: "toit" },
   { jp: "ユミ", romaji: "yumi", fr: "arc (arme)" },
   { jp: "ヨン", romaji: "yon", fr: "quatre" },
-  { jp: "ヤン", romaji: "yan", fr: "(suffixe familier)" },
+  { jp: "ヤン", romaji: "yan", fr: "(suffixe)" },
   { jp: "ユン", romaji: "yun", fr: "(rare)" },
   { jp: "ヨヤ", romaji: "yoya", fr: "nuit tombante" },
 ];

@@ -183,7 +183,7 @@ export const katakanaWQuestions: Question[] = [
     ],
   },
 
-  // QUESTIONS 16-18 : IDENTIFICATION DES KATAKANA
+  // QUESTIONS 16-18 : Identification des katakana W
   {
     id: 16,
     category: "katakana",

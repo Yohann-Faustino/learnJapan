@@ -1,3 +1,4 @@
+// src/data/katakana/katakanaConsonneM.ts
 import type { Question } from "../../types/Question";
 
 export const katakanaMQuestions: Question[] = [
@@ -10,8 +11,8 @@ export const katakanaMQuestions: Question[] = [
     options: [
       { text: "machi", correct: true },
       { text: "maka", correct: false },
+      { text: "maki", correct: false },
       { text: "maku", correct: false },
-      { text: "make", correct: false },
     ],
   },
   {
@@ -33,9 +34,9 @@ export const katakanaMQuestions: Question[] = [
     question: "Comment se prononce le mot ムシ ?",
     options: [
       { text: "mushi", correct: true },
-      { text: "musha", correct: false },
-      { text: "mushu", correct: false },
-      { text: "mushe", correct: false },
+      { text: "musa", correct: false },
+      { text: "musu", correct: false },
+      { text: "muse", correct: false },
     ],
   },
   {
@@ -58,8 +59,8 @@ export const katakanaMQuestions: Question[] = [
     options: [
       { text: "momo", correct: true },
       { text: "moma", correct: false },
-      { text: "momu", correct: false },
       { text: "mome", correct: false },
+      { text: "momi", correct: false },
     ],
   },
   {
@@ -82,20 +83,20 @@ export const katakanaMQuestions: Question[] = [
     options: [
       { text: "michi", correct: true },
       { text: "mika", correct: false },
+      { text: "miki", correct: false },
       { text: "miku", correct: false },
-      { text: "mike", correct: false },
     ],
   },
   {
     id: 8,
     category: "katakana",
     subCategory: "consonne M",
-    question: "Comment se prononce le mot ムス ?",
+    question: "Comment se prononce le mot ムネ ?",
     options: [
-      { text: "musu", correct: true },
-      { text: "musa", correct: false },
-      { text: "musi", correct: false },
-      { text: "muse", correct: false },
+      { text: "mune", correct: true },
+      { text: "muna", correct: false },
+      { text: "muni", correct: false },
+      { text: "muno", correct: false },
     ],
   },
   {
@@ -126,40 +127,52 @@ export const katakanaMQuestions: Question[] = [
     id: 11,
     category: "katakana",
     subCategory: "consonne M",
-    question: "Comment se prononce le mot マン ?",
+    question: "Comment se prononce le mot マツ ?",
     options: [
-      { text: "man", correct: true },
-      { text: "mani", correct: false },
-      { text: "mano", correct: false },
-      { text: "mane", correct: false },
+      { text: "matsu", correct: true },
+      { text: "machi", correct: false },
+      { text: "mate", correct: false },
+      { text: "mato", correct: false },
     ],
   },
   {
     id: 12,
     category: "katakana",
     subCategory: "consonne M",
-    question: "Comment se prononce le mot ミン ?",
+    question: "Comment se prononce le mot ミツ ?",
     options: [
-      { text: "min", correct: true },
-      { text: "mini", correct: false },
-      { text: "mino", correct: false },
-      { text: "mine", correct: false },
+      { text: "mitsu", correct: true },
+      { text: "michu", correct: false },
+      { text: "micho", correct: false },
+      { text: "micha", correct: false },
     ],
   },
   {
     id: 13,
     category: "katakana",
     subCategory: "consonne M",
-    question: "Comment se prononce le mot ムン ?",
+    question: "Comment se prononce le mot ムカ ?",
     options: [
-      { text: "mun", correct: true },
-      { text: "muni", correct: false },
-      { text: "muno", correct: false },
-      { text: "mune", correct: false },
+      { text: "muka", correct: true },
+      { text: "muki", correct: false },
+      { text: "muku", correct: false },
+      { text: "muke", correct: false },
     ],
   },
   {
     id: 14,
+    category: "katakana",
+    subCategory: "consonne M",
+    question: "Comment se prononce le mot メイ ?",
+    options: [
+      { text: "mei", correct: true },
+      { text: "mea", correct: false },
+      { text: "meu", correct: false },
+      { text: "meo", correct: false },
+    ],
+  },
+  {
+    id: 15,
     category: "katakana",
     subCategory: "consonne M",
     question: "Comment se prononce le mot モン ?",
@@ -170,20 +183,8 @@ export const katakanaMQuestions: Question[] = [
       { text: "mone", correct: false },
     ],
   },
-  {
-    id: 15,
-    category: "katakana",
-    subCategory: "consonne M",
-    question: "Comment se prononce le mot マツ ?",
-    options: [
-      { text: "matsu", correct: true },
-      { text: "mata", correct: false },
-      { text: "mati", correct: false },
-      { text: "mate", correct: false },
-    ],
-  },
 
-  // QUESTIONS 16-20 : IDENTIFICATION DES KATAKANA
+  // QUESTIONS 16-20 : Identification des katakana M
   {
     id: 16,
     category: "katakana",
@@ -248,19 +249,19 @@ export const katakanaMQuestions: Question[] = [
 
 // VOCABULAIRE (LES MÊMES 15 MOTS QUE DANS LES QUESTIONS 1-15)
 export const katakanaMVocab = [
-  { jp: "マチ", romaji: "machi", fr: "ville / quartier" },
+  { jp: "マチ", romaji: "machi", fr: "ville" },
   { jp: "ミズ", romaji: "mizu", fr: "eau" },
   { jp: "ムシ", romaji: "mushi", fr: "insecte" },
   { jp: "メ", romaji: "me", fr: "œil" },
   { jp: "モモ", romaji: "momo", fr: "pêche (fruit)" },
   { jp: "マメ", romaji: "mame", fr: "haricot" },
-  { jp: "ミチ", romaji: "michi", fr: "chemin / route" },
-  { jp: "ムス", romaji: "musu", fr: "nouer / créer" },
-  { jp: "メン", romaji: "men", fr: "nouilles / visage" },
-  { jp: "モク", romaji: "moku", fr: "bois / but" },
-  { jp: "マン", romaji: "man", fr: "dix mille" },
-  { jp: "ミン", romaji: "min", fr: "peuple (comme dans みんぞく)" },
-  { jp: "ムン", romaji: "mun", fr: "(rare) chaud/humide" },
-  { jp: "モン", romaji: "mon", fr: "porte / question" },
+  { jp: "ミチ", romaji: "michi", fr: "chemin" },
+  { jp: "ムネ", romaji: "mune", fr: "poitrine" },
+  { jp: "メン", romaji: "men", fr: "nouilles" },
+  { jp: "モク", romaji: "moku", fr: "bois" },
   { jp: "マツ", romaji: "matsu", fr: "attendre / pin" },
+  { jp: "ミツ", romaji: "mitsu", fr: "miel" },
+  { jp: "ムカ", romaji: "muka", fr: "il y a (vieilli)" },
+  { jp: "メイ", romaji: "mei", fr: "ordure / nom" },
+  { jp: "モン", romaji: "mon", fr: "porte" },
 ];
