@@ -55,6 +55,11 @@ import {
   katakanaWVocab,
 } from "../data/katakana/katakanaConsonneW";
 
+import {
+  katakanaDakutenQuestions,
+  katakanaDakutenVocab,
+} from "../data/katakana/katakanaDakuten";
+
 type Section =
   | "voyelles"
   | "K"
@@ -66,6 +71,7 @@ type Section =
   | "Y"
   | "R"
   | "W"
+  | "Dakuten"
   | "autres";
 
 export default function KatakanaPage() {
@@ -373,6 +379,64 @@ export default function KatakanaPage() {
             {renderMiniVocab(katakanaWVocab)}
             <div className={styles.miniQuiz}>
               <Quiz questions={katakanaWQuestions} title="Quiz Consonnes W" />
+            </div>
+          </>
+        );
+
+      case "Dakuten":
+        return (
+          <>
+            <h2>Les Dakuten (゛)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Deux petits traits (゛) changent la
+                prononciation d'une consonne sourde en consonne sonore.
+              </p>
+
+              <p>
+                <strong>Série K → G :</strong>
+              </p>
+              <p>
+                <strong>カキクケコ</strong> → <strong>ガギグゲゴ</strong>
+                <br />
+                "k" devient "g" (comme dans gare, guide, gum, guêpe, gorge)
+              </p>
+
+              <p>
+                <strong>Série S → Z :</strong>
+              </p>
+              <p>
+                <strong>サシスセソ</strong> → <strong>ザジズゼゾ</strong>
+                <br />
+                "s" devient "z" (zèbre, zone)
+                <br />• シ (shi) → ジ (ji) - prononcé "ji" comme dans "djembé"
+              </p>
+
+              <p>
+                <strong>Série T → D :</strong>
+              </p>
+              <p>
+                <strong>タチツテト</strong> → <strong>ダヂヅデド</strong>
+                <br />
+                "t" devient "d" (date, dé, dommage)
+                <br />• チ (chi) → ヂ (ji) - très rare, souvent remplacé par ジ
+                <br />• ツ (tsu) → ヅ (zu) - très rare, souvent remplacé par ズ
+              </p>
+
+              <p>
+                <strong>Série H → B :</strong>
+              </p>
+              <p>
+                <strong>ハヒフヘホ</strong> → <strong>バビブベボ</strong>
+                <br />
+                "h" devient "b" (bateau, bise, bulle, berceau, bol)
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaDakutenVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz questions={katakanaDakutenQuestions} title="Quiz Dakuten" />
             </div>
           </>
         );

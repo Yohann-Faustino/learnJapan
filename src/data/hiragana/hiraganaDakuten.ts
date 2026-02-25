@@ -1,6 +1,6 @@
 import type { Question } from "../../types/Question";
 
-export const dakutenQuestions: Question[] = [
+export const hiraganaDakutenQuestions: Question[] = [
   // QUESTIONS 1-15 : MÊMES MOTS QUE DANS dakutenVocab
   {
     id: 1,
@@ -431,7 +431,7 @@ export const dakutenQuestions: Question[] = [
   },
 ];
 
-export const dakutenVocab = [
+export const hiraganaDakutenVocab = [
   { jp: "がっこう", romaji: "gakkou", fr: "école" },
   { jp: "かぎ", romaji: "kagi", fr: "clé" },
   { jp: "かぞく", romaji: "kazoku", fr: "famille" },

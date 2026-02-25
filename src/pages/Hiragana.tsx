@@ -46,7 +46,10 @@ import {
   hiraganaWQuestions,
   hiraganaWVocab,
 } from "../data/hiragana/hiraganaConsonneW";
-import { dakutenQuestions, dakutenVocab } from "../data/hiragana/dakuten";
+import {
+  hiraganaDakutenQuestions,
+  hiraganaDakutenVocab,
+} from "../data/hiragana/hiraganaDakuten";
 import {
   handakutenQuestions,
   handakutenVocab,
@@ -431,9 +434,9 @@ export default function HiraganaPage() {
             </div>
 
             <h3>Mini-vocabulaire</h3>
-            {renderMiniVocab(dakutenVocab)}
+            {renderMiniVocab(hiraganaDakutenVocab)}
             <div className={styles.miniQuiz}>
-              <Quiz questions={dakutenQuestions} title="Quiz Dakuten" />
+              <Quiz questions={hiraganaDakutenQuestions} title="Quiz Dakuten" />
             </div>
           </>
         );
