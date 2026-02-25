@@ -469,6 +469,7 @@ export default function KatakanaPage() {
           { label: "Y", key: "Y" },
           { label: "R", key: "R" },
           { label: "W", key: "W" },
+          { label: "Dakuten", key: "Dakuten" },
           { label: "autres", key: "autres" },
         ].map((tab) => (
           <TabButton
