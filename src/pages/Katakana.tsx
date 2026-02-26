@@ -60,6 +60,11 @@ import {
   katakanaDakutenVocab,
 } from "../data/katakana/katakanaDakuten";
 
+import {
+  katakanaHandakutenQuestions,
+  katakanaHandakutenVocab,
+} from "../data/katakana/katakanaHandakuten";
+
 type Section =
   | "voyelles"
   | "K"
@@ -72,6 +77,7 @@ type Section =
   | "R"
   | "W"
   | "Dakuten"
+  | "Handakuten"
   | "autres";
 
 export default function KatakanaPage() {
@@ -441,6 +447,44 @@ export default function KatakanaPage() {
           </>
         );
 
+      case "Handakuten":
+        return (
+          <>
+            <h2>Les Handakuten (゜)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Un petit cercle (゜) change la
+                prononciation de la série H en "P".
+              </p>
+
+              <p>
+                <strong>ハヒフヘホ</strong> → <strong>パピプペポ</strong>
+                <br />
+                "h" devient "p" (comme dans pain, piano, pudding, pen, poche)
+              </p>
+
+              <p>
+                <strong>À noter</strong> :
+                <br />• Le handakuten ne s'applique{" "}
+                <strong>qu'à la série H</strong>
+                <br />• C'est le seul cas où un katakana peut avoir deux marques
+                diacritiques
+                <br />• Beaucoup de mots avec handakuten sont des mots étrangers
+                adaptés (パン, ピアノ, プレゼント...)
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaHandakutenVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz
+                questions={katakanaHandakutenQuestions}
+                title="Quiz Handakuten"
+              />
+            </div>
+          </>
+        );
+
       case "autres":
         return (
           <div style={{ textAlign: "center", padding: "3rem" }}>
@@ -470,6 +514,7 @@ export default function KatakanaPage() {
           { label: "R", key: "R" },
           { label: "W", key: "W" },
           { label: "Dakuten", key: "Dakuten" },
+          { label: "Handakuten", key: "Handakuten" },
           { label: "autres", key: "autres" },
         ].map((tab) => (
           <TabButton

@@ -53,7 +53,7 @@ import {
 import {
   handakutenQuestions,
   handakutenVocab,
-} from "../data/hiragana/handakuten";
+} from "../data/hiragana/hiraganaHandakuten";
 import {
   hiraganaCombiQuestions,
   hiraganaCombiVocab,
