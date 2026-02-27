@@ -65,6 +65,11 @@ import {
   katakanaHandakutenVocab,
 } from "../data/katakana/katakanaHandakuten";
 
+import {
+  katakanaCombiQuestions,
+  katakanaCombiVocab,
+} from "../data/katakana/katakanaCombi";
+
 type Section =
   | "voyelles"
   | "K"
@@ -78,6 +83,7 @@ type Section =
   | "W"
   | "Dakuten"
   | "Handakuten"
+  | "Combinaisons"
   | "autres";
 
 export default function KatakanaPage() {
@@ -485,6 +491,89 @@ export default function KatakanaPage() {
           </>
         );
 
+      case "Combinaisons":
+        return (
+          <>
+            <h2>Combinaisons (キャ, シャ, チョ, etc.)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>Règle</strong> : Un katakana de la colonne Y (ヤ, ユ,
+                ヨ) en petit size combiné avec un autre katakana.
+              </p>
+
+              <p>
+                <strong>Formation</strong> :
+                <br />• Base (キ, シ, チ, ニ, ヒ, ミ, リ, ギ, ジ, ピ) + petit
+                ヤ/ユ/ヨ
+                <br />• Exemples : キ + ャ = キャ (kya)
+              </p>
+
+              <p>
+                <strong>Séries principales :</strong>
+              </p>
+              <p>
+                <strong>K → KY</strong> : キャ (kya), キュ (kyu), キョ (kyo)
+                <br />
+                <strong>S → SH</strong> : シャ (sha), シュ (shu), ショ (sho)
+                <br />
+                <strong>T → CH</strong> : チャ (cha), チュ (chu), チョ (cho)
+                <br />
+                <strong>N → NY</strong> : ニャ (nya), ニュ (nyu), ニョ (nyo)
+                <br />
+                <strong>H → HY</strong> : ヒャ (hya), ヒュ (hyu), ヒョ (hyo)
+                <br />
+                <strong>M → MY</strong> : ミャ (mya), ミュ (myu), ミョ (myo)
+                <br />
+                <strong>R → RY</strong> : リャ (rya), リュ (ryu), リョ (ryo)
+              </p>
+
+              <p>
+                <strong>Avec dakuten/handakuten :</strong>
+                <br />• ギャ (gya), ギュ (gyu), ギョ (gyo)
+                <br />• ジャ (ja), ジュ (ju), ジョ (jo)
+                <br />• ピャ (pya), ピュ (pyu), ピョ (pyo)
+              </p>
+
+              <p
+                style={{
+                  marginTop: "1rem",
+                  color: "#1565c0",
+                  fontWeight: "bold",
+                }}
+              >
+                <strong>✨ Spécificités katakana - Sons étrangers :</strong>
+              </p>
+              <p>
+                <strong>ティ</strong> (ti), <strong>ディ</strong> (di)
+                <br />
+                <strong>ファ</strong> (fa), <strong>フィ</strong> (fi),{" "}
+                <strong>フェ</strong> (fe), <strong>フォ</strong> (fo)
+                <br />
+                <strong>ヴァ</strong> (va), <strong>ヴィ</strong> (vi),{" "}
+                <strong>ヴェ</strong> (ve), <strong>ヴォ</strong> (vo)
+                <br />
+                <strong>ツァ</strong> (tsa), <strong>ツィ</strong> (tsi),{" "}
+                <strong>ツェ</strong> (tse), <strong>ツォ</strong> (tso)
+              </p>
+
+              <p>
+                <strong>À noter</strong> : Les combinaisons se prononcent en une
+                seule syllabe, pas comme deux sons séparés (キャ = "kya", pas
+                "ki-ya").
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaCombiVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz
+                questions={katakanaCombiQuestions}
+                title="Quiz Combinaisons"
+              />
+            </div>
+          </>
+        );
+
       case "autres":
         return (
           <div style={{ textAlign: "center", padding: "3rem" }}>
@@ -515,6 +604,7 @@ export default function KatakanaPage() {
           { label: "W", key: "W" },
           { label: "Dakuten", key: "Dakuten" },
           { label: "Handakuten", key: "Handakuten" },
+          { label: "Combinaisons", key: "Combinaisons" },
           { label: "autres", key: "autres" },
         ].map((tab) => (
           <TabButton
