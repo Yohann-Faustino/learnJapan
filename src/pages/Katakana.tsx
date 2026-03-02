@@ -70,6 +70,11 @@ import {
   katakanaCombiVocab,
 } from "../data/katakana/katakanaCombi";
 
+import {
+  katakanaExceptionsQuestions,
+  katakanaExceptionsVocab,
+} from "../data/katakana/katakanaExceptions";
+
 type Section =
   | "voyelles"
   | "K"
@@ -84,7 +89,7 @@ type Section =
   | "Dakuten"
   | "Handakuten"
   | "Combinaisons"
-  | "autres";
+  | "Exceptions";
 
 export default function KatakanaPage() {
   const [activeSection, setActiveSection] = useState<Section>("voyelles");
@@ -574,12 +579,80 @@ export default function KatakanaPage() {
           </>
         );
 
-      case "autres":
+      case "Exceptions":
         return (
-          <div style={{ textAlign: "center", padding: "3rem" }}>
-            <h3>Section en construction</h3>
-            <p>Cette section sera bientôt disponible !</p>
-          </div>
+          <>
+            <h2>Exceptions (ッ, ー, etc.)</h2>
+            <div className={styles.pronunciation}>
+              <p>
+                <strong>1. Le sokuon (ッ) - Consonne doublée</strong>
+              </p>
+              <p>
+                • Petit ッ devant k, s, t, p : double la consonne suivante
+                <br />• Exemples : ガッコウ (gakkou), キップ (kippu)
+                <br />• Prononciation : Petite pause avant la consonne
+              </p>
+
+              <p>
+                <strong>2. Le chōon (ー) - Voyelle longue</strong>
+              </p>
+              <p>
+                • Trait horizontal qui allonge la voyelle précédente
+                <br />• Exemples : ケーキ (keeki = gâteau), コーヒー (koohii =
+                café)
+                <br />• C'est la différence majeure avec les hiragana (pas de
+                ああ mais ー)
+              </p>
+
+              <p>
+                <strong>3. Voyelles longues en katakana</strong>
+              </p>
+              <p>
+                • アー = ā (ア long) : オカーサン (okaasan)
+                <br />• イー = ī (イ long) : オニーサン (oniisan)
+                <br />• ウー = ū (ウ long) : ジュウショ (juusho)
+                <br />• エー = ē (エ long) : センセイ (sensei)
+                <br />• オー = ō (オ long) : オオキイ (ookii)
+              </p>
+
+              <p>
+                <strong>
+                  4. Les particules en katakana (rares mais existent)
+                </strong>
+              </p>
+              <p>
+                • ハ (ha) → se prononce "wa" comme particule
+                <br />• ヘ (he) → se prononce "e" comme particule
+                <br />• ヲ (wo) → se prononce "o" comme particule
+              </p>
+
+              <p>
+                <strong>5. Le katakana ン</strong>
+              </p>
+              <p>
+                • Seul katakana qui ne se termine pas par une voyelle
+                <br />• Son nasal "n" comme dans "bonbon"
+                <br />• Peut se trouver en milieu ou fin de mot : ニホン (nihon)
+              </p>
+
+              <p>
+                <strong>6. Les combinaisons spéciales</strong>
+              </p>
+              <p>
+                • キャ, シャ, ピャ, etc. : voir section "Combinaisons"
+                <br />• Les petits ャ, ュ, ョ modifient la prononciation
+              </p>
+            </div>
+
+            <h3>Mini-vocabulaire</h3>
+            {renderMiniVocab(katakanaExceptionsVocab)}
+            <div className={styles.miniQuiz}>
+              <Quiz
+                questions={katakanaExceptionsQuestions}
+                title="Quiz Exceptions"
+              />
+            </div>
+          </>
         );
 
       default:
@@ -605,7 +678,7 @@ export default function KatakanaPage() {
           { label: "Dakuten", key: "Dakuten" },
           { label: "Handakuten", key: "Handakuten" },
           { label: "Combinaisons", key: "Combinaisons" },
-          { label: "autres", key: "autres" },
+          { label: "Exceptions", key: "Exceptions" },
         ].map((tab) => (
           <TabButton
             key={tab.key}
