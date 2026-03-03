@@ -8,6 +8,12 @@ export default function Home() {
       <p className={styles.subtitle}>Choisis une catégorie pour commencer :</p>
 
       <div className={styles.categories}>
+        <Link to="/phrase" className={styles.card}>
+          Phrase
+        </Link>
+        <Link to="/particules" className={styles.card}>
+          Particules
+        </Link>
         <Link to="/hiragana" className={styles.card}>
           Hiragana
         </Link>
@@ -25,9 +31,6 @@ export default function Home() {
         </Link>{" "}
         <Link to="/complexe" className={styles.card}>
           Vocabulaire complexe
-        </Link>
-        <Link to="/particules" className={styles.card}>
-          Particules
         </Link>
       </div>
     </div>

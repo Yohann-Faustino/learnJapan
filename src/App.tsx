@@ -5,6 +5,7 @@ import Hiragana from "./pages/Hiragana";
 import Katakana from "./pages/Katakana";
 import Particules from "./pages/Particules";
 import BaseVocabularyPage from "./pages/BaseVocabulary";
+import PhraseStructurePage from "./pages/PhraseStructure";
 
 function App() {
   return (
@@ -14,17 +15,20 @@ function App() {
           {/* Accueil */}
           <Route path="/" element={<Home />} />
 
-          {/* Catégorie Hiragana */}
-          <Route path="/hiragana" element={<Hiragana />} />
+          {/* Phrase */}
+          <Route path="/phrase" element={<PhraseStructurePage />} />
 
-          {/* Catégorie Hiragana */}
-          <Route path="/katakana" element={<Katakana />} />
+          {/* Catégorie particules */}
+          <Route path="/particules" element={<Particules />} />
 
           {/* Catégorie BaseVocabulary */}
           <Route path="/base" element={<BaseVocabularyPage />} />
 
-          {/* Catégorie particules */}
-          <Route path="/particules" element={<Particules />} />
+          {/* Catégorie Hiragana */}
+          <Route path="/hiragana" element={<Hiragana />} />
+
+          {/* Catégorie Katakana */}
+          <Route path="/katakana" element={<Katakana />} />
         </Routes>
       </BrowserRouter>
     </div>
