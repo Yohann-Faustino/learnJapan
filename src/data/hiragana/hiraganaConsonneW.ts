@@ -9,9 +9,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わたし ?",
     options: [
       { text: "watashi", correct: true },
-      { text: "watashi", correct: false },
-      { text: "watashi", correct: false },
-      { text: "watashi", correct: false },
+      { text: "watashiwa", correct: false },
+      { text: "watashino", correct: false },
+      { text: "watashiga", correct: false },
     ],
   },
   {
@@ -21,9 +21,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わかる ?",
     options: [
       { text: "wakaru", correct: true },
-      { text: "wakaru", correct: false },
-      { text: "wakaru", correct: false },
-      { text: "wakaru", correct: false },
+      { text: "wakaranai", correct: false },
+      { text: "wakatta", correct: false },
+      { text: "wakare", correct: false },
     ],
   },
   {
@@ -33,9 +33,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わかめ ?",
     options: [
       { text: "wakame", correct: true },
-      { text: "wakame", correct: false },
-      { text: "wakame", correct: false },
-      { text: "wakame", correct: false },
+      { text: "wakare", correct: false },
+      { text: "wakami", correct: false },
+      { text: "wakamo", correct: false },
     ],
   },
   {
@@ -45,9 +45,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わに ?",
     options: [
       { text: "wani", correct: true },
-      { text: "wani", correct: false },
-      { text: "wani", correct: false },
-      { text: "wani", correct: false },
+      { text: "wane", correct: false },
+      { text: "wana", correct: false },
+      { text: "wano", correct: false },
     ],
   },
   {
@@ -57,9 +57,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot をかし ?",
     options: [
       { text: "okashi", correct: true },
-      { text: "wokashi", correct: false },
-      { text: "okashi", correct: false },
-      { text: "okashi", correct: false },
+      { text: "okashii", correct: false },
+      { text: "okashite", correct: false },
+      { text: "okashira", correct: false },
     ],
   },
   {
@@ -69,9 +69,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わらう ?",
     options: [
       { text: "warau", correct: true },
-      { text: "warau", correct: false },
-      { text: "warau", correct: false },
-      { text: "warau", correct: false },
+      { text: "waratta", correct: false },
+      { text: "warawanai", correct: false },
+      { text: "waratte", correct: false },
     ],
   },
   {
@@ -81,9 +81,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わかい ?",
     options: [
       { text: "wakai", correct: true },
-      { text: "wakai", correct: false },
-      { text: "wakai", correct: false },
-      { text: "wakai", correct: false },
+      { text: "wakare", correct: false },
+      { text: "wakaku", correct: false },
+      { text: "wakasa", correct: false },
     ],
   },
   {
@@ -93,9 +93,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わすれる ?",
     options: [
       { text: "wasureru", correct: true },
-      { text: "wasureru", correct: false },
-      { text: "wasureru", correct: false },
-      { text: "wasureru", correct: false },
+      { text: "wasurenai", correct: false },
+      { text: "wasureta", correct: false },
+      { text: "wasuremasu", correct: false },
     ],
   },
   {
@@ -105,9 +105,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わし ?",
     options: [
       { text: "washi", correct: true },
-      { text: "washi", correct: false },
-      { text: "washi", correct: false },
-      { text: "washi", correct: false },
+      { text: "washa", correct: false },
+      { text: "washu", correct: false },
+      { text: "washe", correct: false },
     ],
   },
   {
@@ -117,9 +117,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わくわく ?",
     options: [
       { text: "wakuwaku", correct: true },
-      { text: "wakuwaku", correct: false },
-      { text: "wakuwaku", correct: false },
-      { text: "wakuwaku", correct: false },
+      { text: "wakuwake", correct: false },
+      { text: "wakuwaki", correct: false },
+      { text: "wakuwaka", correct: false },
     ],
   },
   {
@@ -129,9 +129,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わたる ?",
     options: [
       { text: "wataru", correct: true },
-      { text: "wataru", correct: false },
-      { text: "wataru", correct: false },
-      { text: "wataru", correct: false },
+      { text: "wataranai", correct: false },
+      { text: "watta", correct: false },
+      { text: "watatte", correct: false },
     ],
   },
   {
@@ -141,9 +141,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わか ?",
     options: [
       { text: "waka", correct: true },
-      { text: "waka", correct: false },
-      { text: "waka", correct: false },
-      { text: "waka", correct: false },
+      { text: "wake", correct: false },
+      { text: "waki", correct: false },
+      { text: "waku", correct: false },
     ],
   },
   {
@@ -153,9 +153,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わん ?",
     options: [
       { text: "wan", correct: true },
-      { text: "wan", correct: false },
-      { text: "wan", correct: false },
-      { text: "wan", correct: false },
+      { text: "wane", correct: false },
+      { text: "wani", correct: false },
+      { text: "wano", correct: false },
     ],
   },
   {
@@ -165,9 +165,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot わり ?",
     options: [
       { text: "wari", correct: true },
-      { text: "wari", correct: false },
-      { text: "wari", correct: false },
-      { text: "wari", correct: false },
+      { text: "wara", correct: false },
+      { text: "ware", correct: false },
+      { text: "waro", correct: false },
     ],
   },
   {
@@ -177,9 +177,9 @@ export const hiraganaWQuestions: Question[] = [
     question: "Comment se prononce le mot をり ?",
     options: [
       { text: "ori", correct: true },
-      { text: "wori", correct: false },
-      { text: "ori", correct: false },
-      { text: "ori", correct: false },
+      { text: "oriru", correct: false },
+      { text: "orita", correct: false },
+      { text: "orimasu", correct: false },
     ],
   },
 
