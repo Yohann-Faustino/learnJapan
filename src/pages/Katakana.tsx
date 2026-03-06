@@ -8,72 +8,72 @@ import styles from "./Hiragana.module.css";
 import {
   katakanaVoyellesQuestions,
   katakanaVoyellesVocab,
-} from "../data/katakana/katakanaVoyelles";
+} from "../data/katakanaVocab/katakanaVoyelles";
 
 import {
   katakanaKQuestions,
   katakanaKVocab,
-} from "../data/katakana/katakanaConsonneK";
+} from "../data/katakanaVocab/katakanaConsonneK";
 
 import {
   katakanaSVocab,
   katakanaSQuestions,
-} from "../data/katakana/katakanaConsonneS";
+} from "../data/katakanaVocab/katakanaConsonneS";
 
 import {
   katakanaTQuestions,
   katakanaTVocab,
-} from "../data/katakana/katakanaConsonneT";
+} from "../data/katakanaVocab/katakanaConsonneT";
 
 import {
   katakanaNQuestions,
   katakanaNVocab,
-} from "../data/katakana/katakanaConsonneN";
+} from "../data/katakanaVocab/katakanaConsonneN";
 
 import {
   katakanaHQuestions,
   katakanaHVocab,
-} from "../data/katakana/katakanaConsonneH";
+} from "../data/katakanaVocab/katakanaConsonneH";
 
 import {
   katakanaMQuestions,
   katakanaMVocab,
-} from "../data/katakana/katakanaConsonneM";
+} from "../data/katakanaVocab/katakanaConsonneM";
 
 import {
   katakanaYQuestions,
   katakanaYVocab,
-} from "../data/katakana/katakanaConsonneY";
+} from "../data/katakanaVocab/katakanaConsonneY";
 
 import {
   katakanaRQuestions,
   katakanaRVocab,
-} from "../data/katakana/katakanaConsonneR";
+} from "../data/katakanaVocab/katakanaConsonneR";
 
 import {
   katakanaWQuestions,
   katakanaWVocab,
-} from "../data/katakana/katakanaConsonneW";
+} from "../data/katakanaVocab/katakanaConsonneW";
 
 import {
   katakanaDakutenQuestions,
   katakanaDakutenVocab,
-} from "../data/katakana/katakanaDakuten";
+} from "../data/katakanaVocab/katakanaDakuten";
 
 import {
   katakanaHandakutenQuestions,
   katakanaHandakutenVocab,
-} from "../data/katakana/katakanaHandakuten";
+} from "../data/katakanaVocab/katakanaHandakuten";
 
 import {
   katakanaCombiQuestions,
   katakanaCombiVocab,
-} from "../data/katakana/katakanaCombi";
+} from "../data/katakanaVocab/katakanaCombi";
 
 import {
   katakanaExceptionsQuestions,
   katakanaExceptionsVocab,
-} from "../data/katakana/katakanaExceptions";
+} from "../data/katakanaVocab/katakanaExceptions";
 
 type Section =
   | "voyelles"

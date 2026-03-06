@@ -8,60 +8,60 @@ import styles from "./Hiragana.module.css";
 import {
   hiraganaVoyellesQuestions,
   hiraganaVoyellesVocab,
-} from "../data/hiragana/hiraganaVoyelles";
+} from "../data/hiraganaVocab/hiraganaVoyelles";
 
 import {
   hiraganaKQuestions,
   hiraganaKVocab,
-} from "../data/hiragana/hiraganaConsonneK";
+} from "../data/hiraganaVocab/hiraganaConsonneK";
 import {
   hiraganaSQuestions,
   hiraganaSVocab,
-} from "../data/hiragana/hiraganaConsonneS";
+} from "../data/hiraganaVocab/hiraganaConsonneS";
 import {
   hiraganaTQuestions,
   hiraganaTVocab,
-} from "../data/hiragana/hiraganaConsonneT";
+} from "../data/hiraganaVocab/hiraganaConsonneT";
 import {
   hiraganaNQuestions,
   hiraganaNVocab,
-} from "../data/hiragana/hiraganaConsonneN";
+} from "../data/hiraganaVocab/hiraganaConsonneN";
 import {
   hiraganaHQuestions,
   hiraganaHVocab,
-} from "../data/hiragana/hiraganaConsonneH";
+} from "../data/hiraganaVocab/hiraganaConsonneH";
 import {
   hiraganaMQuestions,
   hiraganaMVocab,
-} from "../data/hiragana/hiraganaConsonneM";
+} from "../data/hiraganaVocab/hiraganaConsonneM";
 import {
   hiraganaYQuestions,
   hiraganaYVocab,
-} from "../data/hiragana/hiraganaConsonneY";
+} from "../data/hiraganaVocab/hiraganaConsonneY";
 import {
   hiraganaRQuestions,
   hiraganaRVocab,
-} from "../data/hiragana/hiraganaConsonneR";
+} from "../data/hiraganaVocab/hiraganaConsonneR";
 import {
   hiraganaWQuestions,
   hiraganaWVocab,
-} from "../data/hiragana/hiraganaConsonneW";
+} from "../data/hiraganaVocab/hiraganaConsonneW";
 import {
   hiraganaDakutenQuestions,
   hiraganaDakutenVocab,
-} from "../data/hiragana/hiraganaDakuten";
+} from "../data/hiraganaVocab/hiraganaDakuten";
 import {
   handakutenQuestions,
   handakutenVocab,
-} from "../data/hiragana/hiraganaHandakuten";
-import {
-  hiraganaCombiQuestions,
-  hiraganaCombiVocab,
-} from "../data/hiragana/hiraganaCombi";
+} from "../data/hiraganaVocab/hiraganaHandakuten";
+
+import { hiraganaCombiVocab } from "../data/hiraganaVocab/hiraganaCombi";
+import { hiraganaCombiQuestions } from "../data/hiraganaQuestions/hiraganaCombiQuestions";
+
 import {
   hiraganaExceptionsQuestions,
   hiraganaExceptionsVocab,
-} from "../data/hiragana/hiraganaExceptions";
+} from "../data/hiraganaVocab/hiraganaExceptions";
 
 type Section =
   | "voyelles"

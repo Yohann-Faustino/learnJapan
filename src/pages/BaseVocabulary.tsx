@@ -8,38 +8,32 @@ import styles from "./BaseVocabulary.module.css";
 import {
   salutationsVocab,
   salutationsQuestions,
-} from "../data/baseVocabularyData/vocabSalutations";
+} from "../data/baseVocabulary/vocabSalutations";
 import {
   nourritureVocab,
   nourritureQuestions,
-} from "../data/baseVocabularyData/vocabNourriture";
+} from "../data/baseVocabulary/vocabNourriture";
 import {
   transportVocab,
   transportQuestions,
-} from "../data/baseVocabularyData/vocabTransport";
+} from "../data/baseVocabulary/vocabTransport";
 import {
   achatsVocab,
   achatsQuestions,
-} from "../data/baseVocabularyData/vocabAchats";
+} from "../data/baseVocabulary/vocabAchats";
 
-import {
-  santeVocab,
-  santeQuestions,
-} from "../data/baseVocabularyData/vocabSante";
+import { santeVocab, santeQuestions } from "../data/baseVocabulary/vocabSante";
 import {
   quotidienVocab,
   quotidienQuestions,
-} from "../data/baseVocabularyData/vocabQuotidien";
+} from "../data/baseVocabulary/vocabQuotidien";
 
-import {
-  utileVocab,
-  utileQuestions,
-} from "../data/baseVocabularyData/vocabUtile";
+import { utileVocab, utileQuestions } from "../data/baseVocabulary/vocabUtile";
 
 import {
   questionsVocab,
   questionsQuestions,
-} from "../data/baseVocabularyData/vocabQuestions";
+} from "../data/baseVocabulary/vocabQuestions";
 
 type Section =
   | "quotidien"
