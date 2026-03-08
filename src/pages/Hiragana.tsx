@@ -10,46 +10,50 @@ import {
   hiraganaVoyellesVocab,
 } from "../data/hiraganaVocab/hiraganaVoyelles";
 
-import {
-  hiraganaKQuestions,
-  hiraganaKVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneK";
+import { hiraganaKVocab } from "../data/hiraganaVocab/hiraganaConsonneK";
+import { hiraganaKQuestions } from "../data/hiraganaQuestions/hiraganaConsonneKQuestions";
+
 import {
   hiraganaSQuestions,
   hiraganaSVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneS";
+
 import {
   hiraganaTQuestions,
   hiraganaTVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneT";
+
 import {
   hiraganaNQuestions,
   hiraganaNVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneN";
-import {
-  hiraganaHQuestions,
-  hiraganaHVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneH";
-import {
-  hiraganaMQuestions,
-  hiraganaMVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneM";
+
+import { hiraganaHVocab } from "../data/hiraganaVocab/hiraganaConsonneH";
+import { hiraganaHQuestions } from "../data/hiraganaQuestions/hiraganaConsonneHQuestions";
+
+import { hiraganaMVocab } from "../data/hiraganaVocab/hiraganaConsonneM";
+import { hiraganaMQuestions } from "../data/hiraganaQuestions/hiraganaConsonneMQuestions";
+
 import {
   hiraganaYQuestions,
   hiraganaYVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneY";
+
 import {
   hiraganaRQuestions,
   hiraganaRVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneR";
+
 import {
   hiraganaWQuestions,
   hiraganaWVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneW";
+
 import {
   hiraganaDakutenQuestions,
   hiraganaDakutenVocab,
 } from "../data/hiraganaVocab/hiraganaDakuten";
+
 import {
   handakutenQuestions,
   handakutenVocab,
