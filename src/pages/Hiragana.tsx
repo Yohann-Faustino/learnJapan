@@ -23,10 +23,8 @@ import {
   hiraganaTVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneT";
 
-import {
-  hiraganaNQuestions,
-  hiraganaNVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneN";
+import { hiraganaNVocab } from "../data/hiraganaVocab/hiraganaConsonneN";
+import { hiraganaNQuestions } from "../data/hiraganaQuestions/hiraganaConsonneNQuestions";
 
 import { hiraganaHVocab } from "../data/hiraganaVocab/hiraganaConsonneH";
 import { hiraganaHQuestions } from "../data/hiraganaQuestions/hiraganaConsonneHQuestions";
@@ -39,10 +37,8 @@ import {
   hiraganaYVocab,
 } from "../data/hiraganaVocab/hiraganaConsonneY";
 
-import {
-  hiraganaRQuestions,
-  hiraganaRVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneR";
+import { hiraganaRVocab } from "../data/hiraganaVocab/hiraganaConsonneR";
+import { hiraganaRQuestions } from "../data/hiraganaQuestions/hiraganaConsonneRQuestions";
 
 import {
   hiraganaWQuestions,
