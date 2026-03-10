@@ -13,15 +13,11 @@ import {
 import { hiraganaKVocab } from "../data/hiraganaVocab/hiraganaConsonneK";
 import { hiraganaKQuestions } from "../data/hiraganaQuestions/hiraganaConsonneKQuestions";
 
-import {
-  hiraganaSQuestions,
-  hiraganaSVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneS";
+import { hiraganaSVocab } from "../data/hiraganaVocab/hiraganaConsonneS";
+import { hiraganaSQuestions } from "../data/hiraganaQuestions/hiraganaConsonneSQuestions";
 
-import {
-  hiraganaTQuestions,
-  hiraganaTVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneT";
+import { hiraganaTVocab } from "../data/hiraganaVocab/hiraganaConsonneT";
+import { hiraganaTQuestions } from "../data/hiraganaQuestions/hiraganaConsonneTQuestions";
 
 import { hiraganaNVocab } from "../data/hiraganaVocab/hiraganaConsonneN";
 import { hiraganaNQuestions } from "../data/hiraganaQuestions/hiraganaConsonneNQuestions";
