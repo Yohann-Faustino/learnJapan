@@ -28,18 +28,14 @@ import { hiraganaHQuestions } from "../data/hiraganaQuestions/hiraganaConsonneHQ
 import { hiraganaMVocab } from "../data/hiraganaVocab/hiraganaConsonneM";
 import { hiraganaMQuestions } from "../data/hiraganaQuestions/hiraganaConsonneMQuestions";
 
-import {
-  hiraganaYQuestions,
-  hiraganaYVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneY";
+import { hiraganaYVocab } from "../data/hiraganaVocab/hiraganaConsonneY";
+import { hiraganaYQuestions } from "../data/hiraganaQuestions/hiraganaConsonneYQuestions";
 
 import { hiraganaRVocab } from "../data/hiraganaVocab/hiraganaConsonneR";
 import { hiraganaRQuestions } from "../data/hiraganaQuestions/hiraganaConsonneRQuestions";
 
-import {
-  hiraganaWQuestions,
-  hiraganaWVocab,
-} from "../data/hiraganaVocab/hiraganaConsonneW";
+import { hiraganaWVocab } from "../data/hiraganaVocab/hiraganaConsonneW";
+import { hiraganaWQuestions } from "../data/hiraganaQuestions/hiraganaConsonneWQuestions";
 
 import {
   hiraganaDakutenQuestions,
