@@ -37,10 +37,8 @@ import { hiraganaRQuestions } from "../data/hiraganaQuestions/hiraganaConsonneRQ
 import { hiraganaWVocab } from "../data/hiraganaVocab/hiraganaConsonneW";
 import { hiraganaWQuestions } from "../data/hiraganaQuestions/hiraganaConsonneWQuestions";
 
-import {
-  hiraganaDakutenQuestions,
-  hiraganaDakutenVocab,
-} from "../data/hiraganaVocab/hiraganaDakuten";
+import { hiraganaDakutenVocab } from "../data/hiraganaVocab/hiraganaDakuten";
+import { hiraganaDakutenQuestions } from "../data/hiraganaQuestions/hiraganaDakutenQuestions";
 
 import {
   handakutenQuestions,
@@ -50,10 +48,8 @@ import {
 import { hiraganaCombiVocab } from "../data/hiraganaVocab/hiraganaCombi";
 import { hiraganaCombiQuestions } from "../data/hiraganaQuestions/hiraganaCombiQuestions";
 
-import {
-  hiraganaExceptionsQuestions,
-  hiraganaExceptionsVocab,
-} from "../data/hiraganaVocab/hiraganaExceptions";
+import { hiraganaExceptionsVocab } from "../data/hiraganaVocab/hiraganaExceptions";
+import { hiraganaExceptionsQuestions } from "../data/hiraganaQuestions/hiraganaExceptionsQuestions";
 
 type Section =
   | "voyelles"
