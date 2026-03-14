@@ -5,10 +5,8 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 
-import {
-  hiraganaVoyellesQuestions,
-  hiraganaVoyellesVocab,
-} from "../data/hiraganaVocab/hiraganaVoyelles";
+import { hiraganaVoyellesVocab } from "../data/hiraganaVocab/hiraganaVoyelles";
+import { hiraganaVoyellesQuestions } from "../data/hiraganaQuestions/hiraganaVoyellesQuestions";
 
 import { hiraganaKVocab } from "../data/hiraganaVocab/hiraganaConsonneK";
 import { hiraganaKQuestions } from "../data/hiraganaQuestions/hiraganaConsonneKQuestions";
@@ -40,10 +38,8 @@ import { hiraganaWQuestions } from "../data/hiraganaQuestions/hiraganaConsonneWQ
 import { hiraganaDakutenVocab } from "../data/hiraganaVocab/hiraganaDakuten";
 import { hiraganaDakutenQuestions } from "../data/hiraganaQuestions/hiraganaDakutenQuestions";
 
-import {
-  handakutenQuestions,
-  handakutenVocab,
-} from "../data/hiraganaVocab/hiraganaHandakuten";
+import { handakutenVocab } from "../data/hiraganaVocab/hiraganaHandakuten";
+import { handakutenQuestions } from "../data/hiraganaQuestions/hiraganaHandakutenQuestions";
 
 import { hiraganaCombiVocab } from "../data/hiraganaVocab/hiraganaCombi";
 import { hiraganaCombiQuestions } from "../data/hiraganaQuestions/hiraganaCombiQuestions";
