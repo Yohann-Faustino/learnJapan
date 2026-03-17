@@ -10,10 +10,8 @@ import {
   katakanaVoyellesVocab,
 } from "../data/katakanaVocab/katakanaVoyelles";
 
-import {
-  katakanaKQuestions,
-  katakanaKVocab,
-} from "../data/katakanaVocab/katakanaConsonneK";
+import { katakanaKVocab } from "../data/katakanaVocab/katakanaConsonneK";
+import { katakanaKQuestions } from "../data/katakanaQuestions/katakanaConsonneKQuestions";
 
 import {
   katakanaSVocab,
@@ -30,15 +28,11 @@ import {
   katakanaNVocab,
 } from "../data/katakanaVocab/katakanaConsonneN";
 
-import {
-  katakanaHQuestions,
-  katakanaHVocab,
-} from "../data/katakanaVocab/katakanaConsonneH";
+import { katakanaHVocab } from "../data/katakanaVocab/katakanaConsonneH";
+import { katakanaHQuestions } from "../data/katakanaQuestions/katakanaConsonneHQuestions";
 
-import {
-  katakanaMQuestions,
-  katakanaMVocab,
-} from "../data/katakanaVocab/katakanaConsonneM";
+import { katakanaMVocab } from "../data/katakanaVocab/katakanaConsonneM";
+import { katakanaMQuestions } from "../data/katakanaQuestions/katakanaConsonneMQuestions";
 
 import {
   katakanaYQuestions,
@@ -65,11 +59,8 @@ import {
   katakanaHandakutenVocab,
 } from "../data/katakanaVocab/katakanaHandakuten";
 
-import {
-  katakanaCombiQuestions,
-  katakanaCombiVocab,
-} from "../data/katakanaVocab/katakanaCombi";
-
+import { katakanaCombiVocab } from "../data/katakanaVocab/katakanaCombi";
+import { katakanaCombiQuestions } from "../data/katakanaQuestions/katakanaCombiQuestions";
 import {
   katakanaExceptionsQuestions,
   katakanaExceptionsVocab,
