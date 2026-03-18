@@ -23,10 +23,8 @@ import {
   katakanaTVocab,
 } from "../data/katakanaVocab/katakanaConsonneT";
 
-import {
-  katakanaNQuestions,
-  katakanaNVocab,
-} from "../data/katakanaVocab/katakanaConsonneN";
+import { katakanaNVocab } from "../data/katakanaVocab/katakanaConsonneN";
+import { katakanaNQuestions } from "../data/katakanaQuestions/katakanaConsonneNQuestions";
 
 import { katakanaHVocab } from "../data/katakanaVocab/katakanaConsonneH";
 import { katakanaHQuestions } from "../data/katakanaQuestions/katakanaConsonneHQuestions";
@@ -39,10 +37,8 @@ import {
   katakanaYVocab,
 } from "../data/katakanaVocab/katakanaConsonneY";
 
-import {
-  katakanaRQuestions,
-  katakanaRVocab,
-} from "../data/katakanaVocab/katakanaConsonneR";
+import { katakanaRVocab } from "../data/katakanaVocab/katakanaConsonneR";
+import { katakanaRQuestions } from "../data/katakanaQuestions/katakanaConsonneRQuestions";
 
 import {
   katakanaWQuestions,
