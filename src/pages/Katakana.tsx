@@ -13,15 +13,11 @@ import {
 import { katakanaKVocab } from "../data/katakanaVocab/katakanaConsonneK";
 import { katakanaKQuestions } from "../data/katakanaQuestions/katakanaConsonneKQuestions";
 
-import {
-  katakanaSVocab,
-  katakanaSQuestions,
-} from "../data/katakanaVocab/katakanaConsonneS";
+import { katakanaSVocab } from "../data/katakanaVocab/katakanaConsonneS";
+import { katakanaSQuestions } from "../data/katakanaQuestions/katakanaConsonneSQuestions";
 
-import {
-  katakanaTQuestions,
-  katakanaTVocab,
-} from "../data/katakanaVocab/katakanaConsonneT";
+import { katakanaTVocab } from "../data/katakanaVocab/katakanaConsonneT";
+import { katakanaTQuestions } from "../data/katakanaQuestions/katakanaConsonneTQuestions";
 
 import { katakanaNVocab } from "../data/katakanaVocab/katakanaConsonneN";
 import { katakanaNQuestions } from "../data/katakanaQuestions/katakanaConsonneNQuestions";
