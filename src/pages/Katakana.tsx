@@ -28,18 +28,14 @@ import { katakanaHQuestions } from "../data/katakanaQuestions/katakanaConsonneHQ
 import { katakanaMVocab } from "../data/katakanaVocab/katakanaConsonneM";
 import { katakanaMQuestions } from "../data/katakanaQuestions/katakanaConsonneMQuestions";
 
-import {
-  katakanaYQuestions,
-  katakanaYVocab,
-} from "../data/katakanaVocab/katakanaConsonneY";
+import { katakanaYVocab } from "../data/katakanaVocab/katakanaConsonneY";
+import { katakanaYQuestions } from "../data/katakanaQuestions/katakanaConsonneYQuestions";
 
 import { katakanaRVocab } from "../data/katakanaVocab/katakanaConsonneR";
 import { katakanaRQuestions } from "../data/katakanaQuestions/katakanaConsonneRQuestions";
 
-import {
-  katakanaWQuestions,
-  katakanaWVocab,
-} from "../data/katakanaVocab/katakanaConsonneW";
+import { katakanaWVocab } from "../data/katakanaVocab/katakanaConsonneW";
+import { katakanaWQuestions } from "../data/katakanaQuestions/katakanaConsonneWQuestions";
 
 import {
   katakanaDakutenQuestions,

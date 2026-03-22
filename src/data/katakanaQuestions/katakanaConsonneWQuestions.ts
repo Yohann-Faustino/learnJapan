@@ -1,0 +1,223 @@
+import type { Question } from "../../types/Question";
+
+export const katakanaWQuestions: Question[] = [
+  // QUESTIONS 1-15 : MÊMES MOTS QUE DANS katakanaWVocab
+  {
+    id: 1,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワタシ ?",
+    options: [
+      { text: "watashi", correct: true },
+      { text: "watashiwa", correct: false },
+      { text: "watashino", correct: false },
+      { text: "watashiga", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワカル ?",
+    options: [
+      { text: "wakaru", correct: true },
+      { text: "wakaranai", correct: false },
+      { text: "wakatta", correct: false },
+      { text: "wakare", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワカメ ?",
+    options: [
+      { text: "wakame", correct: true },
+      { text: "wakare", correct: false },
+      { text: "wakami", correct: false },
+      { text: "wakamo", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワニ ?",
+    options: [
+      { text: "wani", correct: true },
+      { text: "wane", correct: false },
+      { text: "wana", correct: false },
+      { text: "wano", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ヲカシ ?",
+    options: [
+      { text: "okashi", correct: true },
+      { text: "okashii", correct: false },
+      { text: "okashite", correct: false },
+      { text: "okashira", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワラウ ?",
+    options: [
+      { text: "warau", correct: true },
+      { text: "waratta", correct: false },
+      { text: "warawanai", correct: false },
+      { text: "waratte", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワカイ ?",
+    options: [
+      { text: "wakai", correct: true },
+      { text: "wakare", correct: false },
+      { text: "wakaku", correct: false },
+      { text: "wakasa", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワスレル ?",
+    options: [
+      { text: "wasureru", correct: true },
+      { text: "wasurenai", correct: false },
+      { text: "wasureta", correct: false },
+      { text: "wasuremasu", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワシ ?",
+    options: [
+      { text: "washi", correct: true },
+      { text: "washa", correct: false },
+      { text: "washu", correct: false },
+      { text: "washe", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワクワク ?",
+    options: [
+      { text: "wakuwaku", correct: true },
+      { text: "wakuwake", correct: false },
+      { text: "wakuwaki", correct: false },
+      { text: "wakuwaka", correct: false },
+    ],
+  },
+  {
+    id: 11,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワタル ?",
+    options: [
+      { text: "wataru", correct: true },
+      { text: "watashi", correct: false },
+      { text: "wagaru", correct: false },
+      { text: "gataru", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワカ ?",
+    options: [
+      { text: "waka", correct: true },
+      { text: "wake", correct: false },
+      { text: "waki", correct: false },
+      { text: "waku", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワン ?",
+    options: [
+      { text: "wan", correct: true },
+      { text: "wane", correct: false },
+      { text: "wani", correct: false },
+      { text: "wano", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ワリ ?",
+    options: [
+      { text: "wari", correct: true },
+      { text: "wara", correct: false },
+      { text: "ware", correct: false },
+      { text: "waro", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Comment se prononce le mot ヲリ ?",
+    options: [
+      { text: "ori", correct: true },
+      { text: "oriru", correct: false },
+      { text: "orita", correct: false },
+      { text: "orimasu", correct: false },
+    ],
+  },
+
+  // QUESTIONS 16-18 : Identification des katakana W
+  {
+    id: 16,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Quel est le katakana 'wa' ?",
+    options: [
+      { text: "ワ", correct: true },
+      { text: "ヲ", correct: false },
+      { text: "ン", correct: false },
+      { text: "ウ", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Quel est le katakana 'wo' ?",
+    options: [
+      { text: "ヲ", correct: true },
+      { text: "ワ", correct: false },
+      { text: "ン", correct: false },
+      { text: "ウ", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "katakana",
+    subCategory: "consonne W",
+    question: "Quel est le katakana 'n' ?",
+    options: [
+      { text: "ン", correct: true },
+      { text: "ヲ", correct: false },
+      { text: "ワ", correct: false },
+      { text: "ウ", correct: false },
+    ],
+  },
+];
