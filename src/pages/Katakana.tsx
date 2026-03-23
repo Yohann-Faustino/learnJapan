@@ -37,10 +37,8 @@ import { katakanaRQuestions } from "../data/katakanaQuestions/katakanaConsonneRQ
 import { katakanaWVocab } from "../data/katakanaVocab/katakanaConsonneW";
 import { katakanaWQuestions } from "../data/katakanaQuestions/katakanaConsonneWQuestions";
 
-import {
-  katakanaDakutenQuestions,
-  katakanaDakutenVocab,
-} from "../data/katakanaVocab/katakanaDakuten";
+import { katakanaDakutenVocab } from "../data/katakanaVocab/katakanaDakuten";
+import { katakanaDakutenQuestions } from "../data/katakanaQuestions/katakanaDakutenQuestions";
 
 import {
   katakanaHandakutenQuestions,
@@ -49,10 +47,9 @@ import {
 
 import { katakanaCombiVocab } from "../data/katakanaVocab/katakanaCombi";
 import { katakanaCombiQuestions } from "../data/katakanaQuestions/katakanaCombiQuestions";
-import {
-  katakanaExceptionsQuestions,
-  katakanaExceptionsVocab,
-} from "../data/katakanaVocab/katakanaExceptions";
+
+import { katakanaExceptionsVocab } from "../data/katakanaVocab/katakanaExceptions";
+import { katakanaExceptionsQuestions } from "../data/katakanaQuestions/katakanaExceptionsQuestions";
 
 type Section =
   | "voyelles"
