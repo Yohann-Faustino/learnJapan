@@ -1,0 +1,23 @@
+// VOCABULAIRE (LES MÊMES 20 MOTS QUE DANS LES QUESTIONS 1-20)
+export const verbesG1Vocab = [
+  { jp: "行く", romaji: "iku", fr: "aller", groupe: 1 },
+  { jp: "話す", romaji: "hanasu", fr: "parler", groupe: 1 },
+  { jp: "読む", romaji: "yomu", fr: "lire", groupe: 1 },
+  { jp: "書く", romaji: "kaku", fr: "écrire", groupe: 1 },
+  { jp: "聞く", romaji: "kiku", fr: "écouter / demander", groupe: 1 },
+  { jp: "飲む", romaji: "nomu", fr: "boire", groupe: 1 },
+  { jp: "買う", romaji: "kau", fr: "acheter", groupe: 1 },
+  { jp: "売る", romaji: "uru", fr: "vendre", groupe: 1 },
+  { jp: "待つ", romaji: "matsu", fr: "attendre", groupe: 1 },
+  { jp: "帰る", romaji: "kaeru", fr: "rentrer", groupe: 1 },
+  { jp: "泳ぐ", romaji: "oyogu", fr: "nager", groupe: 1 },
+  { jp: "遊ぶ", romaji: "asobu", fr: "jouer", groupe: 1 },
+  { jp: "会う", romaji: "au", fr: "rencontrer", groupe: 1 },
+  { jp: "死ぬ", romaji: "shinu", fr: "mourir", groupe: 1 },
+  { jp: "座る", romaji: "suwaru", fr: "s'asseoir", groupe: 1 },
+  { jp: "立つ", romaji: "tatsu", fr: "se lever / debout", groupe: 1 },
+  { jp: "使う", romaji: "tsukau", fr: "utiliser", groupe: 1 },
+  { jp: "笑う", romaji: "warau", fr: "rire", groupe: 1 },
+  { jp: "働く", romaji: "hataraku", fr: "travailler", groupe: 1 },
+  { jp: "歌う", romaji: "utau", fr: "chanter", groupe: 1 },
+];
