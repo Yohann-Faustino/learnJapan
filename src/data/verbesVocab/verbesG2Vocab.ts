@@ -1,0 +1,23 @@
+// VOCABULAIRE (LES MÊMES 20 MOTS QUE DANS LES QUESTIONS 1-20)
+export const verbesG2Vocab = [
+  { jp: "食べる", romaji: "taberu", fr: "manger", groupe: 2 },
+  { jp: "見る", romaji: "miru", fr: "voir / regarder", groupe: 2 },
+  { jp: "寝る", romaji: "neru", fr: "dormir", groupe: 2 },
+  { jp: "起きる", romaji: "okiru", fr: "se lever", groupe: 2 },
+  { jp: "着る", romaji: "kiru", fr: "porter (vêtement)", groupe: 2 },
+  { jp: "開ける", romaji: "akeru", fr: "ouvrir", groupe: 2 },
+  { jp: "閉める", romaji: "shimeru", fr: "fermer", groupe: 2 },
+  { jp: "教える", romaji: "oshieru", fr: "enseigner", groupe: 2 },
+  { jp: "覚える", romaji: "oboeru", fr: "mémoriser", groupe: 2 },
+  { jp: "借りる", romaji: "kariru", fr: "emprunter", groupe: 2 },
+  { jp: "調べる", romaji: "shiraberu", fr: "chercher / enquêter", groupe: 2 },
+  { jp: "捨てる", romaji: "suteru", fr: "jeter", groupe: 2 },
+  { jp: "疲れる", romaji: "tsukareru", fr: "être fatigué", groupe: 2 },
+  { jp: "信じる", romaji: "shinjiru", fr: "croire", groupe: 2 },
+  { jp: "答える", romaji: "kotaeru", fr: "répondre", groupe: 2 },
+  { jp: "考える", romaji: "kangaeru", fr: "réfléchir / penser", groupe: 2 },
+  { jp: "感じる", romaji: "kanjiru", fr: "ressentir", groupe: 2 },
+  { jp: "遅れる", romaji: "okureru", fr: "être en retard", groupe: 2 },
+  { jp: "足りる", romaji: "tariru", fr: "suffire", groupe: 2 },
+  { jp: "迎える", romaji: "mukaeru", fr: "accueillir", groupe: 2 },
+];
