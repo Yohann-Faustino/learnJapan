@@ -1,0 +1,33 @@
+// VOCABULAIRE (LES MÊMES 20 MOTS QUE DANS LES QUESTIONS 1-20)
+export const verbesG3Vocab = [
+  { jp: "する", romaji: "suru", fr: "faire", groupe: 3 },
+  { jp: "来る", romaji: "kuru", fr: "venir", groupe: 3 },
+  { jp: "勉強する", romaji: "benkyou suru", fr: "étudier", groupe: 3 },
+  { jp: "旅行する", romaji: "ryokou suru", fr: "voyager", groupe: 3 },
+  { jp: "食事する", romaji: "shokuji suru", fr: "prendre un repas", groupe: 3 },
+  { jp: "散歩する", romaji: "sanpo suru", fr: "se promener", groupe: 3 },
+  { jp: "運転する", romaji: "unten suru", fr: "conduire", groupe: 3 },
+  { jp: "電話する", romaji: "denwa suru", fr: "téléphoner", groupe: 3 },
+  {
+    jp: "買い物する",
+    romaji: "kaimono suru",
+    fr: "faire des courses",
+    groupe: 3,
+  },
+  { jp: "洗濯する", romaji: "sentaku suru", fr: "faire la lessive", groupe: 3 },
+  { jp: "掃除する", romaji: "souji suru", fr: "nettoyer", groupe: 3 },
+  { jp: "料理する", romaji: "ryouri suru", fr: "cuisiner", groupe: 3 },
+  { jp: "準備する", romaji: "junbi suru", fr: "préparer", groupe: 3 },
+  { jp: "紹介する", romaji: "shoukai suru", fr: "présenter", groupe: 3 },
+  { jp: "結婚する", romaji: "kekkon suru", fr: "se marier", groupe: 3 },
+  { jp: "心配する", romaji: "shinpai suru", fr: "s'inquiéter", groupe: 3 },
+  { jp: "約束する", romaji: "yakusoku suru", fr: "promettre", groupe: 3 },
+  { jp: "注意する", romaji: "chuui suru", fr: "faire attention", groupe: 3 },
+  {
+    jp: "質問する",
+    romaji: "shitsumon suru",
+    fr: "poser une question",
+    groupe: 3,
+  },
+  { jp: "予約する", romaji: "yoyaku suru", fr: "réserver", groupe: 3 },
+];
