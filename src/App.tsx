@@ -6,6 +6,7 @@ import Katakana from "./pages/Katakana";
 import Particules from "./pages/Particules";
 import BaseVocabularyPage from "./pages/BaseVocabulary";
 import PhraseStructurePage from "./pages/PhraseStructure";
+import Verbes from "./pages/Verbes";
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
           {/* Phrase */}
           <Route path="/phrase" element={<PhraseStructurePage />} />
 
-          {/* Catégorie particules */}
+          {/* Catégorie Particules */}
           <Route path="/particules" element={<Particules />} />
+
+          {/* Catégorie Verbes */}
+          <Route path="/verbes" element={<Verbes />} />
 
           {/* Catégorie BaseVocabulary */}
           <Route path="/base" element={<BaseVocabularyPage />} />

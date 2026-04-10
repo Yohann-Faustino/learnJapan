@@ -14,6 +14,9 @@ export default function Home() {
         <Link to="/particules" className={styles.card}>
           Particules
         </Link>
+        <Link to="/verbes" className={styles.card}>
+          Verbes
+        </Link>
         <Link to="/hiragana" className={styles.card}>
           Hiragana
         </Link>
