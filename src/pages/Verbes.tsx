@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Quiz from "../components/Quiz";
 import TabButton from "../components/TabButton";
-import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { verbesCatalogue } from "../data/catalogues/verbesCatalogue";
+import FrenchRevealButton from "../components/FrenchRevealButton";
 
 export default function VerbesPage() {
   const [activeSection, setActiveSection] = useState(verbesCatalogue[0].id);
@@ -33,12 +33,18 @@ export default function VerbesPage() {
 
   const renderVocab = () => (
     <div className={styles.miniVocab}>
-      {currentSection.vocab.map((item, idx) => (
-        <RevealButton
+      {(
+        currentSection.vocab as {
+          french: string;
+          romaji: string;
+          pronunciation: string;
+        }[]
+      ).map((item, idx) => (
+        <FrenchRevealButton
           key={idx}
-          japanese={item.jp}
+          french={item.french}
           romaji={item.romaji}
-          french={item.fr}
+          pronunciation={item.pronunciation}
         />
       ))}
     </div>
