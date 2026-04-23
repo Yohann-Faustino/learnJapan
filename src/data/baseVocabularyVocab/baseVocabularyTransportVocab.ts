@@ -1,0 +1,23 @@
+// VOCABULAIRE TRANSPORT (20 mots)
+export const transportVocab = [
+  { french: "train", romaji: "densha", pronunciation: "dé-ne-cha" },
+  { french: "gare", romaji: "eki", pronunciation: "é-ki" },
+  { french: "billet", romaji: "kippu", pronunciation: "ki-ppou" },
+  { french: "avion", romaji: "hikōki", pronunciation: "hi-ko-o-ki" },
+  { french: "aéroport", romaji: "kūkō", pronunciation: "kou-ko-o" },
+  { french: "bus", romaji: "basu", pronunciation: "ba-sou" },
+  { french: "taxi", romaji: "takushī", pronunciation: "ta-kou-chi-i" },
+  { french: "métro", romaji: "chikatetsu", pronunciation: "chi-ka-té-tsou" },
+  { french: "vélo", romaji: "jitensha", pronunciation: "ji-té-ne-cha" },
+  { french: "voiture", romaji: "kuruma", pronunciation: "kou-rou-ma" },
+  { french: "carte", romaji: "chizu", pronunciation: "chi-zou" },
+  { french: "droite", romaji: "migi", pronunciation: "mi-gui" },
+  { french: "gauche", romaji: "hidari", pronunciation: "hi-da-ri" },
+  { french: "tout droit", romaji: "massugu", pronunciation: "ma-ssou-gou" },
+  { french: "près", romaji: "chikai", pronunciation: "chi-ka-i" },
+  { french: "loin", romaji: "tōi", pronunciation: "to-o-i" },
+  { french: "station", romaji: "station", pronunciation: "sou-té-chon" },
+  { french: "arrêt", romaji: "teiryūjo", pronunciation: "té-i-ryu-u-jo" },
+  { french: "direction", romaji: "hōkō", pronunciation: "ho-o-ko-o" },
+  { french: "destination", romaji: "ikisaki", pronunciation: "i-ki-sa-ki" },
+];

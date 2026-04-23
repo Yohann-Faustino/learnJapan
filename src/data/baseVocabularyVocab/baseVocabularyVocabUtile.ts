@@ -1,0 +1,23 @@
+// VOCABULAIRE (LES MÊMES 20 MOTS QUE DANS LES QUESTIONS 1-20)
+export const utileVocab = [
+  { french: "et", romaji: "to", pronunciation: "to" },
+  { french: "mais", romaji: "demo", pronunciation: "dé-mo" },
+  { french: "parce que", romaji: "kara", pronunciation: "ka-ra" },
+  { french: "avec", romaji: "issho ni", pronunciation: "i-sshio-ni" },
+  { french: "beaucoup", romaji: "takusan", pronunciation: "ta-kou-san" },
+  { french: "aujourd'hui", romaji: "kyō", pronunciation: "kyo-o" },
+  { french: "demain", romaji: "ashita", pronunciation: "a-chi-ta" },
+  { french: "maintenant", romaji: "ima", pronunciation: "i-ma" },
+  { french: "ici", romaji: "koko", pronunciation: "ko-ko" },
+  { french: "là-bas", romaji: "asoko", pronunciation: "a-so-ko" },
+  { french: "hier", romaji: "kinō", pronunciation: "ki-no-o" },
+  { french: "après-demain", romaji: "asatte", pronunciation: "a-sa-tté" },
+  { french: "toujours", romaji: "itsumo", pronunciation: "i-tsou-mo" },
+  { french: "parfois", romaji: "tokidoki", pronunciation: "to-ki-do-ki" },
+  { french: "vite", romaji: "hayaku", pronunciation: "ha-ya-kou" },
+  { french: "lentement", romaji: "yukkuri", pronunciation: "you-kou-ri" },
+  { french: "déjà", romaji: "mō", pronunciation: "mo-o" },
+  { french: "encore", romaji: "mada", pronunciation: "ma-da" },
+  { french: "très", romaji: "totemo", pronunciation: "to-té-mo" },
+  { french: "un peu", romaji: "sukoshi", pronunciation: "sou-ko-chi" },
+];
