@@ -1,33 +1,5 @@
 import type { Question } from "../../types/Question";
 
-// VOCABULAIRE SANTÉ (20 mots)
-export const santeVocab = [
-  { french: "hôpital", romaji: "byōin", pronunciation: "byo-o-i-ne" },
-  { french: "médecin", romaji: "isha", pronunciation: "i-cha" },
-  { french: "malade", romaji: "byōki", pronunciation: "byo-o-ki" },
-  { french: "douleur", romaji: "itai", pronunciation: "i-ta-i" },
-  { french: "médicament", romaji: "kusuri", pronunciation: "kou-sou-ri" },
-  { french: "pharmacie", romaji: "yakkyoku", pronunciation: "ya-kkyo-kou" },
-  { french: "fièvre", romaji: "netsu", pronunciation: "né-tsou" },
-  { french: "tête", romaji: "atama", pronunciation: "a-ta-ma" },
-  { french: "ventre", romaji: "onaka", pronunciation: "o-na-ka" },
-  { french: "main", romaji: "te", pronunciation: "té" },
-  { french: "pied", romaji: "ashi", pronunciation: "a-chi" },
-  { french: "yeux", romaji: "me", pronunciation: "mé" },
-  { french: "oreille", romaji: "mimi", pronunciation: "mi-mi" },
-  { french: "nez", romaji: "hana", pronunciation: "ha-na" },
-  { french: "bouche", romaji: "kuchi", pronunciation: "kou-chi" },
-  { french: "dent", romaji: "ha", pronunciation: "ha" },
-  { french: "dos", romaji: "senaka", pronunciation: "sé-na-ka" },
-  { french: "coeur", romaji: "shinzō", pronunciation: "chi-ne-zo-o" },
-  { french: "urgence", romaji: "kyūkyū", pronunciation: "kyu-u-kyu-u" },
-  {
-    french: "ambulance",
-    romaji: "kyūkyūsha",
-    pronunciation: "kyu-u-kyu-u-cha",
-  },
-];
-
 // QUESTIONS (40 questions)
 export const santeQuestions: Question[] = [
   // QUESTIONS 1-20 : FRANÇAIS → JAPONAIS

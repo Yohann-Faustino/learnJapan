@@ -8,7 +8,7 @@ import styles from "./BaseVocabulary.module.css";
 import {
   salutationsVocab,
   salutationsQuestions,
-} from "../data/baseVocabularyQuestion/vocabSalutations";
+} from "../data/baseVocabularyQuestion/vocabSalutationsQuestions";
 import {
   nourritureVocab,
   nourritureQuestions,
@@ -25,7 +25,7 @@ import {
 import {
   santeVocab,
   santeQuestions,
-} from "../data/baseVocabularyQuestion/vocabSante";
+} from "../data/baseVocabularyQuestion/vocabSanteQuestions";
 import {
   quotidienVocab,
   quotidienQuestions,
