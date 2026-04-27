@@ -29,7 +29,7 @@ import {
 import {
   quotidienVocab,
   quotidienQuestions,
-} from "../data/baseVocabularyQuestion/vocabQuotidien";
+} from "../data/baseVocabularyQuestion/vocabQuotidienQestions";
 
 import {
   utileVocab,
@@ -39,7 +39,7 @@ import {
 import {
   questionsVocab,
   questionsQuestions,
-} from "../data/baseVocabularyQuestion/vocabQuestions";
+} from "../data/baseVocabularyQuestion/vocabQuestionsQuestions";
 
 type Section =
   | "quotidien"

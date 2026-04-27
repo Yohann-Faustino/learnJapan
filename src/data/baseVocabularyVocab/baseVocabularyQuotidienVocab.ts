@@ -1,0 +1,23 @@
+// VOCABULAIRE QUOTIDIEN (20 mots)
+export const quotidienVocab = [
+  { french: "maison", romaji: "ie", pronunciation: "i-é" },
+  { french: "chambre", romaji: "heya", pronunciation: "hé-ya" },
+  { french: "table", romaji: "tēburu", pronunciation: "té-e-bou-rou" },
+  { french: "chaise", romaji: "isu", pronunciation: "i-sou" },
+  { french: "lit", romaji: "beddo", pronunciation: "bé-ddo" },
+  { french: "porte", romaji: "doa", pronunciation: "do-a" },
+  { french: "fenêtre", romaji: "mado", pronunciation: "ma-do" },
+  { french: "téléphone", romaji: "denwa", pronunciation: "dé-ne-wa" },
+  { french: "livre", romaji: "hon", pronunciation: "ho-ne" },
+  { french: "stylo", romaji: "pen", pronunciation: "pé-ne" },
+  { french: "argent", romaji: "okane", pronunciation: "o-ka-né" },
+  { french: "sac", romaji: "kaban", pronunciation: "ka-ba-ne" },
+  { french: "vêtements", romaji: "fuku", pronunciation: "fou-kou" },
+  { french: "chaussures", romaji: "kutsu", pronunciation: "kou-tsou" },
+  { french: "famille", romaji: "kazoku", pronunciation: "ka-zo-kou" },
+  { french: "enfant", romaji: "kodomo", pronunciation: "ko-do-mo" },
+  { french: "travail", romaji: "shigoto", pronunciation: "chi-go-to" },
+  { french: "école", romaji: "gakkō", pronunciation: "ga-kko-o" },
+  { french: "temps (météo)", romaji: "tenki", pronunciation: "té-ne-ki" },
+  { french: "jour", romaji: "hi", pronunciation: "hi" },
+];
