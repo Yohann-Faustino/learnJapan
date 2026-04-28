@@ -1,0 +1,31 @@
+// VOCABULAIRE NOURRITURE & BOISSONS (20 mots)
+export const nourritureVocab = [
+  { french: "manger", romaji: "taberu", pronunciation: "ta-bé-rou" },
+  { french: "boire", romaji: "nomu", pronunciation: "no-mou" },
+  { french: "eau", romaji: "mizu", pronunciation: "mi-zou" },
+  { french: "riz", romaji: "gohan", pronunciation: "go-ha-ne" },
+  { french: "pain", romaji: "pan", pronunciation: "pa-ne" },
+  { french: "café", romaji: "kōhī", pronunciation: "ko-o-hi-i" },
+  { french: "thé", romaji: "ocha", pronunciation: "o-tcha" },
+  { french: "bière", romaji: "bīru", pronunciation: "bi-i-rou" },
+  {
+    french: "restaurant",
+    romaji: "resutoran",
+    pronunciation: "ré-sou-to-ra-ne",
+  },
+  { french: "menu", romaji: "menyū", pronunciation: "mé-nyu-u" },
+  { french: "bon (goût)", romaji: "oishii", pronunciation: "o-i-chi-i" },
+  { french: "mauvais (goût)", romaji: "mazui", pronunciation: "ma-zou-i" },
+  { french: "chaud (température)", romaji: "atsui", pronunciation: "a-tsou-i" },
+  {
+    french: "froid (température)",
+    romaji: "tsumetai",
+    pronunciation: "tsou-mé-ta-i",
+  },
+  { french: "viande", romaji: "niku", pronunciation: "ni-kou" },
+  { french: "poisson", romaji: "sakana", pronunciation: "sa-ka-na" },
+  { french: "légumes", romaji: "yasai", pronunciation: "ya-sa-i" },
+  { french: "fruits", romaji: "kudamono", pronunciation: "kou-da-mo-no" },
+  { french: "baguettes", romaji: "hashi", pronunciation: "ha-chi" },
+  { french: "l'addition", romaji: "kanjō", pronunciation: "ka-ne-jō" },
+];

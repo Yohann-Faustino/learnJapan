@@ -12,7 +12,7 @@ import {
 import {
   nourritureVocab,
   nourritureQuestions,
-} from "../data/baseVocabularyQuestion/vocabNourriture";
+} from "../data/baseVocabularyQuestion/vocabNourritureQuestions";
 import {
   transportVocab,
   transportQuestions,
@@ -20,7 +20,7 @@ import {
 import {
   achatsVocab,
   achatsQuestions,
-} from "../data/baseVocabularyQuestion/vocabAchats";
+} from "../data/baseVocabularyQuestion/vocabAchatsQuestions";
 
 import {
   santeVocab,

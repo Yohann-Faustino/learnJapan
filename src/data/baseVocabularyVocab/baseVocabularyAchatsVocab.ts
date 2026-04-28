@@ -1,0 +1,23 @@
+// VOCABULAIRE ACHATS (20 mots)
+export const achatsVocab = [
+  { french: "argent", romaji: "okane", pronunciation: "o-ka-né" },
+  { french: "cher", romaji: "takai", pronunciation: "ta-ka-i" },
+  { french: "pas cher", romaji: "yasui", pronunciation: "ya-sou-i" },
+  { french: "acheter", romaji: "kau", pronunciation: "ka-ou" },
+  { french: "vendre", romaji: "uru", pronunciation: "ou-rou" },
+  { french: "magasin", romaji: "mise", pronunciation: "mi-sé" },
+  { french: "supermarché", romaji: "sūpā", pronunciation: "sou-pa-a" },
+  { french: "prix", romaji: "nedan", pronunciation: "né-dan" },
+  { french: "réduction", romaji: "waribiki", pronunciation: "wa-ri-bi-ki" },
+  { french: "caisse", romaji: "kaikeijo", pronunciation: "ka-i-ké-i-jo" },
+  { french: "carte de crédit", romaji: "kādo", pronunciation: "ka-a-do" },
+  { french: "espèces", romaji: "genkin", pronunciation: "gué-ne-kin" },
+  { french: "sac", romaji: "fukuro", pronunciation: "fou-kou-ro" },
+  { french: "étiquette", romaji: "hyō", pronunciation: "hyo-o" },
+  { french: "essayer", romaji: "shichaku", pronunciation: "chi-cha-kou" },
+  { french: "taille", romaji: "saizu", pronunciation: "sa-i-zou" },
+  { french: "couleur", romaji: "iro", pronunciation: "i-ro" },
+  { french: "solde", romaji: "seru", pronunciation: "sé-rou" },
+  { french: "bon marché", romaji: "yasuppoi", pronunciation: "ya-sou-ppo-i" },
+  { french: "facture", romaji: "receipto", pronunciation: "ré-sé-i-pou-to" },
+];
