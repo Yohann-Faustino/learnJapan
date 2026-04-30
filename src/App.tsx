@@ -7,6 +7,7 @@ import Particules from "./pages/Particules";
 import BaseVocabularyPage from "./pages/BaseVocabulary";
 import PhraseStructurePage from "./pages/PhraseStructure";
 import Verbes from "./pages/Verbes";
+import Kanji from "./pages/Kanji";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
 
           {/* Catégorie Katakana */}
           <Route path="/katakana" element={<Katakana />} />
+
+          {/* Catégorie Kanji */}
+          <Route path="/kanji" element={<Kanji />} />
         </Routes>
       </BrowserRouter>
     </div>

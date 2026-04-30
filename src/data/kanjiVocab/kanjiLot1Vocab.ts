@@ -1,0 +1,73 @@
+// VOCABULAIRE (LES MÊMES 10 MOTS QUE DANS LES QUESTIONS 1-10)
+export const kanjiLot1Vocab = [
+  {
+    kanji: "一",
+    sens: "un",
+    onyomi: "ichi",
+    kunyomi: "hito(tsu)",
+    exemple: "一人 (hitori) - une personne",
+  },
+  {
+    kanji: "二",
+    sens: "deux",
+    onyomi: "ni",
+    kunyomi: "futa(tsu)",
+    exemple: "二人 (futari) - deux personnes",
+  },
+  {
+    kanji: "三",
+    sens: "trois",
+    onyomi: "san",
+    kunyomi: "mit(tsu)",
+    exemple: "三日 (mikka) - 3 jours",
+  },
+  {
+    kanji: "四",
+    sens: "quatre",
+    onyomi: "shi",
+    kunyomi: "yon",
+    exemple: "四時 (yoji) - 4 heures",
+  },
+  {
+    kanji: "五",
+    sens: "cinq",
+    onyomi: "go",
+    kunyomi: "itsu(tsu)",
+    exemple: "五人 (gonin) - 5 personnes",
+  },
+  {
+    kanji: "六",
+    sens: "six",
+    onyomi: "roku",
+    kunyomi: "mut(tsu)",
+    exemple: "六時 (rokuji) - 6 heures",
+  },
+  {
+    kanji: "七",
+    sens: "sept",
+    onyomi: "shichi",
+    kunyomi: "nana(tsu)",
+    exemple: "七時 (shichiji) - 7 heures",
+  },
+  {
+    kanji: "八",
+    sens: "huit",
+    onyomi: "hachi",
+    kunyomi: "yat(tsu)",
+    exemple: "八時 (hachiji) - 8 heures",
+  },
+  {
+    kanji: "九",
+    sens: "neuf",
+    onyomi: "kyū",
+    kunyomi: "kokono(tsu)",
+    exemple: "九時 (kuji) - 9 heures",
+  },
+  {
+    kanji: "十",
+    sens: "dix",
+    onyomi: "jū",
+    kunyomi: "tō",
+    exemple: "十日 (tōka) - 10 jours",
+  },
+];
