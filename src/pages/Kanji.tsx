@@ -16,7 +16,7 @@ export default function KanjiPage() {
         <RevealButton
           key={idx}
           japanese={item.kanji}
-          romaji={`${item.onyomi} / ${item.kunyomi}`}
+          romaji={item.lecture}
           french={item.sens}
         />
       ))}
