@@ -3,10 +3,12 @@
 // 1. IMPORTS DES VOCABULAIRES
 import { kanjiLot1Vocab } from "../kanjiVocab/kanjiLot1Vocab";
 import { kanjiLot2Vocab } from "../kanjiVocab/kanjiLot2Vocab";
+import { kanjiLot3Vocab } from "../kanjiVocab/kanjiLot3Vocab";
 
 // 2. IMPORTS DES QUESTIONS
 import { kanjiLot1Questions } from "../kanjiQuestions/kanjiLot1Questions";
 import { kanjiLot2Questions } from "../kanjiQuestions/kanjiLot2Questions";
+import { kanjiLot3Questions } from "../kanjiQuestions/kanjiLot3Questions";
 
 export const kanjiCatalogue = [
   {
@@ -22,5 +24,12 @@ export const kanjiCatalogue = [
     description: "Grands nombres, yen, jours de la semaine (partie 1)",
     vocab: kanjiLot2Vocab,
     questions: kanjiLot2Questions,
+  },
+  {
+    id: "lot3",
+    label: "Kanji Lot 3",
+    description: "Métaux, directions, tailles, nature",
+    vocab: kanjiLot3Vocab,
+    questions: kanjiLot3Questions,
   },
 ];
