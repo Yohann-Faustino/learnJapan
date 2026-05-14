@@ -1,0 +1,248 @@
+// src/data/kanjiQuestions/kanjiLot4Questions.ts
+import type { Question } from "../../types/Question";
+
+export const kanjiLot4Questions: Question[] = [
+  // QUESTIONS 1-10 : Quel est ce kanji ?
+  {
+    id: 1,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'bouche' ?",
+    options: [
+      { text: "口", correct: true },
+      { text: "目", correct: false },
+      { text: "耳", correct: false },
+      { text: "手", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'œil' ?",
+    options: [
+      { text: "目", correct: true },
+      { text: "口", correct: false },
+      { text: "耳", correct: false },
+      { text: "手", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'oreille' ?",
+    options: [
+      { text: "耳", correct: true },
+      { text: "口", correct: false },
+      { text: "目", correct: false },
+      { text: "手", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'main' ?",
+    options: [
+      { text: "手", correct: true },
+      { text: "足", correct: false },
+      { text: "心", correct: false },
+      { text: "口", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'pied / jambe' ?",
+    options: [
+      { text: "足", correct: true },
+      { text: "手", correct: false },
+      { text: "心", correct: false },
+      { text: "力", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'cœur' ?",
+    options: [
+      { text: "心", correct: true },
+      { text: "気", correct: false },
+      { text: "力", correct: false },
+      { text: "口", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'force' ?",
+    options: [
+      { text: "力", correct: true },
+      { text: "気", correct: false },
+      { text: "心", correct: false },
+      { text: "休", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'énergie / esprit' ?",
+    options: [
+      { text: "気", correct: true },
+      { text: "心", correct: false },
+      { text: "力", correct: false },
+      { text: "休", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'se reposer' ?",
+    options: [
+      { text: "休", correct: true },
+      { text: "行", correct: false },
+      { text: "気", correct: false },
+      { text: "心", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Quel est le kanji pour 'aller' ?",
+    options: [
+      { text: "行", correct: true },
+      { text: "休", correct: false },
+      { text: "足", correct: false },
+      { text: "手", correct: false },
+    ],
+  },
+
+  // QUESTIONS 11-20 : Que signifie ce kanji ?
+  {
+    id: 11,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '口' ?",
+    options: [
+      { text: "bouche", correct: true },
+      { text: "œil", correct: false },
+      { text: "oreille", correct: false },
+      { text: "main", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '目' ?",
+    options: [
+      { text: "œil", correct: true },
+      { text: "bouche", correct: false },
+      { text: "oreille", correct: false },
+      { text: "pied", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '耳' ?",
+    options: [
+      { text: "oreille", correct: true },
+      { text: "œil", correct: false },
+      { text: "bouche", correct: false },
+      { text: "main", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '手' ?",
+    options: [
+      { text: "main", correct: true },
+      { text: "pied", correct: false },
+      { text: "cœur", correct: false },
+      { text: "force", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '足' ?",
+    options: [
+      { text: "pied / jambe", correct: true },
+      { text: "main", correct: false },
+      { text: "cœur", correct: false },
+      { text: "force", correct: false },
+    ],
+  },
+  {
+    id: 16,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '心' ?",
+    options: [
+      { text: "cœur", correct: true },
+      { text: "énergie", correct: false },
+      { text: "force", correct: false },
+      { text: "bouche", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '力' ?",
+    options: [
+      { text: "force", correct: true },
+      { text: "cœur", correct: false },
+      { text: "énergie", correct: false },
+      { text: "repos", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '気' ?",
+    options: [
+      { text: "énergie / esprit", correct: true },
+      { text: "cœur", correct: false },
+      { text: "force", correct: false },
+      { text: "aller", correct: false },
+    ],
+  },
+  {
+    id: 19,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '休' ?",
+    options: [
+      { text: "se reposer", correct: true },
+      { text: "aller", correct: false },
+      { text: "énergie", correct: false },
+      { text: "force", correct: false },
+    ],
+  },
+  {
+    id: 20,
+    category: "kanji",
+    subCategory: "lot4",
+    question: "Que signifie le kanji '行' ?",
+    options: [
+      { text: "aller", correct: true },
+      { text: "se reposer", correct: false },
+      { text: "énergie", correct: false },
+      { text: "force", correct: false },
+    ],
+  },
+];
