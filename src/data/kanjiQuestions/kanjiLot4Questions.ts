@@ -1,4 +1,3 @@
-// src/data/kanjiQuestions/kanjiLot4Questions.ts
 import type { Question } from "../../types/Question";
 
 export const kanjiLot4Questions: Question[] = [
