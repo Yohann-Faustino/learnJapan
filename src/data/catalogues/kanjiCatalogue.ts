@@ -6,6 +6,7 @@ import { kanjiLot2Vocab } from "../kanjiVocab/kanjiLot2Vocab";
 import { kanjiLot3Vocab } from "../kanjiVocab/kanjiLot3Vocab";
 import { kanjiLot4Vocab } from "../kanjiVocab/kanjiLot4Vocab";
 import { kanjiLot5Vocab } from "../kanjiVocab/kanjiLot5Vocab";
+import { kanjiLot6Vocab } from "../kanjiVocab/kanjiLot6Vocab";
 
 // 2. IMPORTS DES QUESTIONS
 import { kanjiLot1Questions } from "../kanjiQuestions/kanjiLot1Questions";
@@ -13,6 +14,7 @@ import { kanjiLot2Questions } from "../kanjiQuestions/kanjiLot2Questions";
 import { kanjiLot3Questions } from "../kanjiQuestions/kanjiLot3Questions";
 import { kanjiLot4Questions } from "../kanjiQuestions/kanjiLot4Questions";
 import { kanjiLot5Questions } from "../kanjiQuestions/kanjiLot5Questions";
+import { kanjiLot6Questions } from "../kanjiQuestions/kanjiLot6Questions";
 
 export const kanjiCatalogue = [
   {
@@ -38,16 +40,23 @@ export const kanjiCatalogue = [
   },
   {
     id: "lot4",
-    label: "Kanji Lot 4 (31-40)",
+    label: "Kanji Lot 4",
     description: "Le corps humain et les actions de base",
     vocab: kanjiLot4Vocab,
     questions: kanjiLot4Questions,
   },
   {
     id: "lot5",
-    label: "Kanji Lot 5 (41-50)",
+    label: "Kanji Lot 5",
     description: "Les verbes d'action essentiels",
     vocab: kanjiLot5Vocab,
     questions: kanjiLot5Questions,
+  },
+  {
+    id: "lot6",
+    label: "Kanji Lot 6",
+    description: "Les verbes du quotidien",
+    vocab: kanjiLot6Vocab,
+    questions: kanjiLot6Questions,
   },
 ];
