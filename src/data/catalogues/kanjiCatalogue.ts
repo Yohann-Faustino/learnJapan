@@ -7,6 +7,7 @@ import { kanjiLot3Vocab } from "../kanjiVocab/kanjiLot3Vocab";
 import { kanjiLot4Vocab } from "../kanjiVocab/kanjiLot4Vocab";
 import { kanjiLot5Vocab } from "../kanjiVocab/kanjiLot5Vocab";
 import { kanjiLot6Vocab } from "../kanjiVocab/kanjiLot6Vocab";
+import { kanjiLot7Vocab } from "../kanjiVocab/kanjiLot7Vocab";
 
 // 2. IMPORTS DES QUESTIONS
 import { kanjiLot1Questions } from "../kanjiQuestions/kanjiLot1Questions";
@@ -15,6 +16,7 @@ import { kanjiLot3Questions } from "../kanjiQuestions/kanjiLot3Questions";
 import { kanjiLot4Questions } from "../kanjiQuestions/kanjiLot4Questions";
 import { kanjiLot5Questions } from "../kanjiQuestions/kanjiLot5Questions";
 import { kanjiLot6Questions } from "../kanjiQuestions/kanjiLot6Questions";
+import { kanjiLot7Questions } from "../kanjiQuestions/kanjiLot7Questions";
 
 export const kanjiCatalogue = [
   {
@@ -58,5 +60,12 @@ export const kanjiCatalogue = [
     description: "Les verbes du quotidien",
     vocab: kanjiLot6Vocab,
     questions: kanjiLot6Questions,
+  },
+  {
+    id: "lot7",
+    label: "Kanji Lot 7",
+    description: "Les adjectifs du quotidien",
+    vocab: kanjiLot7Vocab,
+    questions: kanjiLot7Questions,
   },
 ];
