@@ -1,0 +1,248 @@
+// src/data/kanjiQuestions/kanjiLot8Questions.ts
+import type { Question } from "../../types/Question";
+
+export const kanjiLot8Questions: Question[] = [
+  // QUESTIONS 1-10 : Quel est ce kanji ?
+  {
+    id: 1,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'froid' ?",
+    options: [
+      { text: "寒", correct: true },
+      { text: "暖", correct: false },
+      { text: "早", correct: false },
+      { text: "遅", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'chaud (température)' ?",
+    options: [
+      { text: "暖", correct: true },
+      { text: "寒", correct: false },
+      { text: "早", correct: false },
+      { text: "遅", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'tôt / rapide' ?",
+    options: [
+      { text: "早", correct: true },
+      { text: "遅", correct: false },
+      { text: "多", correct: false },
+      { text: "少", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'tard / lent' ?",
+    options: [
+      { text: "遅", correct: true },
+      { text: "早", correct: false },
+      { text: "多", correct: false },
+      { text: "少", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'beaucoup' ?",
+    options: [
+      { text: "多", correct: true },
+      { text: "少", correct: false },
+      { text: "難", correct: false },
+      { text: "易", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'peu' ?",
+    options: [
+      { text: "少", correct: true },
+      { text: "多", correct: false },
+      { text: "難", correct: false },
+      { text: "易", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'difficile' ?",
+    options: [
+      { text: "難", correct: true },
+      { text: "易", correct: false },
+      { text: "強", correct: false },
+      { text: "弱", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'facile' ?",
+    options: [
+      { text: "易", correct: true },
+      { text: "難", correct: false },
+      { text: "強", correct: false },
+      { text: "弱", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'fort' ?",
+    options: [
+      { text: "強", correct: true },
+      { text: "弱", correct: false },
+      { text: "難", correct: false },
+      { text: "易", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Quel est le kanji pour 'faible' ?",
+    options: [
+      { text: "弱", correct: true },
+      { text: "強", correct: false },
+      { text: "難", correct: false },
+      { text: "易", correct: false },
+    ],
+  },
+
+  // QUESTIONS 11-20 : Que signifie ce kanji ?
+  {
+    id: 11,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '寒' ?",
+    options: [
+      { text: "froid", correct: true },
+      { text: "chaud", correct: false },
+      { text: "tôt", correct: false },
+      { text: "tard", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '暖' ?",
+    options: [
+      { text: "chaud (température)", correct: true },
+      { text: "froid", correct: false },
+      { text: "tôt", correct: false },
+      { text: "tard", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '早' ?",
+    options: [
+      { text: "tôt / rapide", correct: true },
+      { text: "tard / lent", correct: false },
+      { text: "beaucoup", correct: false },
+      { text: "peu", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '遅' ?",
+    options: [
+      { text: "tard / lent", correct: true },
+      { text: "tôt / rapide", correct: false },
+      { text: "beaucoup", correct: false },
+      { text: "peu", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '多' ?",
+    options: [
+      { text: "beaucoup", correct: true },
+      { text: "peu", correct: false },
+      { text: "difficile", correct: false },
+      { text: "facile", correct: false },
+    ],
+  },
+  {
+    id: 16,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '少' ?",
+    options: [
+      { text: "peu", correct: true },
+      { text: "beaucoup", correct: false },
+      { text: "difficile", correct: false },
+      { text: "facile", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '難' ?",
+    options: [
+      { text: "difficile", correct: true },
+      { text: "facile", correct: false },
+      { text: "fort", correct: false },
+      { text: "faible", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '易' ?",
+    options: [
+      { text: "facile", correct: true },
+      { text: "difficile", correct: false },
+      { text: "fort", correct: false },
+      { text: "faible", correct: false },
+    ],
+  },
+  {
+    id: 19,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '強' ?",
+    options: [
+      { text: "fort", correct: true },
+      { text: "faible", correct: false },
+      { text: "difficile", correct: false },
+      { text: "facile", correct: false },
+    ],
+  },
+  {
+    id: 20,
+    category: "kanji",
+    subCategory: "lot8",
+    question: "Que signifie le kanji '弱' ?",
+    options: [
+      { text: "faible", correct: true },
+      { text: "fort", correct: false },
+      { text: "difficile", correct: false },
+      { text: "facile", correct: false },
+    ],
+  },
+];

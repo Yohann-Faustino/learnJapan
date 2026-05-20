@@ -8,6 +8,7 @@ import { kanjiLot4Vocab } from "../kanjiVocab/kanjiLot4Vocab";
 import { kanjiLot5Vocab } from "../kanjiVocab/kanjiLot5Vocab";
 import { kanjiLot6Vocab } from "../kanjiVocab/kanjiLot6Vocab";
 import { kanjiLot7Vocab } from "../kanjiVocab/kanjiLot7Vocab";
+import { kanjiLot8Vocab } from "../kanjiVocab/kanjiLot8Vocab";
 
 // 2. IMPORTS DES QUESTIONS
 import { kanjiLot1Questions } from "../kanjiQuestions/kanjiLot1Questions";
@@ -17,6 +18,7 @@ import { kanjiLot4Questions } from "../kanjiQuestions/kanjiLot4Questions";
 import { kanjiLot5Questions } from "../kanjiQuestions/kanjiLot5Questions";
 import { kanjiLot6Questions } from "../kanjiQuestions/kanjiLot6Questions";
 import { kanjiLot7Questions } from "../kanjiQuestions/kanjiLot7Questions";
+import { kanjiLot8Questions } from "../kanjiQuestions/kanjiLot8Questions";
 
 export const kanjiCatalogue = [
   {
@@ -67,5 +69,12 @@ export const kanjiCatalogue = [
     description: "Les adjectifs du quotidien",
     vocab: kanjiLot7Vocab,
     questions: kanjiLot7Questions,
+  },
+  {
+    id: "lot8",
+    label: "Kanji Lot 8 (71-80)",
+    description: "Les contraires : température, quantité, force",
+    vocab: kanjiLot8Vocab,
+    questions: kanjiLot8Questions,
   },
 ];
