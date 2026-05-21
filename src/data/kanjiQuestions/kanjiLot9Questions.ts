@@ -1,0 +1,248 @@
+// src/data/kanjiQuestions/kanjiLot9Questions.ts
+import type { Question } from "../../types/Question";
+
+export const kanjiLot9Questions: Question[] = [
+  // QUESTIONS 1-10 : Quel est ce kanji ?
+  {
+    id: 1,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'lourd' ?",
+    options: [
+      { text: "重", correct: true },
+      { text: "軽", correct: false },
+      { text: "深", correct: false },
+      { text: "浅", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'léger' ?",
+    options: [
+      { text: "軽", correct: true },
+      { text: "重", correct: false },
+      { text: "深", correct: false },
+      { text: "浅", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'profond' ?",
+    options: [
+      { text: "深", correct: true },
+      { text: "浅", correct: false },
+      { text: "広", correct: false },
+      { text: "狭", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'peu profond' ?",
+    options: [
+      { text: "浅", correct: true },
+      { text: "深", correct: false },
+      { text: "広", correct: false },
+      { text: "狭", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'large / spacieux' ?",
+    options: [
+      { text: "広", correct: true },
+      { text: "狭", correct: false },
+      { text: "太", correct: false },
+      { text: "細", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'étroit' ?",
+    options: [
+      { text: "狭", correct: true },
+      { text: "広", correct: false },
+      { text: "太", correct: false },
+      { text: "細", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'gros / épais' ?",
+    options: [
+      { text: "太", correct: true },
+      { text: "細", correct: false },
+      { text: "遠", correct: false },
+      { text: "近", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'mince / fin' ?",
+    options: [
+      { text: "細", correct: true },
+      { text: "太", correct: false },
+      { text: "遠", correct: false },
+      { text: "近", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'loin' ?",
+    options: [
+      { text: "遠", correct: true },
+      { text: "近", correct: false },
+      { text: "重", correct: false },
+      { text: "軽", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Quel est le kanji pour 'près' ?",
+    options: [
+      { text: "近", correct: true },
+      { text: "遠", correct: false },
+      { text: "重", correct: false },
+      { text: "軽", correct: false },
+    ],
+  },
+
+  // QUESTIONS 11-20 : Que signifie ce kanji ?
+  {
+    id: 11,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '重' ?",
+    options: [
+      { text: "lourd", correct: true },
+      { text: "léger", correct: false },
+      { text: "profond", correct: false },
+      { text: "peu profond", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '軽' ?",
+    options: [
+      { text: "léger", correct: true },
+      { text: "lourd", correct: false },
+      { text: "profond", correct: false },
+      { text: "peu profond", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '深' ?",
+    options: [
+      { text: "profond", correct: true },
+      { text: "peu profond", correct: false },
+      { text: "large", correct: false },
+      { text: "étroit", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '浅' ?",
+    options: [
+      { text: "peu profond", correct: true },
+      { text: "profond", correct: false },
+      { text: "large", correct: false },
+      { text: "étroit", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '広' ?",
+    options: [
+      { text: "large / spacieux", correct: true },
+      { text: "étroit", correct: false },
+      { text: "gros", correct: false },
+      { text: "mince", correct: false },
+    ],
+  },
+  {
+    id: 16,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '狭' ?",
+    options: [
+      { text: "étroit", correct: true },
+      { text: "large / spacieux", correct: false },
+      { text: "gros", correct: false },
+      { text: "mince", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '太' ?",
+    options: [
+      { text: "gros / épais", correct: true },
+      { text: "mince / fin", correct: false },
+      { text: "loin", correct: false },
+      { text: "près", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '細' ?",
+    options: [
+      { text: "mince / fin", correct: true },
+      { text: "gros / épais", correct: false },
+      { text: "loin", correct: false },
+      { text: "près", correct: false },
+    ],
+  },
+  {
+    id: 19,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '遠' ?",
+    options: [
+      { text: "loin", correct: true },
+      { text: "près", correct: false },
+      { text: "lourd", correct: false },
+      { text: "léger", correct: false },
+    ],
+  },
+  {
+    id: 20,
+    category: "kanji",
+    subCategory: "lot9",
+    question: "Que signifie le kanji '近' ?",
+    options: [
+      { text: "près", correct: true },
+      { text: "loin", correct: false },
+      { text: "lourd", correct: false },
+      { text: "léger", correct: false },
+    ],
+  },
+];

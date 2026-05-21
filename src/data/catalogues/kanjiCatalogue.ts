@@ -9,6 +9,7 @@ import { kanjiLot5Vocab } from "../kanjiVocab/kanjiLot5Vocab";
 import { kanjiLot6Vocab } from "../kanjiVocab/kanjiLot6Vocab";
 import { kanjiLot7Vocab } from "../kanjiVocab/kanjiLot7Vocab";
 import { kanjiLot8Vocab } from "../kanjiVocab/kanjiLot8Vocab";
+import { kanjiLot9Vocab } from "../kanjiVocab/KanjiLot9Vocab";
 
 // 2. IMPORTS DES QUESTIONS
 import { kanjiLot1Questions } from "../kanjiQuestions/kanjiLot1Questions";
@@ -19,6 +20,7 @@ import { kanjiLot5Questions } from "../kanjiQuestions/kanjiLot5Questions";
 import { kanjiLot6Questions } from "../kanjiQuestions/kanjiLot6Questions";
 import { kanjiLot7Questions } from "../kanjiQuestions/kanjiLot7Questions";
 import { kanjiLot8Questions } from "../kanjiQuestions/kanjiLot8Questions";
+import { kanjiLot9Questions } from "../kanjiQuestions/kanjiLot9Questions";
 
 export const kanjiCatalogue = [
   {
@@ -76,5 +78,12 @@ export const kanjiCatalogue = [
     description: "Les contraires : température, quantité, force",
     vocab: kanjiLot8Vocab,
     questions: kanjiLot8Questions,
+  },
+  {
+    id: "lot9",
+    label: "Kanji Lot 9 (81-90)",
+    description: "Les contraires : poids, profondeur, taille, distance",
+    vocab: kanjiLot9Vocab,
+    questions: kanjiLot9Questions,
   },
 ];
