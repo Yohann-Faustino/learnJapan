@@ -1,0 +1,248 @@
+// src/data/kanjiQuestions/kanjiLot10Questions.ts
+import type { Question } from "../../types/Question";
+
+export const kanjiLot10Questions: Question[] = [
+  // QUESTIONS 1-10 : Quel est ce kanji ?
+  {
+    id: 1,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'je / moi' ?",
+    options: [
+      { text: "私", correct: true },
+      { text: "君", correct: false },
+      { text: "何", correct: false },
+      { text: "誰", correct: false },
+    ],
+  },
+  {
+    id: 2,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'toi' ?",
+    options: [
+      { text: "君", correct: true },
+      { text: "私", correct: false },
+      { text: "何", correct: false },
+      { text: "誰", correct: false },
+    ],
+  },
+  {
+    id: 3,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'quoi' ?",
+    options: [
+      { text: "何", correct: true },
+      { text: "誰", correct: false },
+      { text: "所", correct: false },
+      { text: "時", correct: false },
+    ],
+  },
+  {
+    id: 4,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'qui' ?",
+    options: [
+      { text: "誰", correct: true },
+      { text: "何", correct: false },
+      { text: "所", correct: false },
+      { text: "時", correct: false },
+    ],
+  },
+  {
+    id: 5,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'endroit' ?",
+    options: [
+      { text: "所", correct: true },
+      { text: "時", correct: false },
+      { text: "間", correct: false },
+      { text: "年", correct: false },
+    ],
+  },
+  {
+    id: 6,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'temps' ?",
+    options: [
+      { text: "時", correct: true },
+      { text: "所", correct: false },
+      { text: "間", correct: false },
+      { text: "年", correct: false },
+    ],
+  },
+  {
+    id: 7,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'intervalle / pendant' ?",
+    options: [
+      { text: "間", correct: true },
+      { text: "時", correct: false },
+      { text: "年", correct: false },
+      { text: "月", correct: false },
+    ],
+  },
+  {
+    id: 8,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'année' ?",
+    options: [
+      { text: "年", correct: true },
+      { text: "月", correct: false },
+      { text: "週", correct: false },
+      { text: "間", correct: false },
+    ],
+  },
+  {
+    id: 9,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'mois / lune' ?",
+    options: [
+      { text: "月", correct: true },
+      { text: "年", correct: false },
+      { text: "週", correct: false },
+      { text: "日", correct: false },
+    ],
+  },
+  {
+    id: 10,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Quel est le kanji pour 'semaine' ?",
+    options: [
+      { text: "週", correct: true },
+      { text: "月", correct: false },
+      { text: "年", correct: false },
+      { text: "日", correct: false },
+    ],
+  },
+
+  // QUESTIONS 11-20 : Que signifie ce kanji ?
+  {
+    id: 11,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '私' ?",
+    options: [
+      { text: "je / moi", correct: true },
+      { text: "toi", correct: false },
+      { text: "quoi", correct: false },
+      { text: "qui", correct: false },
+    ],
+  },
+  {
+    id: 12,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '君' ?",
+    options: [
+      { text: "toi", correct: true },
+      { text: "je / moi", correct: false },
+      { text: "quoi", correct: false },
+      { text: "qui", correct: false },
+    ],
+  },
+  {
+    id: 13,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '何' ?",
+    options: [
+      { text: "quoi", correct: true },
+      { text: "qui", correct: false },
+      { text: "endroit", correct: false },
+      { text: "temps", correct: false },
+    ],
+  },
+  {
+    id: 14,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '誰' ?",
+    options: [
+      { text: "qui", correct: true },
+      { text: "quoi", correct: false },
+      { text: "endroit", correct: false },
+      { text: "temps", correct: false },
+    ],
+  },
+  {
+    id: 15,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '所' ?",
+    options: [
+      { text: "endroit", correct: true },
+      { text: "temps", correct: false },
+      { text: "intervalle", correct: false },
+      { text: "année", correct: false },
+    ],
+  },
+  {
+    id: 16,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '時' ?",
+    options: [
+      { text: "temps", correct: true },
+      { text: "endroit", correct: false },
+      { text: "intervalle", correct: false },
+      { text: "année", correct: false },
+    ],
+  },
+  {
+    id: 17,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '間' ?",
+    options: [
+      { text: "intervalle / pendant", correct: true },
+      { text: "temps", correct: false },
+      { text: "année", correct: false },
+      { text: "mois", correct: false },
+    ],
+  },
+  {
+    id: 18,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '年' ?",
+    options: [
+      { text: "année", correct: true },
+      { text: "mois", correct: false },
+      { text: "semaine", correct: false },
+      { text: "intervalle", correct: false },
+    ],
+  },
+  {
+    id: 19,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '月' ?",
+    options: [
+      { text: "mois / lune", correct: true },
+      { text: "année", correct: false },
+      { text: "semaine", correct: false },
+      { text: "jour", correct: false },
+    ],
+  },
+  {
+    id: 20,
+    category: "kanji",
+    subCategory: "lot10",
+    question: "Que signifie le kanji '週' ?",
+    options: [
+      { text: "semaine", correct: true },
+      { text: "mois", correct: false },
+      { text: "année", correct: false },
+      { text: "jour", correct: false },
+    ],
+  },
+];
