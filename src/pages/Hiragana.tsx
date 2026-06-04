@@ -62,6 +62,8 @@ export default function HiraganaPage() {
             <Quiz
               questions={currentSection.questions}
               title={`Quiz ${currentSection.label}`}
+              category="hiragana"
+              subCategory={currentSection.id}
             />
           </div>
         </div>

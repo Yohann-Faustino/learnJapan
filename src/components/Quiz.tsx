@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import type { Question, Option } from "../types/Question";
 import QuizButton from "./QuizButton";
+import { saveQuizScore } from "../services/progressService";
 
 type QuizProps = {
   questions: Question[];
@@ -9,7 +10,12 @@ type QuizProps = {
   subCategory?: string;
 };
 
-export default function Quiz({ questions, title }: QuizProps) {
+export default function Quiz({
+  questions,
+  title,
+  category,
+  subCategory,
+}: QuizProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [showScore, setShowScore] = useState<boolean>(false);
@@ -22,12 +28,24 @@ export default function Quiz({ questions, title }: QuizProps) {
   }, [questions]);
 
   const handleAnswer = (correct: boolean) => {
-    if (correct) setScore((s) => s + 1);
-
+    const newScore = score + (correct ? 1 : 0);
     const nextIndex = currentIndex + 1;
+
     if (nextIndex < shuffledQuestions.length) {
+      setScore(newScore);
       setCurrentIndex(nextIndex);
     } else {
+      // Calcul du score final en pourcentage
+      const finalScore = Math.round(
+        (newScore / shuffledQuestions.length) * 100,
+      );
+
+      // Sauvegarde du score
+      if (category && subCategory) {
+        saveQuizScore(category, subCategory, finalScore);
+      }
+
+      setScore(newScore);
       setShowScore(true);
     }
   };
@@ -43,6 +61,7 @@ export default function Quiz({ questions, title }: QuizProps) {
           <p>
             🎉 Ton score : {score} / {shuffledQuestions.length}
           </p>
+          <p>Soit : {Math.round((score / shuffledQuestions.length) * 100)}%</p>
         </div>
       ) : (
         <div>
