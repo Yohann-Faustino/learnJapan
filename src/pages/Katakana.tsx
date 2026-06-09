@@ -62,6 +62,8 @@ export default function KatakanaPage() {
             <Quiz
               questions={currentSection.questions}
               title={`Quiz ${currentSection.label}`}
+              category="katakana"
+              subCategory={currentSection.id}
             />
           </div>
         </div>

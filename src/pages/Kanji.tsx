@@ -67,6 +67,8 @@ export default function KanjiPage() {
             <Quiz
               questions={currentSection.questions}
               title={`Quiz ${currentSection.label}`}
+              category="kanji"
+              subCategory={currentSection.id}
             />
           </div>
         </div>

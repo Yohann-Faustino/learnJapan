@@ -64,6 +64,8 @@ export default function BaseVocabularyPage() {
             <Quiz
               questions={currentSection.questions}
               title={`Quiz ${currentSection.label}`}
+              category="vocabulaire"
+              subCategory={currentSection.id}
             />
           </div>
         </div>

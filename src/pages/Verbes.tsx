@@ -77,6 +77,8 @@ export default function VerbesPage() {
             <Quiz
               questions={currentSection.questions}
               title={`Quiz ${currentSection.label}`}
+              category="verbes"
+              subCategory={currentSection.id}
             />
           </div>
         </div>
