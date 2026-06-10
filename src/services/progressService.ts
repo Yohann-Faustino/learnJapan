@@ -27,3 +27,25 @@ export function saveQuizScore(
 
   localStorage.setItem(key, JSON.stringify(data));
 }
+
+// Récupérer et exporter le meilleur score
+export function getBestScore(
+  category: string,
+  subCategory: string,
+): number | null {
+  const key = `${category}_${subCategory}`;
+  const data = localStorage.getItem(key);
+  if (!data) return null;
+  return JSON.parse(data).bestScore;
+}
+
+// Récupérer et exporter le dernier score
+export function getLastScore(
+  category: string,
+  subCategory: string,
+): number | null {
+  const key = `${category}_${subCategory}`;
+  const data = localStorage.getItem(key);
+  if (!data) return null;
+  return JSON.parse(data).lastScore;
+}
