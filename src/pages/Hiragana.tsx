@@ -7,13 +7,11 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { hiraganaCatalogue } from "../data/catalogues/hiraganaCatalogue";
-import { getBestScore, getLastScore } from "../services/progressService";
+import { ScoreDisplay } from "../components/ScoreDisplay";
 
 export default function HiraganaPage() {
   const [activeSection, setActiveSection] = useState(hiraganaCatalogue[0].id);
   const currentSection = hiraganaCatalogue.find((s) => s.id === activeSection)!;
-  const lastScore = getLastScore("hiragana", currentSection.id);
-  const bestScore = getBestScore("hiragana", currentSection.id);
 
   const renderPronunciation = () => (
     <div className={styles.pronunciation}>
@@ -62,13 +60,7 @@ export default function HiraganaPage() {
           {renderVocab()}
 
           {/* AFFICHAGE DES SCORES */}
-          {lastScore !== null && (
-            <div className={styles.scoreDisplay}>
-              <p>
-                📊 Dernier score : {lastScore}% | Meilleur : {bestScore}%
-              </p>
-            </div>
-          )}
+          <ScoreDisplay category="hiragana" subCategory={currentSection.id} />
 
           <div className={styles.miniQuiz}>
             <Quiz

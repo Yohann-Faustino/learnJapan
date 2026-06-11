@@ -5,6 +5,7 @@ import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { verbesCatalogue } from "../data/catalogues/verbesCatalogue";
 import FrenchRevealButton from "../components/FrenchRevealButton";
+import { ScoreDisplay } from "../components/ScoreDisplay";
 
 export default function VerbesPage() {
   const [activeSection, setActiveSection] = useState(verbesCatalogue[0].id);
@@ -72,6 +73,9 @@ export default function VerbesPage() {
 
           <h3>Mini-vocabulaire</h3>
           {renderVocab()}
+
+          {/* AFFICHAGE DES SCORES */}
+          <ScoreDisplay category="verbes" subCategory={currentSection.id} />
 
           <div className={styles.miniQuiz}>
             <Quiz

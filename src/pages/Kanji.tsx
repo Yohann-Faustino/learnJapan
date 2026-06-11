@@ -5,6 +5,7 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { kanjiCatalogue } from "../data/catalogues/kanjiCatalogue";
+import { ScoreDisplay } from "../components/ScoreDisplay";
 
 export default function KanjiPage() {
   const [activeSection, setActiveSection] = useState(kanjiCatalogue[0].id);
@@ -62,6 +63,9 @@ export default function KanjiPage() {
 
           <h3>Mini-vocabulaire</h3>
           {renderVocab()}
+
+          {/* AFFICHAGE DES SCORES */}
+          <ScoreDisplay category="kanji" subCategory={currentSection.id} />
 
           <div className={styles.miniQuiz}>
             <Quiz

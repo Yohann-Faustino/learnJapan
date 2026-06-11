@@ -7,6 +7,7 @@ import BackButton from "../components/BackButton";
 import TabButton from "../components/TabButton";
 import styles from "./BaseVocabulary.module.css";
 import { baseVocabCatalogue } from "../data/catalogues/baseVocabCatalogue";
+import { ScoreDisplay } from "../components/ScoreDisplay";
 
 export default function BaseVocabularyPage() {
   const [activeSection, setActiveSection] = useState(baseVocabCatalogue[0].id);
@@ -59,6 +60,12 @@ export default function BaseVocabularyPage() {
 
           <h3>Vocabulaire</h3>
           {renderMiniVocab()}
+
+          {/* AFFICHAGE DES SCORES */}
+          <ScoreDisplay
+            category="vocabulaire"
+            subCategory={currentSection.id}
+          />
 
           <div className={styles.miniQuiz}>
             <Quiz

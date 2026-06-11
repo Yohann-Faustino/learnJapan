@@ -1,6 +1,6 @@
 import Quiz from "../components/Quiz";
 import BackButton from "../components/BackButton";
-
+import { ScoreDisplay } from "../components/ScoreDisplay";
 import {
   particulesQuestions,
   particulesVocab,
@@ -111,6 +111,9 @@ export default function ParticlesPage() {
             dans les conversations
           </p>
         </div>
+
+        {/* AFFICHAGE DES SCORES */}
+        <ScoreDisplay category="grammaire" subCategory="particules" />
 
         <div style={{ margin: "2rem 0" }}>
           <Quiz
