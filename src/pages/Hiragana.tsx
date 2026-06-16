@@ -7,7 +7,7 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { hiraganaCatalogue } from "../data/catalogues/hiraganaCatalogue";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 
 export default function HiraganaPage() {
   const [activeSection, setActiveSection] = useState(hiraganaCatalogue[0].id);

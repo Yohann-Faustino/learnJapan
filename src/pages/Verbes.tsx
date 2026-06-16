@@ -5,7 +5,7 @@ import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { verbesCatalogue } from "../data/catalogues/verbesCatalogue";
 import FrenchRevealButton from "../components/FrenchRevealButton";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 
 export default function VerbesPage() {
   const [activeSection, setActiveSection] = useState(verbesCatalogue[0].id);

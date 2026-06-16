@@ -1,6 +1,6 @@
 import Quiz from "../components/Quiz";
 import BackButton from "../components/BackButton";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 import {
   particulesQuestions,
   particulesVocab,

@@ -59,7 +59,7 @@ export default function Quiz({
         <div>
           <h2>{title || "Quiz terminé !"}</h2>
           <p>
-            🎉 Ton score : {score} / {shuffledQuestions.length}
+            Ton score : {score} / {shuffledQuestions.length}
           </p>
           <p>Soit : {Math.round((score / shuffledQuestions.length) * 100)}%</p>
         </div>

@@ -5,7 +5,7 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { kanjiCatalogue } from "../data/catalogues/kanjiCatalogue";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 
 export default function KanjiPage() {
   const [activeSection, setActiveSection] = useState(kanjiCatalogue[0].id);

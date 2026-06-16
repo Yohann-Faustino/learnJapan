@@ -7,7 +7,7 @@ import BackButton from "../components/BackButton";
 import TabButton from "../components/TabButton";
 import styles from "./BaseVocabulary.module.css";
 import { baseVocabCatalogue } from "../data/catalogues/baseVocabCatalogue";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 
 export default function BaseVocabularyPage() {
   const [activeSection, setActiveSection] = useState(baseVocabCatalogue[0].id);

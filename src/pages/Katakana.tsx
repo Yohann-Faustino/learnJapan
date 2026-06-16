@@ -7,7 +7,7 @@ import RevealButton from "../components/RevealButton";
 import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { katakanaCatalogue } from "../data/catalogues/katakanaCatalogue";
-import { ScoreDisplay } from "../components/ScoreDisplay";
+import ScoreDisplay from "../components/ScoreDisplay";
 
 export default function KatakanaPage() {
   const [activeSection, setActiveSection] = useState(katakanaCatalogue[0].id);
