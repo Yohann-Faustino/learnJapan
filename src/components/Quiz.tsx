@@ -19,6 +19,7 @@ export default function Quiz({
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [showScore, setShowScore] = useState<boolean>(false);
+  const [finalScore, setFinalScore] = useState<number>(0);
 
   const shuffledQuestions = useMemo(() => {
     return questions.map((q: Question) => ({
@@ -36,15 +37,16 @@ export default function Quiz({
       setCurrentIndex(nextIndex);
     } else {
       // Calcul du score final en pourcentage
-      const finalScore = Math.round(
+      const finalScoreValue = Math.round(
         (newScore / shuffledQuestions.length) * 100,
       );
 
       // Sauvegarde du score
       if (category && subCategory) {
-        saveQuizScore(category, subCategory, finalScore);
+        saveQuizScore(category, subCategory, finalScoreValue);
       }
 
+      setFinalScore(finalScoreValue);
       setScore(newScore);
       setShowScore(true);
     }
@@ -52,6 +54,9 @@ export default function Quiz({
 
   const currentQuestion = shuffledQuestions[currentIndex];
   if (!currentQuestion) return null;
+
+  // Calcul du pourcentage pour l'affichage
+  const percentage = Math.round((score / shuffledQuestions.length) * 100);
 
   return (
     <div>
@@ -61,7 +66,7 @@ export default function Quiz({
           <p>
             Ton score : {score} / {shuffledQuestions.length}
           </p>
-          <p>Soit : {Math.round((score / shuffledQuestions.length) * 100)}%</p>
+          <p>Soit : {finalScore || percentage}%</p>
         </div>
       ) : (
         <div>
