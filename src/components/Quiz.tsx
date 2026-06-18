@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import type { Question, Option } from "../types/Question";
 import QuizButton from "./QuizButton";
 import { saveQuizScore } from "../services/progressService";
+import { getScoreSmiley } from "./ScoreDisplay";
 
 type QuizProps = {
   questions: Question[];
@@ -57,6 +58,7 @@ export default function Quiz({
 
   // Calcul du pourcentage pour l'affichage
   const percentage = Math.round((score / shuffledQuestions.length) * 100);
+  const smiley = getScoreSmiley(finalScore || percentage);
 
   return (
     <div>
@@ -64,7 +66,7 @@ export default function Quiz({
         <div>
           <h2>{title || "Quiz terminé !"}</h2>
           <p>
-            Ton score : {score} / {shuffledQuestions.length}
+            {smiley} Ton score : {score} / {shuffledQuestions.length}
           </p>
           <p>Soit : {finalScore || percentage}%</p>
         </div>
