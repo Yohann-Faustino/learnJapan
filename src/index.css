@@ -24,20 +24,22 @@ body {
   color: black;
 }
 
-.parchemin {
-  /* Parchemin semi-transparent derrière le contenu */
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 1000px;
-  margin: 2rem auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
 ul {
   /* supprime les puces */
   list-style: none;
+}
+
+/* navigation */
+.navTabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(139, 69, 19, 0.1);
+  border-radius: 12px;
+  border: 2px solid #8b4513;
 }
 
 /* ========== MODE SOMBRE ========== */
@@ -46,88 +48,25 @@ body.dark {
 }
 
 body.dark .parchemin {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #e0e0e0;
-  border-left: 15px solid #1a1a2e;
-  border-right: 15px solid #1a1a2e;
+  background: #1e1a16;
+  border-left: 4px solid #b8956a;
+  border-right: 4px solid #b8956a;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
 }
 
-body.dark .card {
-  background-color: rgba(0, 40, 20, 0.9);
-  color: #e0e0e0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-}
-
-body.dark .card:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-body.dark .pronunciation {
-  background-color: rgba(50, 50, 50, 0.5);
-  color: #e0e0e0;
-}
-
-body.dark button:not(.themeToggle) {
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-  border-color: #444;
-}
-
-body.dark a {
-  color: #66ccff;
-}
-
-body.dark .navTabs {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-color: #333;
-}
-
-body.dark .section {
-  border-top-color: #444;
-}
-
-body.dark .section h3 {
-  color: #66ccff;
-}
-
-body.dark .cours {
-  background: rgba(0, 40, 20, 0.3);
-  border-left-color: #66ccff;
-}
-
-body.dark .miniQuiz {
-  background-color: #1a1a1a;
-  border-color: #333;
-}
-
-body.dark .backButtonContainer button {
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-}
-
-body.dark .backButtonContainer button:hover {
-  background-color: #3a3a3a;
+body.dark .parchemin::before,
+body.dark .parchemin::after {
+  color: #b8956a;
+  opacity: 0.3;
 }
 
 body.dark .title {
-  color: #e0e0e0;
-  border-bottom-color: #66ccff;
+  color: #ff0000;
+  border-bottom: 1px solid #4a3f35;
+  background-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-body.dark h1,
-body.dark h2,
-body.dark h3 {
-  color: #e0e0e0;
-}
-
-body.dark p {
-  color: #c0c0c0;
-}
-
-body.dark .homeContainer {
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-body.dark .categories {
-  color: #e0e0e0;
+body.dark .content {
+  color: #ff0000;
 }
