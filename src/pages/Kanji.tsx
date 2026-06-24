@@ -2,10 +2,10 @@ import { useState } from "react";
 import Quiz from "../components/Quiz";
 import TabButton from "../components/TabButton";
 import RevealButton from "../components/RevealButton";
-import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { kanjiCatalogue } from "../data/catalogues/kanjiCatalogue";
 import ScoreDisplay from "../components/ScoreDisplay";
+import ParcheminLayout from "../components/ParcheminLayout";
 
 export default function KanjiPage() {
   const [activeSection, setActiveSection] = useState(kanjiCatalogue[0].id);
@@ -42,10 +42,8 @@ export default function KanjiPage() {
   );
 
   return (
-    <div className={styles.parchemin}>
-      <h1 className={styles.title}>📖 Kanji japonais</h1>
-
-      <div className={styles.navTabs}>
+    <ParcheminLayout title="📖 Kanji japonais">
+      <div className="navTabs">
         {kanjiCatalogue.map((section) => (
           <TabButton
             key={section.id}
@@ -56,31 +54,25 @@ export default function KanjiPage() {
         ))}
       </div>
 
-      <div className="parchemin">
-        <div className={styles.content}>
-          <h2>{currentSection.label}</h2>
-          {renderDescription()}
+      <div className={styles.content}>
+        <h2>{currentSection.label}</h2>
+        {renderDescription()}
 
-          <h3>Mini-vocabulaire</h3>
-          {renderVocab()}
+        <h3>Mini-vocabulaire</h3>
+        {renderVocab()}
 
-          {/* AFFICHAGE DES SCORES */}
-          <ScoreDisplay category="kanji" subCategory={currentSection.id} />
+        {/* AFFICHAGE DES SCORES */}
+        <ScoreDisplay category="kanji" subCategory={currentSection.id} />
 
-          <div className={styles.miniQuiz}>
-            <Quiz
-              questions={currentSection.questions}
-              title={`Quiz ${currentSection.label}`}
-              category="kanji"
-              subCategory={currentSection.id}
-            />
-          </div>
-        </div>
-
-        <div className={styles.backButtonContainer}>
-          <BackButton />
+        <div className={styles.miniQuiz}>
+          <Quiz
+            questions={currentSection.questions}
+            title={`Quiz ${currentSection.label}`}
+            category="kanji"
+            subCategory={currentSection.id}
+          />
         </div>
       </div>
-    </div>
+    </ParcheminLayout>
   );
 }

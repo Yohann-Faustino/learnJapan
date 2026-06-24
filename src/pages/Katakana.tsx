@@ -4,10 +4,10 @@ import { useState } from "react";
 import Quiz from "../components/Quiz";
 import TabButton from "../components/TabButton";
 import RevealButton from "../components/RevealButton";
-import BackButton from "../components/BackButton";
 import styles from "./Hiragana.module.css";
 import { katakanaCatalogue } from "../data/catalogues/katakanaCatalogue";
 import ScoreDisplay from "../components/ScoreDisplay";
+import ParcheminLayout from "../components/ParcheminLayout";
 
 export default function KatakanaPage() {
   const [activeSection, setActiveSection] = useState(katakanaCatalogue[0].id);
@@ -37,10 +37,8 @@ export default function KatakanaPage() {
   );
 
   return (
-    <div className={styles.parchemin}>
-      <h1 className={styles.title}>Apprentissage des Katakana</h1>
-
-      <div className={styles.navTabs}>
+    <ParcheminLayout title="Apprentissage des Katakana">
+      <div className="navTabs">
         {katakanaCatalogue.map((section) => (
           <TabButton
             key={section.id}
@@ -51,31 +49,25 @@ export default function KatakanaPage() {
         ))}
       </div>
 
-      <div className="parchemin">
-        <div className={styles.content}>
-          <h2>{currentSection.label}</h2>
-          {renderPronunciation()}
+      <div className={styles.content}>
+        <h2>{currentSection.label}</h2>
+        {renderPronunciation()}
 
-          <h3>Mini-vocabulaire</h3>
-          {renderVocab()}
+        <h3>Mini-vocabulaire</h3>
+        {renderVocab()}
 
-          {/* AFFICHAGE DES SCORES */}
-          <ScoreDisplay category="katakana" subCategory={currentSection.id} />
+        {/* AFFICHAGE DES SCORES */}
+        <ScoreDisplay category="katakana" subCategory={currentSection.id} />
 
-          <div className={styles.miniQuiz}>
-            <Quiz
-              questions={currentSection.questions}
-              title={`Quiz ${currentSection.label}`}
-              category="katakana"
-              subCategory={currentSection.id}
-            />
-          </div>
-        </div>
-
-        <div className={styles.backButtonContainer}>
-          <BackButton />
+        <div className={styles.miniQuiz}>
+          <Quiz
+            questions={currentSection.questions}
+            title={`Quiz ${currentSection.label}`}
+            category="katakana"
+            subCategory={currentSection.id}
+          />
         </div>
       </div>
-    </div>
+    </ParcheminLayout>
   );
 }

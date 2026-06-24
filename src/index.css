@@ -21,7 +21,6 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Noto Sans", "Sawarabi Mincho", sans-serif;
-  color: black;
 }
 
 ul {
@@ -68,5 +67,15 @@ body.dark .title {
 }
 
 body.dark .content {
-  color: #ff0000;
+  color: #ffffff;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark td,
+body.dark th,
+body.dark li,
+body.dark span {
+  color: #d0c8bd;
 }

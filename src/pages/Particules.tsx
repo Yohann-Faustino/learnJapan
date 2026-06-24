@@ -1,24 +1,14 @@
 import Quiz from "../components/Quiz";
-import BackButton from "../components/BackButton";
 import ScoreDisplay from "../components/ScoreDisplay";
 import {
   particulesQuestions,
   particulesVocab,
 } from "../data/particules/particules";
+import ParcheminLayout from "../components/ParcheminLayout";
 
 export default function ParticlesPage() {
   return (
-    <div className="parchemin">
-      <h1
-        style={{
-          fontSize: "2rem",
-          marginBottom: "1.5rem",
-          textAlign: "center",
-        }}
-      >
-        Cours des Particules Japonaises
-      </h1>
-
+    <ParcheminLayout title="Cours des Particules Japonaises">
       <div style={{ textAlign: "left" }}>
         <h2>Pourquoi apprendre les particules ?</h2>
         <div style={{ marginBottom: "1.5rem" }}>
@@ -123,10 +113,6 @@ export default function ParticlesPage() {
           />
         </div>
       </div>
-
-      <div style={{ marginTop: "2rem", textAlign: "center" }}>
-        <BackButton />
-      </div>
-    </div>
+    </ParcheminLayout>
   );
 }

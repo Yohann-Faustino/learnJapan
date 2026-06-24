@@ -3,11 +3,11 @@
 import { useState } from "react";
 import Quiz from "../components/Quiz";
 import FrenchRevealButton from "../components/FrenchRevealButton";
-import BackButton from "../components/BackButton";
 import TabButton from "../components/TabButton";
 import styles from "./BaseVocabulary.module.css";
 import { baseVocabCatalogue } from "../data/catalogues/baseVocabCatalogue";
 import ScoreDisplay from "../components/ScoreDisplay";
+import ParcheminLayout from "../components/ParcheminLayout";
 
 export default function BaseVocabularyPage() {
   const [activeSection, setActiveSection] = useState(baseVocabCatalogue[0].id);
@@ -29,10 +29,8 @@ export default function BaseVocabularyPage() {
   );
 
   return (
-    <div className={styles.parchemin}>
-      <h1 className={styles.title}>📚 Vocabulaire de Base</h1>
-
-      <div className={styles.navTabs}>
+    <ParcheminLayout title="📚 Vocabulaire de Base">
+      <div className="navTabs">
         {baseVocabCatalogue.map((section) => (
           <TabButton
             key={section.id}
@@ -43,44 +41,35 @@ export default function BaseVocabularyPage() {
         ))}
       </div>
 
-      <div className="parchemin">
-        <div className={styles.content}>
-          <h2>{currentSection.label}</h2>
-          <div className={styles.cours}>
-            <p>{currentSection.description}</p>
+      <div className={styles.content}>
+        <h2>{currentSection.label}</h2>
+        <div className={styles.cours}>
+          <p>{currentSection.description}</p>
+          <p>
+            <strong>Phrase utile</strong> : {currentSection.phraseUtile}
+          </p>
+          {currentSection.astuce && (
             <p>
-              <strong>Phrase utile</strong> : {currentSection.phraseUtile}
+              <strong>Astuce</strong> : {currentSection.astuce}
             </p>
-            {currentSection.astuce && (
-              <p>
-                <strong>Astuce</strong> : {currentSection.astuce}
-              </p>
-            )}
-          </div>
+          )}
+        </div>
 
-          <h3>Vocabulaire</h3>
-          {renderMiniVocab()}
+        <h3>Vocabulaire</h3>
+        {renderMiniVocab()}
 
-          {/* AFFICHAGE DES SCORES */}
-          <ScoreDisplay
+        {/* AFFICHAGE DES SCORES */}
+        <ScoreDisplay category="vocabulaire" subCategory={currentSection.id} />
+
+        <div className={styles.miniQuiz}>
+          <Quiz
+            questions={currentSection.questions}
+            title={`Quiz ${currentSection.label}`}
             category="vocabulaire"
             subCategory={currentSection.id}
           />
-
-          <div className={styles.miniQuiz}>
-            <Quiz
-              questions={currentSection.questions}
-              title={`Quiz ${currentSection.label}`}
-              category="vocabulaire"
-              subCategory={currentSection.id}
-            />
-          </div>
-        </div>
-
-        <div className={styles.backButtonContainer}>
-          <BackButton />
         </div>
       </div>
-    </div>
+    </ParcheminLayout>
   );
 }
