@@ -10,6 +10,7 @@ import Verbes from "./pages/Verbes";
 import Kanji from "./pages/Kanji";
 import { ThemeProvider } from "./context/ThemeContext";
 import ThemeToggle from "./components/ThemeToogle";
+import ProfilPage from "./pages/Profile";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
 
             {/* Catégorie Kanji */}
             <Route path="/kanji" element={<Kanji />} />
+
+            {/* Catégorie Profile */}
+            <Route path="/profil" element={<ProfilPage />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -35,6 +35,9 @@ export default function Home() {
         <Link to="/complexe" className={styles.card}>
           📚 Vocabulaire complexe
         </Link>
+        <Link to="/profil" className={styles.card}>
+          📊 Mon Profil
+        </Link>
       </div>
     </ParcheminLayout>
   );
