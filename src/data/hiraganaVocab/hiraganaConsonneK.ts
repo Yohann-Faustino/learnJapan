@@ -11,8 +11,8 @@ export const hiraganaKVocab = [
   { jp: "こう", romaji: "kou", fr: "école / construction" },
   { jp: "けい", romaji: "kei", fr: "système / plan" },
   { jp: "けいこ", romaji: "keiko", fr: "entraînement" },
-  { jp: "かさ", romaji: "kasa", fr: "parapluie" },
-  { jp: "きそ", romaji: "kiso", fr: "base / fondation" },
-  { jp: "くす", romaji: "kusu", fr: "camphre (arbre)" },
   { jp: "くう", romaji: "kuu", fr: "espace / vide" },
+  { jp: "こお", romaji: "koo", fr: "soie" },
+  { jp: "けお", romaji: "keo", fr: "désordre" },
+  { jp: "きお", romaji: "kio", fr: "drapeau" },
 ];
