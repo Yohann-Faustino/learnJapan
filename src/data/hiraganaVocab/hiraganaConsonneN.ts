@@ -1,4 +1,4 @@
-// VOCABULAIRE (LES MÊMES 15 MOTS QUE DANS LES QUESTIONS 1-15)
+// src/data/hiraganaVocab/hiraganaConsonneN.ts
 export const hiraganaNVocab = [
   { jp: "なつ", romaji: "natsu", fr: "été" },
   { jp: "にし", romaji: "nishi", fr: "ouest" },
@@ -10,9 +10,9 @@ export const hiraganaNVocab = [
   { jp: "ぬす", romaji: "nusu", fr: "voler" },
   { jp: "ねた", romaji: "neta", fr: "matériau" },
   { jp: "のか", romaji: "noka", fr: "de (particule)" },
-  { jp: "なん", romaji: "nan", fr: "combien / quel" },
-  { jp: "にん", romaji: "nin", fr: "personne (compteur)" },
-  { jp: "ねん", romaji: "nen", fr: "année" },
-  { jp: "かん", romaji: "kan", fr: "sentiment / perception" },
-  { jp: "さん", romaji: "san", fr: "Monsieur / Madame" },
+  { jp: "なき", romaji: "naki", fr: "pleurs" },
+  { jp: "にこ", romaji: "niko", fr: "sourire" },
+  { jp: "ぬの", romaji: "nuno", fr: "tissu" },
+  { jp: "ねこ", romaji: "neko", fr: "chat" },
+  { jp: "のこ", romaji: "noko", fr: "scie" },
 ];
