@@ -8,7 +8,7 @@ import BaseVocabularyPage from "./pages/BaseVocabulary";
 import PhraseStructurePage from "./pages/PhraseStructure";
 import Verbes from "./pages/Verbes";
 import Kanji from "./pages/Kanji";
-import { ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider } from "../context/ThemeContext";
 import ThemeToggle from "./components/ThemeToogle";
 import ProfilPage from "./pages/Profile";
 
