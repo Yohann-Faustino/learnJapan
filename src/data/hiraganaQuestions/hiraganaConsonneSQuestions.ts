@@ -117,9 +117,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot せかい ?",
     options: [
       { text: "sekai", correct: true },
-      { text: "sekai", correct: false },
-      { text: "sekai", correct: false },
-      { text: "sekai", correct: false },
+      { text: "seka", correct: false },
+      { text: "seki", correct: false },
+      { text: "seke", correct: false },
     ],
   },
   {
@@ -141,9 +141,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot せき ?",
     options: [
       { text: "seki", correct: true },
-      { text: "seki", correct: false },
-      { text: "seki", correct: false },
-      { text: "seki", correct: false },
+      { text: "saki", correct: false },
+      { text: "suke", correct: false },
+      { text: "soko", correct: false },
     ],
   },
   {
@@ -153,9 +153,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot かさい ?",
     options: [
       { text: "kasai", correct: true },
-      { text: "kasai", correct: false },
-      { text: "kasai", correct: false },
-      { text: "kasai", correct: false },
+      { text: "kase", correct: false },
+      { text: "kasi", correct: false },
+      { text: "kaso", correct: false },
     ],
   },
   {
@@ -165,9 +165,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot さい ?",
     options: [
       { text: "sai", correct: true },
-      { text: "sai", correct: false },
-      { text: "sai", correct: false },
-      { text: "sai", correct: false },
+      { text: "sei", correct: false },
+      { text: "sui", correct: false },
+      { text: "soi", correct: false },
     ],
   },
   {
@@ -177,9 +177,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot すこし ?",
     options: [
       { text: "sukoshi", correct: true },
-      { text: "sukoshi", correct: false },
-      { text: "sukoshi", correct: false },
-      { text: "sukoshi", correct: false },
+      { text: "sukosi", correct: false },
+      { text: "sukochi", correct: false },
+      { text: "sukuna", correct: false },
     ],
   },
 

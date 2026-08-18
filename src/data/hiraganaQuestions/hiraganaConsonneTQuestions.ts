@@ -165,9 +165,9 @@ export const hiraganaTQuestions: Question[] = [
     question: "Comment se prononce le mot てつ ?",
     options: [
       { text: "tetsu", correct: true },
-      { text: "tetsu", correct: false },
-      { text: "tetsu", correct: false },
-      { text: "tetsu", correct: false },
+      { text: "tetu", correct: false },
+      { text: "techi", correct: false },
+      { text: "tete", correct: false },
     ],
   },
   {
