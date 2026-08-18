@@ -15,7 +15,7 @@ export default function KanjiPage() {
     <div className={styles.miniVocab}>
       {currentSection.vocab.map((item, idx) => (
         <RevealButton
-          key={idx}
+          key={`${currentSection.id}-${idx}`}
           japanese={item.kanji}
           romaji={item.lecture}
           french={item.sens}

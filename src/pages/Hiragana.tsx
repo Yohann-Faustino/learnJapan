@@ -27,7 +27,7 @@ export default function HiraganaPage() {
     <div className={styles.miniVocab}>
       {currentSection.vocab.map((item, idx) => (
         <RevealButton
-          key={idx}
+          key={`${currentSection.id}-${idx}`}
           japanese={item.jp}
           romaji={item.romaji}
           french={item.fr}
