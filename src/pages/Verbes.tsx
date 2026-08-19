@@ -42,7 +42,7 @@ export default function VerbesPage() {
         }[]
       ).map((item, idx) => (
         <FrenchRevealButton
-          key={idx}
+          key={`${currentSection.id}-${idx}`}
           french={item.french}
           romaji={item.romaji}
           pronunciation={item.pronunciation}

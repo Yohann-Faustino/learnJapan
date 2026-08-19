@@ -19,7 +19,7 @@ export default function BaseVocabularyPage() {
     <div className={styles.miniVocab}>
       {currentSection.vocab.map((item, idx) => (
         <FrenchRevealButton
-          key={idx}
+          key={`${currentSection.id}-${idx}`}
           french={item.french}
           romaji={item.romaji}
           pronunciation={item.pronunciation}

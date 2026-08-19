@@ -93,9 +93,9 @@ export const hiraganaSQuestions: Question[] = [
     question: "Comment se prononce le mot すそ ?",
     options: [
       { text: "suso", correct: true },
-      { text: "suso", correct: false },
-      { text: "suso", correct: false },
-      { text: "suso", correct: false },
+      { text: "suke", correct: false },
+      { text: "suko", correct: false },
+      { text: "sushi", correct: false },
     ],
   },
   {
