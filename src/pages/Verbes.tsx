@@ -76,6 +76,7 @@ export default function VerbesPage() {
 
         <div className={styles.miniQuiz}>
           <Quiz
+            key={currentSection.id}
             questions={currentSection.questions}
             title={`Quiz ${currentSection.label}`}
             category="verbes"

@@ -61,6 +61,7 @@ export default function HiraganaPage() {
 
         <div className={styles.miniQuiz}>
           <Quiz
+            key={currentSection.id}
             questions={currentSection.questions}
             title={`Quiz ${currentSection.label}`}
             category="hiragana"

@@ -63,6 +63,7 @@ export default function BaseVocabularyPage() {
 
         <div className={styles.miniQuiz}>
           <Quiz
+            key={currentSection.id}
             questions={currentSection.questions}
             title={`Quiz ${currentSection.label}`}
             category="vocabulaire"

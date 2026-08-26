@@ -66,6 +66,7 @@ export default function KanjiPage() {
 
         <div className={styles.miniQuiz}>
           <Quiz
+            key={currentSection.id}
             questions={currentSection.questions}
             title={`Quiz ${currentSection.label}`}
             category="kanji"

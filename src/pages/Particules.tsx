@@ -138,6 +138,7 @@ export default function ParticlesPage() {
 
         <div style={{ margin: "2rem 0" }}>
           <Quiz
+            key="particules"
             questions={particulesQuestions}
             category="grammaire"
             subCategory="particules"
