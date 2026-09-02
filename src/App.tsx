@@ -6,7 +6,7 @@ import Katakana from "./pages/Katakana";
 import Particules from "./pages/Particules";
 import BaseVocabularyPage from "./pages/BaseVocabulary";
 import PhraseStructurePage from "./pages/PhraseStructure";
-import Verbes from "./pages/Verbes";
+import VerbesPolisPage from "./pages/VerbesPolis";
 import Kanji from "./pages/Kanji";
 import { ThemeProvider } from "./context/themeContext";
 import ThemeToggle from "./components/ThemeToogle";
@@ -28,8 +28,8 @@ function App() {
             {/* Catégorie Particules */}
             <Route path="/particules" element={<Particules />} />
 
-            {/* Catégorie Verbes */}
-            <Route path="/verbes" element={<Verbes />} />
+            {/* Catégorie Verbes polis */}
+            <Route path="/verbespolis" element={<VerbesPolisPage />} />
 
             {/* Catégorie BaseVocabulary */}
             <Route path="/base" element={<BaseVocabularyPage />} />

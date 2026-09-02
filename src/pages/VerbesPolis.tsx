@@ -1,15 +1,19 @@
 import { useState } from "react";
 import Quiz from "../components/Quiz";
 import TabButton from "../components/TabButton";
-import styles from "./Hiragana.module.css";
-import { verbesCatalogue } from "../data/catalogues/verbesCatalogue";
 import FrenchRevealButton from "../components/FrenchRevealButton";
-import ScoreDisplay from "../components/ScoreDisplay";
 import ParcheminLayout from "../components/ParcheminLayout";
+import ScoreDisplay from "../components/ScoreDisplay";
+import styles from "./Hiragana.module.css";
+import { verbesPolisCatalogue } from "../data/catalogues/verbesPolisCatalogue";
 
-export default function VerbesPage() {
-  const [activeSection, setActiveSection] = useState(verbesCatalogue[0].id);
-  const currentSection = verbesCatalogue.find((s) => s.id === activeSection)!;
+export default function VerbesPolisPage() {
+  const [activeSection, setActiveSection] = useState(
+    verbesPolisCatalogue[0].id,
+  );
+  const currentSection = verbesPolisCatalogue.find(
+    (s) => s.id === activeSection,
+  )!;
 
   const renderDescription = () => (
     <div className={styles.pronunciation}>
@@ -34,17 +38,11 @@ export default function VerbesPage() {
 
   const renderVocab = () => (
     <div className={styles.miniVocab}>
-      {(
-        currentSection.vocab as {
-          french: string;
-          romaji: string;
-          pronunciation: string;
-        }[]
-      ).map((item, idx) => (
+      {currentSection.vocab.map((item, idx) => (
         <FrenchRevealButton
           key={`${currentSection.id}-${idx}`}
           french={item.french}
-          romaji={item.romaji}
+          romaji={`${item.infinitif} → ${item.poli}`}
           pronunciation={item.pronunciation}
         />
       ))}
@@ -52,9 +50,9 @@ export default function VerbesPage() {
   );
 
   return (
-    <ParcheminLayout title="📖 Verbes japonais">
+    <ParcheminLayout title="📖 Verbes polis">
       <div className="navTabs">
-        {verbesCatalogue.map((section) => (
+        {verbesPolisCatalogue.map((section) => (
           <TabButton
             key={section.id}
             label={section.label}
@@ -71,7 +69,6 @@ export default function VerbesPage() {
         <h3>Mini-vocabulaire</h3>
         {renderVocab()}
 
-        {/* AFFICHAGE DES SCORES */}
         <ScoreDisplay category="verbes" subCategory={currentSection.id} />
 
         <div className={styles.miniQuiz}>

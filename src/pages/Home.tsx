@@ -21,7 +21,7 @@ export default function Home() {
   const categories = [
     { id: "phrase", label: "📖 Structure des phrases", path: "/phrase" },
     { id: "particules", label: "📌 Particules", path: "/particules" },
-    { id: "verbes", label: "🔄 Verbes", path: "/verbes" },
+    { id: "verbes polis", label: "🔄 Verbes polis", path: "/verbespolis" },
     { id: "hiragana", label: "🈁 Hiragana", path: "/hiragana" },
     { id: "katakana", label: "🈂 Katakana", path: "/katakana" },
     { id: "kanji", label: "🈶 Kanji", path: "/kanji" },
